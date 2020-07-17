@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://schemas.microsoft.com/ws/2005/02/mex/bindings" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PhaseBulletService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IPhaseBulletService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://schemas.microsoft.com/ws/2005/02/mex/bindings" location="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Idea.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPhaseBulletService_GetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAll" />
+  </wsdl:message>
+  <wsdl:message name="IPhaseBulletService_GetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhaseBulletService_GetByPhaseAndColumn_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByPhaseAndColumn" />
+  </wsdl:message>
+  <wsdl:message name="IPhaseBulletService_GetByPhaseAndColumn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByPhaseAndColumnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhaseBulletService_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="IPhaseBulletService_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhaseBulletService_DeleteByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteByID" />
+  </wsdl:message>
+  <wsdl:message name="IPhaseBulletService_DeleteByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhaseBulletService_SaveColumnBullets_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveColumnBullets" />
+  </wsdl:message>
+  <wsdl:message name="IPhaseBulletService_SaveColumnBullets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveColumnBulletsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPhaseBulletService">
+    <wsdl:operation name="GetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhaseBulletService/GetAll" message="tns:IPhaseBulletService_GetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhaseBulletService/GetAllResponse" message="tns:IPhaseBulletService_GetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByPhaseAndColumn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhaseBulletService/GetByPhaseAndColumn" message="tns:IPhaseBulletService_GetByPhaseAndColumn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhaseBulletService/GetByPhaseAndColumnResponse" message="tns:IPhaseBulletService_GetByPhaseAndColumn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhaseBulletService/Delete" message="tns:IPhaseBulletService_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhaseBulletService/DeleteResponse" message="tns:IPhaseBulletService_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhaseBulletService/DeleteByID" message="tns:IPhaseBulletService_DeleteByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhaseBulletService/DeleteByIDResponse" message="tns:IPhaseBulletService_DeleteByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveColumnBullets">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhaseBulletService/SaveColumnBullets" message="tns:IPhaseBulletService_SaveColumnBullets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhaseBulletService/SaveColumnBulletsResponse" message="tns:IPhaseBulletService_SaveColumnBullets_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IPhaseBulletService" type="tns:IPhaseBulletService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IPhaseBulletService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetAll">
+      <soap12:operation soapAction="http://tempuri.org/IPhaseBulletService/GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByPhaseAndColumn">
+      <soap12:operation soapAction="http://tempuri.org/IPhaseBulletService/GetByPhaseAndColumn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap12:operation soapAction="http://tempuri.org/IPhaseBulletService/Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByID">
+      <soap12:operation soapAction="http://tempuri.org/IPhaseBulletService/DeleteByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveColumnBullets">
+      <soap12:operation soapAction="http://tempuri.org/IPhaseBulletService/SaveColumnBullets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IPhaseBulletService" type="tns:IPhaseBulletService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAll">
+      <soap:operation soapAction="http://tempuri.org/IPhaseBulletService/GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByPhaseAndColumn">
+      <soap:operation soapAction="http://tempuri.org/IPhaseBulletService/GetByPhaseAndColumn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/IPhaseBulletService/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByID">
+      <soap:operation soapAction="http://tempuri.org/IPhaseBulletService/DeleteByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveColumnBullets">
+      <soap:operation soapAction="http://tempuri.org/IPhaseBulletService/SaveColumnBullets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PhaseBulletService">
+    <wsdl:port name="NetTcpBinding_IPhaseBulletService" binding="tns:NetTcpBinding_IPhaseBulletService">
+      <soap12:address location="net.tcp://localhost:8733/Design_Time_Addresses/Idea.Server/PhaseBulletService/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8733/Design_Time_Addresses/Idea.Server/PhaseBulletService/</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IPhaseBulletService" binding="tns:BasicHttpBinding_IPhaseBulletService">
+      <soap:address location="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/" />
+    </wsdl:port>
+    <wsdl:port name="MetadataExchangeHttpBinding_IPhaseBulletService" binding="i0:MetadataExchangeHttpBinding_IPhaseBulletService">
+      <soap12:address location="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

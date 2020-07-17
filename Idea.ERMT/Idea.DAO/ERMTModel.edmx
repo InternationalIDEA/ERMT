@@ -1,0 +1,1456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="IDEA.ERMT.Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Factor">
+          <Key>
+            <PropertyRef Name="IdFactor" />
+          </Key>
+          <Property Name="IdFactor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ScaleMin" Type="int" Nullable="false" />
+          <Property Name="ScaleMax" Type="int" Nullable="false" />
+          <Property Name="Interval" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="HtmlDocument" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="InternalFactor" Type="bit" Nullable="false" />
+          <Property Name="CumulativeFactor" Type="bit" Nullable="false" />
+          <Property Name="Introduction" Type="nvarchar(max)" />
+          <Property Name="EmpiricalCases" Type="nvarchar(max)" />
+          <Property Name="ObservableIndicators" Type="nvarchar(max)" />
+          <Property Name="DataCollection" Type="nvarchar(max)" />
+          <Property Name="Questionnaire" Type="nvarchar(max)" />
+          <Property Name="SortOrder" Type="int" />
+          <Property Name="Color" Type="varchar" MaxLength="50" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Marker">
+          <Key>
+            <PropertyRef Name="IDMarker" />
+          </Key>
+          <Property Name="IDMarker" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDMarkerType" Type="int" Nullable="false" />
+          <Property Name="IDModel" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Latitude" Type="decimal" Precision="18" Scale="8" Nullable="false" />
+          <Property Name="Longitude" Type="decimal" Precision="18" Scale="8" Nullable="false" />
+          <Property Name="DateFrom" Type="datetime" Nullable="false" />
+          <Property Name="DateTo" Type="datetime" Nullable="false" />
+          <Property Name="Color" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MarkerType">
+          <Key>
+            <PropertyRef Name="IDMarkerType" />
+          </Key>
+          <Property Name="IDMarkerType" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Symbol" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Size" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Model">
+          <Key>
+            <PropertyRef Name="IDModel" />
+          </Key>
+          <Property Name="IDModel" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDRegion" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ModelFactor">
+          <Key>
+            <PropertyRef Name="IDModelFactor" />
+          </Key>
+          <Property Name="IDModelFactor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDModel" Type="int" Nullable="false" />
+          <Property Name="IDFactor" Type="int" Nullable="false" />
+          <Property Name="ScaleMin" Type="int" Nullable="false" />
+          <Property Name="ScaleMax" Type="int" Nullable="false" />
+          <Property Name="Interval" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Weight" Type="int" Nullable="false" />
+          <Property Name="SortOrder" Type="int" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ModelFactorData">
+          <Key>
+            <PropertyRef Name="IDModelFactorData" />
+          </Key>
+          <Property Name="IDModelFactorData" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDModelFactor" Type="int" Nullable="false" />
+          <Property Name="IDRegion" Type="int" Nullable="false" />
+          <Property Name="Data" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ModelRiskAlert">
+          <Key>
+            <PropertyRef Name="IDModelRiskAlert" />
+          </Key>
+          <Property Name="IDModelRiskAlert" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDModel" Type="int" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DateFrom" Type="datetime" Nullable="false" />
+          <Property Name="DateTo" Type="datetime" Nullable="false" />
+          <Property Name="RiskDescription" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Action" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Result" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ModelRiskAlertAttachment">
+          <Key>
+            <PropertyRef Name="IDModelRiskAlertAttachment" />
+          </Key>
+          <Property Name="IDModelRiskAlertAttachment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDModelRiskAlert" Type="int" Nullable="false" />
+          <Property Name="AttachmentFile" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ModelRiskAlertPhase">
+          <Key>
+            <PropertyRef Name="IDModelRiskAlertPhase" />
+          </Key>
+          <Property Name="IDModelRiskAlertPhase" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDModelRiskAlert" Type="int" Nullable="false" />
+          <Property Name="IDPhase" Type="int" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ModelRiskAlertRegion">
+          <Key>
+            <PropertyRef Name="IDModelRiskAlertRegion" />
+          </Key>
+          <Property Name="IDModelRiskAlertRegion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDModelRiskAlert" Type="int" Nullable="false" />
+          <Property Name="IDRegion" Type="int" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Phase">
+          <Key>
+            <PropertyRef Name="IDPhase" />
+          </Key>
+          <Property Name="IDPhase" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Column1Text" Type="nvarchar(max)" />
+          <Property Name="Column2Text" Type="nvarchar(max)" />
+          <Property Name="Column3Text" Type="nvarchar(max)" />
+          <Property Name="PractitionersTips" Type="nvarchar(max)" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhaseBullet">
+          <Key>
+            <PropertyRef Name="IDPhaseBullet" />
+          </Key>
+          <Property Name="IDPhaseBullet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDPhase" Type="int" Nullable="false" />
+          <Property Name="ColumnNumber" Type="int" Nullable="false" />
+          <Property Name="Text" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SortOrder" Type="int" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Region">
+          <Key>
+            <PropertyRef Name="IDRegion" />
+          </Key>
+          <Property Name="IDRegion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RegionName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="RegionDescription" Type="nvarchar(max)" />
+          <Property Name="IDParent" Type="int" />
+          <Property Name="ShapeFileName" Type="nvarchar" MaxLength="500" />
+          <Property Name="ShapeFileIndex" Type="int" />
+          <Property Name="RegionLevel" Type="int" Nullable="false" />
+          <Property Name="PathFileName" Type="nvarchar" MaxLength="500" />
+          <Property Name="POIFileName" Type="nvarchar" MaxLength="500" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Report">
+          <Key>
+            <PropertyRef Name="IDReport" />
+          </Key>
+          <Property Name="IDReport" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDModel" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Parameters" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Markers" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Type" Type="int" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="IDRole" />
+          </Key>
+          <Property Name="IDRole" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SystemParameter">
+          <Key>
+            <PropertyRef Name="IDSystemParameter" />
+          </Key>
+          <Property Name="IDSystemParameter" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LastRiskCode" Type="int" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="IDUser" />
+          </Key>
+          <Property Name="IDUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDRole" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Lastname" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Bullet_Phase">
+          <End Role="Phase" Type="Self.Phase" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PhaseBullet" Type="Self.PhaseBullet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phase">
+              <PropertyRef Name="IDPhase" />
+            </Principal>
+            <Dependent Role="PhaseBullet">
+              <PropertyRef Name="IDPhase" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Marker_MarkerType">
+          <End Role="MarkerType" Type="Self.MarkerType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Marker" Type="Self.Marker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MarkerType">
+              <PropertyRef Name="IDMarkerType" />
+            </Principal>
+            <Dependent Role="Marker">
+              <PropertyRef Name="IDMarkerType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Marker_Model">
+          <End Role="Model" Type="Self.Model" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Marker" Type="Self.Marker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Model">
+              <PropertyRef Name="IDModel" />
+            </Principal>
+            <Dependent Role="Marker">
+              <PropertyRef Name="IDModel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Model_Region">
+          <End Role="Region" Type="Self.Region" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Model" Type="Self.Model" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="IDRegion" />
+            </Principal>
+            <Dependent Role="Model">
+              <PropertyRef Name="IDRegion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelFactor_Factor">
+          <End Role="Factor" Type="Self.Factor" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ModelFactor" Type="Self.ModelFactor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Factor">
+              <PropertyRef Name="IdFactor" />
+            </Principal>
+            <Dependent Role="ModelFactor">
+              <PropertyRef Name="IDFactor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelFactor_Model">
+          <End Role="Model" Type="Self.Model" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ModelFactor" Type="Self.ModelFactor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Model">
+              <PropertyRef Name="IDModel" />
+            </Principal>
+            <Dependent Role="ModelFactor">
+              <PropertyRef Name="IDModel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelFactorData_ModelFactor">
+          <End Role="ModelFactor" Type="Self.ModelFactor" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ModelFactorData" Type="Self.ModelFactorData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModelFactor">
+              <PropertyRef Name="IDModelFactor" />
+            </Principal>
+            <Dependent Role="ModelFactorData">
+              <PropertyRef Name="IDModelFactor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelFactorData_Region">
+          <End Role="Region" Type="Self.Region" Multiplicity="1" />
+          <End Role="ModelFactorData" Type="Self.ModelFactorData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="IDRegion" />
+            </Principal>
+            <Dependent Role="ModelFactorData">
+              <PropertyRef Name="IDRegion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlert_Model">
+          <End Role="Model" Type="Self.Model" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ModelRiskAlert" Type="Self.ModelRiskAlert" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Model">
+              <PropertyRef Name="IDModel" />
+            </Principal>
+            <Dependent Role="ModelRiskAlert">
+              <PropertyRef Name="IDModel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertAttachment_ModelRiskAlert">
+          <End Role="ModelRiskAlert" Type="Self.ModelRiskAlert" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ModelRiskAlertAttachment" Type="Self.ModelRiskAlertAttachment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModelRiskAlert">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertAttachment">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertPhase_ModelRiskAlert">
+          <End Role="ModelRiskAlert" Type="Self.ModelRiskAlert" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ModelRiskAlertPhase" Type="Self.ModelRiskAlertPhase" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModelRiskAlert">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertPhase">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertPhase_Phase">
+          <End Role="Phase" Type="Self.Phase" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ModelRiskAlertPhase" Type="Self.ModelRiskAlertPhase" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phase">
+              <PropertyRef Name="IDPhase" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertPhase">
+              <PropertyRef Name="IDPhase" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertRegion_ModelRiskAlert">
+          <End Role="ModelRiskAlert" Type="Self.ModelRiskAlert" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ModelRiskAlertRegion" Type="Self.ModelRiskAlertRegion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModelRiskAlert">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertRegion">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertRegion_Region">
+          <End Role="Region" Type="Self.Region" Multiplicity="1" />
+          <End Role="ModelRiskAlertRegion" Type="Self.ModelRiskAlertRegion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="IDRegion" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertRegion">
+              <PropertyRef Name="IDRegion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Region_Region">
+          <End Role="Region" Type="Self.Region" Multiplicity="0..1" />
+          <End Role="Region1" Type="Self.Region" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="IDRegion" />
+            </Principal>
+            <Dependent Role="Region1">
+              <PropertyRef Name="IDParent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Report_Model">
+          <End Role="Model" Type="Self.Model" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Report" Type="Self.Report" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Model">
+              <PropertyRef Name="IDModel" />
+            </Principal>
+            <Dependent Role="Report">
+              <PropertyRef Name="IDModel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Role">
+          <End Role="Role" Type="Self.Role" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="IDRole" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="IDRole" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="GetFeatureIDsToExclude" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+          <Parameter Name="IDRegion" Type="int" Mode="In" />
+        </Function>
+        <Function Name="spGetFeatureIDsToExclude" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDRegion" Type="int" Mode="In" />
+        </Function>
+        <Function Name="spModelFactorData_GetMapData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDModelFactor" Type="int" Mode="In" />
+          <Parameter Name="Regions" Type="varchar(max)" Mode="In" />
+          <Parameter Name="from" Type="datetime" Mode="In" />
+          <Parameter Name="to" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spModelRiskAlert_GetWithFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdModel" Type="int" Mode="In" />
+          <Parameter Name="IdRegions" Type="varchar(max)" Mode="In" />
+          <Parameter Name="active" Type="bit" Mode="In" />
+        </Function>
+        <EntityContainer Name="IDEAERMTModelStoreContainer">
+          <EntitySet Name="Factor" EntityType="Self.Factor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Marker" EntityType="Self.Marker" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MarkerType" EntityType="Self.MarkerType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Model" EntityType="Self.Model" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ModelFactor" EntityType="Self.ModelFactor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ModelFactorData" EntityType="Self.ModelFactorData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ModelRiskAlert" EntityType="Self.ModelRiskAlert" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ModelRiskAlertAttachment" EntityType="Self.ModelRiskAlertAttachment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ModelRiskAlertPhase" EntityType="Self.ModelRiskAlertPhase" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ModelRiskAlertRegion" EntityType="Self.ModelRiskAlertRegion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Phase" EntityType="Self.Phase" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PhaseBullet" EntityType="Self.PhaseBullet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Region" EntityType="Self.Region" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Report" EntityType="Self.Report" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SystemParameter" EntityType="Self.SystemParameter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Bullet_Phase" Association="Self.FK_Bullet_Phase">
+            <End Role="Phase" EntitySet="Phase" />
+            <End Role="PhaseBullet" EntitySet="PhaseBullet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Marker_MarkerType" Association="Self.FK_Marker_MarkerType">
+            <End Role="MarkerType" EntitySet="MarkerType" />
+            <End Role="Marker" EntitySet="Marker" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Marker_Model" Association="Self.FK_Marker_Model">
+            <End Role="Model" EntitySet="Model" />
+            <End Role="Marker" EntitySet="Marker" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Model_Region" Association="Self.FK_Model_Region">
+            <End Role="Region" EntitySet="Region" />
+            <End Role="Model" EntitySet="Model" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelFactor_Factor" Association="Self.FK_ModelFactor_Factor">
+            <End Role="Factor" EntitySet="Factor" />
+            <End Role="ModelFactor" EntitySet="ModelFactor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelFactor_Model" Association="Self.FK_ModelFactor_Model">
+            <End Role="Model" EntitySet="Model" />
+            <End Role="ModelFactor" EntitySet="ModelFactor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelFactorData_ModelFactor" Association="Self.FK_ModelFactorData_ModelFactor">
+            <End Role="ModelFactor" EntitySet="ModelFactor" />
+            <End Role="ModelFactorData" EntitySet="ModelFactorData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelFactorData_Region" Association="Self.FK_ModelFactorData_Region">
+            <End Role="Region" EntitySet="Region" />
+            <End Role="ModelFactorData" EntitySet="ModelFactorData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlert_Model" Association="Self.FK_ModelRiskAlert_Model">
+            <End Role="Model" EntitySet="Model" />
+            <End Role="ModelRiskAlert" EntitySet="ModelRiskAlert" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertAttachment_ModelRiskAlert" Association="Self.FK_ModelRiskAlertAttachment_ModelRiskAlert">
+            <End Role="ModelRiskAlert" EntitySet="ModelRiskAlert" />
+            <End Role="ModelRiskAlertAttachment" EntitySet="ModelRiskAlertAttachment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertPhase_ModelRiskAlert" Association="Self.FK_ModelRiskAlertPhase_ModelRiskAlert">
+            <End Role="ModelRiskAlert" EntitySet="ModelRiskAlert" />
+            <End Role="ModelRiskAlertPhase" EntitySet="ModelRiskAlertPhase" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertPhase_Phase" Association="Self.FK_ModelRiskAlertPhase_Phase">
+            <End Role="Phase" EntitySet="Phase" />
+            <End Role="ModelRiskAlertPhase" EntitySet="ModelRiskAlertPhase" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertRegion_ModelRiskAlert" Association="Self.FK_ModelRiskAlertRegion_ModelRiskAlert">
+            <End Role="ModelRiskAlert" EntitySet="ModelRiskAlert" />
+            <End Role="ModelRiskAlertRegion" EntitySet="ModelRiskAlertRegion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertRegion_Region" Association="Self.FK_ModelRiskAlertRegion_Region">
+            <End Role="Region" EntitySet="Region" />
+            <End Role="ModelRiskAlertRegion" EntitySet="ModelRiskAlertRegion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Region_Region" Association="Self.FK_Region_Region">
+            <End Role="Region" EntitySet="Region" />
+            <End Role="Region1" EntitySet="Region" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Report_Model" Association="Self.FK_Report_Model">
+            <End Role="Model" EntitySet="Model" />
+            <End Role="Report" EntitySet="Report" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Idea.ERMT.Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Factor">
+          <Key>
+            <PropertyRef Name="IdFactor" />
+          </Key>
+          <Property Name="IdFactor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ScaleMin" Type="Int32" Nullable="false" />
+          <Property Name="ScaleMax" Type="Int32" Nullable="false" />
+          <Property Name="Interval" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="HtmlDocument" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="InternalFactor" Type="Boolean" Nullable="false" />
+          <Property Name="CumulativeFactor" Type="Boolean" Nullable="false" />
+          <Property Name="Introduction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EmpiricalCases" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ObservableIndicators" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DataCollection" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Questionnaire" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SortOrder" Type="Int32" />
+          <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ModelFactors" Relationship="Self.FK_ModelFactor_Factor" FromRole="Factor" ToRole="ModelFactor" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Marker">
+          <Key>
+            <PropertyRef Name="IDMarker" />
+          </Key>
+          <Property Name="IDMarker" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDMarkerType" Type="Int32" Nullable="false" />
+          <Property Name="IDModel" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Latitude" Type="Decimal" Precision="18" Scale="8" Nullable="false" />
+          <Property Name="Longitude" Type="Decimal" Precision="18" Scale="8" Nullable="false" />
+          <Property Name="DateFrom" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateTo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MarkerType" Relationship="Self.FK_Marker_MarkerType" FromRole="Marker" ToRole="MarkerType" />
+          <NavigationProperty Name="Model" Relationship="Self.FK_Marker_Model" FromRole="Marker" ToRole="Model" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="MarkerType">
+          <Key>
+            <PropertyRef Name="IDMarkerType" />
+          </Key>
+          <Property Name="IDMarkerType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Symbol" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Size" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Markers" Relationship="Self.FK_Marker_MarkerType" FromRole="MarkerType" ToRole="Marker" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Model">
+          <Key>
+            <PropertyRef Name="IDModel" />
+          </Key>
+          <Property Name="IDModel" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDRegion" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Markers" Relationship="Self.FK_Marker_Model" FromRole="Model" ToRole="Marker" />
+          <NavigationProperty Name="Region" Relationship="Self.FK_Model_Region" FromRole="Model" ToRole="Region" />
+          <NavigationProperty Name="ModelFactors" Relationship="Self.FK_ModelFactor_Model" FromRole="Model" ToRole="ModelFactor" />
+          <NavigationProperty Name="ModelRiskAlerts" Relationship="Self.FK_ModelRiskAlert_Model" FromRole="Model" ToRole="ModelRiskAlert" />
+          <NavigationProperty Name="Reports" Relationship="Self.FK_Report_Model" FromRole="Model" ToRole="Report" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="ModelFactor">
+          <Key>
+            <PropertyRef Name="IDModelFactor" />
+          </Key>
+          <Property Name="IDModelFactor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDModel" Type="Int32" Nullable="false" />
+          <Property Name="IDFactor" Type="Int32" Nullable="false" />
+          <Property Name="ScaleMin" Type="Int32" Nullable="false" />
+          <Property Name="ScaleMax" Type="Int32" Nullable="false" />
+          <Property Name="Interval" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Weight" Type="Int32" Nullable="false" />
+          <Property Name="SortOrder" Type="Int32" />
+          <NavigationProperty Name="Factor" Relationship="Self.FK_ModelFactor_Factor" FromRole="ModelFactor" ToRole="Factor" />
+          <NavigationProperty Name="Model" Relationship="Self.FK_ModelFactor_Model" FromRole="ModelFactor" ToRole="Model" />
+          <NavigationProperty Name="ModelFactorDatas" Relationship="Self.FK_ModelFactorData_ModelFactor" FromRole="ModelFactor" ToRole="ModelFactorData" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="ModelFactorData">
+          <Key>
+            <PropertyRef Name="IDModelFactorData" />
+          </Key>
+          <Property Name="IDModelFactorData" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDModelFactor" Type="Int32" Nullable="false" />
+          <Property Name="IDRegion" Type="Int32" Nullable="false" />
+          <Property Name="Data" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="ModelFactor" Relationship="Self.FK_ModelFactorData_ModelFactor" FromRole="ModelFactorData" ToRole="ModelFactor" />
+          <NavigationProperty Name="Region" Relationship="Self.FK_ModelFactorData_Region" FromRole="ModelFactorData" ToRole="Region" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="ModelRiskAlert">
+          <Key>
+            <PropertyRef Name="IDModelRiskAlert" />
+          </Key>
+          <Property Name="IDModelRiskAlert" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDModel" Type="Int32" Nullable="false" />
+          <Property Name="Code" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DateFrom" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateTo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RiskDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Action" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Result" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Model" Relationship="Self.FK_ModelRiskAlert_Model" FromRole="ModelRiskAlert" ToRole="Model" />
+          <NavigationProperty Name="ModelRiskAlertAttachments" Relationship="Self.FK_ModelRiskAlertAttachment_ModelRiskAlert" FromRole="ModelRiskAlert" ToRole="ModelRiskAlertAttachment" />
+          <NavigationProperty Name="ModelRiskAlertPhases" Relationship="Self.FK_ModelRiskAlertPhase_ModelRiskAlert" FromRole="ModelRiskAlert" ToRole="ModelRiskAlertPhase" />
+          <NavigationProperty Name="ModelRiskAlertRegions" Relationship="Self.FK_ModelRiskAlertRegion_ModelRiskAlert" FromRole="ModelRiskAlert" ToRole="ModelRiskAlertRegion" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="ModelRiskAlertAttachment">
+          <Key>
+            <PropertyRef Name="IDModelRiskAlertAttachment" />
+          </Key>
+          <Property Name="IDModelRiskAlertAttachment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDModelRiskAlert" Type="Int32" Nullable="false" />
+          <Property Name="AttachmentFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ModelRiskAlert" Relationship="Self.FK_ModelRiskAlertAttachment_ModelRiskAlert" FromRole="ModelRiskAlertAttachment" ToRole="ModelRiskAlert" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="ModelRiskAlertPhase">
+          <Key>
+            <PropertyRef Name="IDModelRiskAlertPhase" />
+          </Key>
+          <Property Name="IDModelRiskAlertPhase" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDModelRiskAlert" Type="Int32" Nullable="false" />
+          <Property Name="IDPhase" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ModelRiskAlert" Relationship="Self.FK_ModelRiskAlertPhase_ModelRiskAlert" FromRole="ModelRiskAlertPhase" ToRole="ModelRiskAlert" />
+          <NavigationProperty Name="Phase" Relationship="Self.FK_ModelRiskAlertPhase_Phase" FromRole="ModelRiskAlertPhase" ToRole="Phase" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="ModelRiskAlertRegion">
+          <Key>
+            <PropertyRef Name="IDModelRiskAlertRegion" />
+          </Key>
+          <Property Name="IDModelRiskAlertRegion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDModelRiskAlert" Type="Int32" Nullable="false" />
+          <Property Name="IDRegion" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ModelRiskAlert" Relationship="Self.FK_ModelRiskAlertRegion_ModelRiskAlert" FromRole="ModelRiskAlertRegion" ToRole="ModelRiskAlert" />
+          <NavigationProperty Name="Region" Relationship="Self.FK_ModelRiskAlertRegion_Region" FromRole="ModelRiskAlertRegion" ToRole="Region" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Phase">
+          <Key>
+            <PropertyRef Name="IDPhase" />
+          </Key>
+          <Property Name="IDPhase" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Column1Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Column2Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Column3Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PractitionersTips" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ModelRiskAlertPhases" Relationship="Self.FK_ModelRiskAlertPhase_Phase" FromRole="Phase" ToRole="ModelRiskAlertPhase" />
+          <NavigationProperty Name="PhaseBullets" Relationship="Self.FK_Bullet_Phase" FromRole="Phase" ToRole="PhaseBullet" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="PhaseBullet">
+          <Key>
+            <PropertyRef Name="IDPhaseBullet" />
+          </Key>
+          <Property Name="IDPhaseBullet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDPhase" Type="Int32" Nullable="false" />
+          <Property Name="ColumnNumber" Type="Int32" Nullable="false" />
+          <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Phase" Relationship="Self.FK_Bullet_Phase" FromRole="PhaseBullet" ToRole="Phase" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Region">
+          <Key>
+            <PropertyRef Name="IDRegion" />
+          </Key>
+          <Property Name="IDRegion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RegionName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RegionDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDParent" Type="Int32" />
+          <NavigationProperty Name="Models" Relationship="Self.FK_Model_Region" FromRole="Region" ToRole="Model" />
+          <NavigationProperty Name="ModelFactorDatas" Relationship="Self.FK_ModelFactorData_Region" FromRole="Region" ToRole="ModelFactorData" />
+          <NavigationProperty Name="ModelRiskAlertRegions" Relationship="Self.FK_ModelRiskAlertRegion_Region" FromRole="Region" ToRole="ModelRiskAlertRegion" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ShapeFileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ShapeFileIndex" Type="Int32" />
+          <NavigationProperty Name="Region1" Relationship="Idea.ERMT.Model.FK_Region_Region" FromRole="Region" ToRole="Region1" />
+          <NavigationProperty Name="Region2" Relationship="Idea.ERMT.Model.FK_Region_Region" FromRole="Region1" ToRole="Region" />
+          <Property Name="RegionLevel" Type="Int32" Nullable="false" />
+          <Property Name="PathFileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="POIFileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          </EntityType>
+        <EntityType Name="Report">
+          <Key>
+            <PropertyRef Name="IDReport" />
+          </Key>
+          <Property Name="IDReport" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDModel" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Parameters" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Markers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Model" Relationship="Self.FK_Report_Model" FromRole="Report" ToRole="Model" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="IDRole" />
+          </Key>
+          <Property Name="IDRole" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Users" Relationship="Self.FK_User_Role" FromRole="Role" ToRole="User" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="SystemParameter">
+          <Key>
+            <PropertyRef Name="IDSystemParameter" />
+          </Key>
+          <Property Name="IDSystemParameter" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LastRiskCode" Type="Int32" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="IDUser" />
+          </Key>
+          <Property Name="IDUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDRole" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Lastname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Role" Relationship="Self.FK_User_Role" FromRole="User" ToRole="Role" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <Association Name="FK_ModelFactor_Factor">
+          <End Role="Factor" Type="Self.Factor" Multiplicity="1" />
+          <End Role="ModelFactor" Type="Self.ModelFactor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Factor">
+              <PropertyRef Name="IdFactor" />
+            </Principal>
+            <Dependent Role="ModelFactor">
+              <PropertyRef Name="IDFactor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Marker_MarkerType">
+          <End Role="MarkerType" Type="Self.MarkerType" Multiplicity="1" />
+          <End Role="Marker" Type="Self.Marker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MarkerType">
+              <PropertyRef Name="IDMarkerType" />
+            </Principal>
+            <Dependent Role="Marker">
+              <PropertyRef Name="IDMarkerType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Marker_Model">
+          <End Role="Model" Type="Self.Model" Multiplicity="1" />
+          <End Role="Marker" Type="Self.Marker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Model">
+              <PropertyRef Name="IDModel" />
+            </Principal>
+            <Dependent Role="Marker">
+              <PropertyRef Name="IDModel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Model_Region">
+          <End Role="Region" Type="Self.Region" Multiplicity="1" />
+          <End Role="Model" Type="Self.Model" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="IDRegion" />
+            </Principal>
+            <Dependent Role="Model">
+              <PropertyRef Name="IDRegion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelFactor_Model">
+          <End Role="Model" Type="Self.Model" Multiplicity="1" />
+          <End Role="ModelFactor" Type="Self.ModelFactor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Model">
+              <PropertyRef Name="IDModel" />
+            </Principal>
+            <Dependent Role="ModelFactor">
+              <PropertyRef Name="IDModel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlert_Model">
+          <End Role="Model" Type="Self.Model" Multiplicity="1" />
+          <End Role="ModelRiskAlert" Type="Self.ModelRiskAlert" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Model">
+              <PropertyRef Name="IDModel" />
+            </Principal>
+            <Dependent Role="ModelRiskAlert">
+              <PropertyRef Name="IDModel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Report_Model">
+          <End Role="Model" Type="Self.Model" Multiplicity="1" />
+          <End Role="Report" Type="Self.Report" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Model">
+              <PropertyRef Name="IDModel" />
+            </Principal>
+            <Dependent Role="Report">
+              <PropertyRef Name="IDModel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelFactorData_ModelFactor">
+          <End Role="ModelFactor" Type="Self.ModelFactor" Multiplicity="1" />
+          <End Role="ModelFactorData" Type="Self.ModelFactorData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModelFactor">
+              <PropertyRef Name="IDModelFactor" />
+            </Principal>
+            <Dependent Role="ModelFactorData">
+              <PropertyRef Name="IDModelFactor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelFactorData_Region">
+          <End Role="Region" Type="Self.Region" Multiplicity="1" />
+          <End Role="ModelFactorData" Type="Self.ModelFactorData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="IDRegion" />
+            </Principal>
+            <Dependent Role="ModelFactorData">
+              <PropertyRef Name="IDRegion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertAttachment_ModelRiskAlert">
+          <End Role="ModelRiskAlert" Type="Self.ModelRiskAlert" Multiplicity="1" />
+          <End Role="ModelRiskAlertAttachment" Type="Self.ModelRiskAlertAttachment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModelRiskAlert">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertAttachment">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertPhase_ModelRiskAlert">
+          <End Role="ModelRiskAlert" Type="Self.ModelRiskAlert" Multiplicity="1" />
+          <End Role="ModelRiskAlertPhase" Type="Self.ModelRiskAlertPhase" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModelRiskAlert">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertPhase">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertRegion_ModelRiskAlert">
+          <End Role="ModelRiskAlert" Type="Self.ModelRiskAlert" Multiplicity="1" />
+          <End Role="ModelRiskAlertRegion" Type="Self.ModelRiskAlertRegion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModelRiskAlert">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertRegion">
+              <PropertyRef Name="IDModelRiskAlert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertPhase_Phase">
+          <End Role="Phase" Type="Self.Phase" Multiplicity="1" />
+          <End Role="ModelRiskAlertPhase" Type="Self.ModelRiskAlertPhase" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phase">
+              <PropertyRef Name="IDPhase" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertPhase">
+              <PropertyRef Name="IDPhase" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModelRiskAlertRegion_Region">
+          <End Role="Region" Type="Self.Region" Multiplicity="1" />
+          <End Role="ModelRiskAlertRegion" Type="Self.ModelRiskAlertRegion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="IDRegion" />
+            </Principal>
+            <Dependent Role="ModelRiskAlertRegion">
+              <PropertyRef Name="IDRegion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Bullet_Phase">
+          <End Role="Phase" Type="Self.Phase" Multiplicity="1" />
+          <End Role="PhaseBullet" Type="Self.PhaseBullet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phase">
+              <PropertyRef Name="IDPhase" />
+            </Principal>
+            <Dependent Role="PhaseBullet">
+              <PropertyRef Name="IDPhase" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Role">
+          <End Role="Role" Type="Self.Role" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="IDRole" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="IDRole" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="IdeaContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Factors" EntityType="Self.Factor" />
+          <EntitySet Name="Markers" EntityType="Self.Marker" />
+          <EntitySet Name="MarkerTypes" EntityType="Self.MarkerType" />
+          <EntitySet Name="Models" EntityType="Self.Model" />
+          <EntitySet Name="ModelFactors" EntityType="Self.ModelFactor" />
+          <EntitySet Name="ModelFactorDatas" EntityType="Self.ModelFactorData" />
+          <EntitySet Name="ModelRiskAlerts" EntityType="Self.ModelRiskAlert" />
+          <EntitySet Name="ModelRiskAlertAttachments" EntityType="Self.ModelRiskAlertAttachment" />
+          <EntitySet Name="ModelRiskAlertPhases" EntityType="Self.ModelRiskAlertPhase" />
+          <EntitySet Name="ModelRiskAlertRegions" EntityType="Self.ModelRiskAlertRegion" />
+          <EntitySet Name="Phases" EntityType="Self.Phase" />
+          <EntitySet Name="PhaseBullets" EntityType="Self.PhaseBullet" />
+          <EntitySet Name="Regions" EntityType="Self.Region" />
+          <EntitySet Name="Reports" EntityType="Self.Report" />
+          <EntitySet Name="Roles" EntityType="Self.Role" />
+          <EntitySet Name="SystemParameters" EntityType="Self.SystemParameter" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK_ModelFactor_Factor" Association="Self.FK_ModelFactor_Factor">
+            <End Role="Factor" EntitySet="Factors" />
+            <End Role="ModelFactor" EntitySet="ModelFactors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Marker_MarkerType" Association="Self.FK_Marker_MarkerType">
+            <End Role="MarkerType" EntitySet="MarkerTypes" />
+            <End Role="Marker" EntitySet="Markers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Marker_Model" Association="Self.FK_Marker_Model">
+            <End Role="Model" EntitySet="Models" />
+            <End Role="Marker" EntitySet="Markers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Model_Region" Association="Self.FK_Model_Region">
+            <End Role="Region" EntitySet="Regions" />
+            <End Role="Model" EntitySet="Models" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelFactor_Model" Association="Self.FK_ModelFactor_Model">
+            <End Role="Model" EntitySet="Models" />
+            <End Role="ModelFactor" EntitySet="ModelFactors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlert_Model" Association="Self.FK_ModelRiskAlert_Model">
+            <End Role="Model" EntitySet="Models" />
+            <End Role="ModelRiskAlert" EntitySet="ModelRiskAlerts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Report_Model" Association="Self.FK_Report_Model">
+            <End Role="Model" EntitySet="Models" />
+            <End Role="Report" EntitySet="Reports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelFactorData_ModelFactor" Association="Self.FK_ModelFactorData_ModelFactor">
+            <End Role="ModelFactor" EntitySet="ModelFactors" />
+            <End Role="ModelFactorData" EntitySet="ModelFactorDatas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelFactorData_Region" Association="Self.FK_ModelFactorData_Region">
+            <End Role="Region" EntitySet="Regions" />
+            <End Role="ModelFactorData" EntitySet="ModelFactorDatas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertAttachment_ModelRiskAlert" Association="Self.FK_ModelRiskAlertAttachment_ModelRiskAlert">
+            <End Role="ModelRiskAlert" EntitySet="ModelRiskAlerts" />
+            <End Role="ModelRiskAlertAttachment" EntitySet="ModelRiskAlertAttachments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertPhase_ModelRiskAlert" Association="Self.FK_ModelRiskAlertPhase_ModelRiskAlert">
+            <End Role="ModelRiskAlert" EntitySet="ModelRiskAlerts" />
+            <End Role="ModelRiskAlertPhase" EntitySet="ModelRiskAlertPhases" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertRegion_ModelRiskAlert" Association="Self.FK_ModelRiskAlertRegion_ModelRiskAlert">
+            <End Role="ModelRiskAlert" EntitySet="ModelRiskAlerts" />
+            <End Role="ModelRiskAlertRegion" EntitySet="ModelRiskAlertRegions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertPhase_Phase" Association="Self.FK_ModelRiskAlertPhase_Phase">
+            <End Role="Phase" EntitySet="Phases" />
+            <End Role="ModelRiskAlertPhase" EntitySet="ModelRiskAlertPhases" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModelRiskAlertRegion_Region" Association="Self.FK_ModelRiskAlertRegion_Region">
+            <End Role="Region" EntitySet="Regions" />
+            <End Role="ModelRiskAlertRegion" EntitySet="ModelRiskAlertRegions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Bullet_Phase" Association="Self.FK_Bullet_Phase">
+            <End Role="Phase" EntitySet="Phases" />
+            <End Role="PhaseBullet" EntitySet="PhaseBullets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <FunctionImport Name="spModelRiskAlert_GetWithFilter" ReturnType="Collection(Idea.ERMT.Model.spModelRiskAlert_GetWithFilter_Result)">
+            <Parameter Name="IdModel" Mode="In" Type="Int32" />
+            <Parameter Name="IdRegions" Mode="In" Type="String" />
+            <Parameter Name="active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spModelFactorData_GetMapData" ReturnType="Collection(Idea.ERMT.Model.spModelFactorData_GetMapData_Result)">
+            <Parameter Name="IDModelFactor" Mode="In" Type="Int32" />
+            <Parameter Name="Regions" Mode="In" Type="String" />
+            <Parameter Name="from" Mode="In" Type="DateTime" />
+            <Parameter Name="to" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <AssociationSet Name="FK_Region_Region" Association="Idea.ERMT.Model.FK_Region_Region">
+            <End Role="Region" EntitySet="Regions" />
+            <End Role="Region1" EntitySet="Regions" />
+          </AssociationSet>
+          <FunctionImport Name="spGetFeatureIDsToExclude" ReturnType="Collection(String)">
+          <Parameter Name="IDRegion" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="spModelRiskAlert_GetWithFilter_Result">
+          <Property Type="Int32" Name="IDModelRiskAlert" Nullable="false" />
+          <Property Type="Int32" Name="IDModel" Nullable="false" />
+          <Property Type="String" Name="Code" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="Title" Nullable="false" />
+          <Property Type="DateTime" Name="DateFrom" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="DateTo" Nullable="false" Precision="23" />
+          <Property Type="String" Name="RiskDescription" Nullable="false" />
+          <Property Type="String" Name="Action" Nullable="false" />
+          <Property Type="String" Name="Result" Nullable="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="DateModified" Nullable="false" Precision="23" />
+          <Property Type="String" Name="modelname" Nullable="false" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="spModelFactorData_GetMapData_Result">
+          <Property Type="Int32" Name="IDModelFactorData" Nullable="true" />
+          <Property Type="Int32" Name="IDModelFactor" Nullable="false" />
+          <Property Type="Int32" Name="IDRegion" Nullable="false" />
+          <Property Type="Decimal" Name="Data" Nullable="true" Precision="38" Scale="6" />
+          <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="dt_created" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="dt_modified" Nullable="true" Precision="23" />
+        </ComplexType>
+        <Association Name="FK_Region_Region">
+          <End Type="Idea.ERMT.Model.Region" Role="Region" Multiplicity="0..1" />
+          <End Type="Idea.ERMT.Model.Region" Role="Region1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="IDRegion" />
+            </Principal>
+            <Dependent Role="Region1">
+              <PropertyRef Name="IDParent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="IDEAERMTModelStoreContainer" CdmEntityContainer="IdeaContext">
+          <EntitySetMapping Name="Factors">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.Factor">
+              <MappingFragment StoreEntitySet="Factor">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IdFactor" ColumnName="IdFactor" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ScaleMin" ColumnName="ScaleMin" />
+                <ScalarProperty Name="ScaleMax" ColumnName="ScaleMax" />
+                <ScalarProperty Name="Interval" ColumnName="Interval" />
+                <ScalarProperty Name="HtmlDocument" ColumnName="HtmlDocument" />
+                <ScalarProperty Name="InternalFactor" ColumnName="InternalFactor" />
+                <ScalarProperty Name="CumulativeFactor" ColumnName="CumulativeFactor" />
+                <ScalarProperty Name="Introduction" ColumnName="Introduction" />
+                <ScalarProperty Name="EmpiricalCases" ColumnName="EmpiricalCases" />
+                <ScalarProperty Name="ObservableIndicators" ColumnName="ObservableIndicators" />
+                <ScalarProperty Name="DataCollection" ColumnName="DataCollection" />
+                <ScalarProperty Name="Questionnaire" ColumnName="Questionnaire" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Markers">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.Marker">
+              <MappingFragment StoreEntitySet="Marker">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDMarker" ColumnName="IDMarker" />
+                <ScalarProperty Name="IDMarkerType" ColumnName="IDMarkerType" />
+                <ScalarProperty Name="IDModel" ColumnName="IDModel" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+                <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MarkerTypes">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.MarkerType">
+              <MappingFragment StoreEntitySet="MarkerType">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDMarkerType" ColumnName="IDMarkerType" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Models">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.Model">
+              <MappingFragment StoreEntitySet="Model">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDModel" ColumnName="IDModel" />
+                <ScalarProperty Name="IDRegion" ColumnName="IDRegion" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ModelFactors">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.ModelFactor">
+              <MappingFragment StoreEntitySet="ModelFactor">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDModelFactor" ColumnName="IDModelFactor" />
+                <ScalarProperty Name="IDModel" ColumnName="IDModel" />
+                <ScalarProperty Name="IDFactor" ColumnName="IDFactor" />
+                <ScalarProperty Name="ScaleMin" ColumnName="ScaleMin" />
+                <ScalarProperty Name="ScaleMax" ColumnName="ScaleMax" />
+                <ScalarProperty Name="Interval" ColumnName="Interval" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ModelFactorDatas">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.ModelFactorData">
+              <MappingFragment StoreEntitySet="ModelFactorData">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDModelFactorData" ColumnName="IDModelFactorData" />
+                <ScalarProperty Name="IDModelFactor" ColumnName="IDModelFactor" />
+                <ScalarProperty Name="IDRegion" ColumnName="IDRegion" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ModelRiskAlerts">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.ModelRiskAlert">
+              <MappingFragment StoreEntitySet="ModelRiskAlert">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDModelRiskAlert" ColumnName="IDModelRiskAlert" />
+                <ScalarProperty Name="IDModel" ColumnName="IDModel" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+                <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+                <ScalarProperty Name="RiskDescription" ColumnName="RiskDescription" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ModelRiskAlertAttachments">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.ModelRiskAlertAttachment">
+              <MappingFragment StoreEntitySet="ModelRiskAlertAttachment">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDModelRiskAlertAttachment" ColumnName="IDModelRiskAlertAttachment" />
+                <ScalarProperty Name="IDModelRiskAlert" ColumnName="IDModelRiskAlert" />
+                <ScalarProperty Name="AttachmentFile" ColumnName="AttachmentFile" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ModelRiskAlertPhases">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.ModelRiskAlertPhase">
+              <MappingFragment StoreEntitySet="ModelRiskAlertPhase">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDModelRiskAlertPhase" ColumnName="IDModelRiskAlertPhase" />
+                <ScalarProperty Name="IDModelRiskAlert" ColumnName="IDModelRiskAlert" />
+                <ScalarProperty Name="IDPhase" ColumnName="IDPhase" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ModelRiskAlertRegions">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.ModelRiskAlertRegion">
+              <MappingFragment StoreEntitySet="ModelRiskAlertRegion">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDModelRiskAlertRegion" ColumnName="IDModelRiskAlertRegion" />
+                <ScalarProperty Name="IDModelRiskAlert" ColumnName="IDModelRiskAlert" />
+                <ScalarProperty Name="IDRegion" ColumnName="IDRegion" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Phases">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.Phase">
+              <MappingFragment StoreEntitySet="Phase">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDPhase" ColumnName="IDPhase" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Column1Text" ColumnName="Column1Text" />
+                <ScalarProperty Name="Column2Text" ColumnName="Column2Text" />
+                <ScalarProperty Name="Column3Text" ColumnName="Column3Text" />
+                <ScalarProperty Name="PractitionersTips" ColumnName="PractitionersTips" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PhaseBullets">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.PhaseBullet">
+              <MappingFragment StoreEntitySet="PhaseBullet">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDPhaseBullet" ColumnName="IDPhaseBullet" />
+                <ScalarProperty Name="IDPhase" ColumnName="IDPhase" />
+                <ScalarProperty Name="ColumnNumber" ColumnName="ColumnNumber" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Regions">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.Region">
+              <MappingFragment StoreEntitySet="Region">
+                <ScalarProperty Name="POIFileName" ColumnName="POIFileName" />
+                <ScalarProperty Name="PathFileName" ColumnName="PathFileName" />
+                <ScalarProperty Name="RegionLevel" ColumnName="RegionLevel" />
+                <ScalarProperty Name="ShapeFileIndex" ColumnName="ShapeFileIndex" />
+                <ScalarProperty Name="ShapeFileName" ColumnName="ShapeFileName" />
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDRegion" ColumnName="IDRegion" />
+                <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+                <ScalarProperty Name="RegionDescription" ColumnName="RegionDescription" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reports">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.Report">
+              <MappingFragment StoreEntitySet="Report">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDReport" ColumnName="IDReport" />
+                <ScalarProperty Name="IDModel" ColumnName="IDModel" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Parameters" ColumnName="Parameters" />
+                <ScalarProperty Name="Markers" ColumnName="Markers" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.Role">
+              <MappingFragment StoreEntitySet="Role">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDRole" ColumnName="IDRole" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SystemParameters">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.SystemParameter">
+              <MappingFragment StoreEntitySet="SystemParameter">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDSystemParameter" ColumnName="IDSystemParameter" />
+                <ScalarProperty Name="LastRiskCode" ColumnName="LastRiskCode" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="Idea.ERMT.Model.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+                <ScalarProperty Name="IDRole" ColumnName="IDRole" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="spModelRiskAlert_GetWithFilter" FunctionName="IDEA.ERMT.Model.Store.spModelRiskAlert_GetWithFilter">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Idea.ERMT.Model.spModelRiskAlert_GetWithFilter_Result">
+                <ScalarProperty Name="IDModelRiskAlert" ColumnName="IDModelRiskAlert" />
+                <ScalarProperty Name="IDModel" ColumnName="IDModel" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+                <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+                <ScalarProperty Name="RiskDescription" ColumnName="RiskDescription" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="modelname" ColumnName="modelname" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spModelFactorData_GetMapData" FunctionName="IDEA.ERMT.Model.Store.spModelFactorData_GetMapData">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Idea.ERMT.Model.spModelFactorData_GetMapData_Result">
+                <ScalarProperty Name="IDModelFactorData" ColumnName="IDModelFactorData" />
+                <ScalarProperty Name="IDModelFactor" ColumnName="IDModelFactor" />
+                <ScalarProperty Name="IDRegion" ColumnName="IDRegion" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="dt_created" ColumnName="dt_created" />
+                <ScalarProperty Name="dt_modified" ColumnName="dt_modified" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetFeatureIDsToExclude" FunctionName="IDEA.ERMT.Model.Store.spGetFeatureIDsToExclude" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

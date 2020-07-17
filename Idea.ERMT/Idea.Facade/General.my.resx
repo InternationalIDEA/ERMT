@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>အေၾကာင္းအရာ</value>
+  </data>
+  <data name="AddShapeBeforeSave" xml:space="preserve">
+    <value>Save မလုပ္မီတြင္ .shp file တစ္ခု add လုပ္ျခင္း သုိ႔မဟုတ္ နယ္နိမိတ္အား မိမိကုိယ္တုိင္ေရးဆြဲျခင္း ျပဳလုပ္ပါ။ </value>
+  </data>
+  <data name="AllOcurrencesReplaced" xml:space="preserve">
+    <value>ျဖစ္ရပ္မ်ားအားလုံးကုိ အစားထုိးလုိက္ပါျပီ။</value>
+  </data>
+  <data name="AtLeastOneFactor" xml:space="preserve">
+    <value>အနည္းဆုံး Factor တစ္ခုအား Select လုပ္ရပါမည္။</value>
+  </data>
+  <data name="BackupSaved" xml:space="preserve">
+    <value>Backup အား Save လုပ္ျပီးပါျပီ။</value>
+  </data>
+  <data name="ConfirmDeleteUser" xml:space="preserve">
+    <value>Select လုပ္ထားေသာ User အား Delete လုပ္ခ်င္သည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="ConfirmDeleteUserTitle" xml:space="preserve">
+    <value>အတည္ျပဳခ်က္</value>
+  </data>
+  <data name="DatabaseRestored" xml:space="preserve">
+    <value>Database အား Restore ျပဳလုပ္လုိက္ပါျပီ။ ေျပာင္းလဲမႈမ်ား အသက္၀င္ေစရန္အတြက္ Application အား ပိတ္လိုက္ပါမည္။</value>
+  </data>
+  <data name="DataChangedSaveMessage" xml:space="preserve">
+    <value>Data အား ေျပာင္းလဲလုိက္ပါျပီ။ ၎ကုိ Save လုပ္ခ်င္ပါသလား။</value>
+  </data>
+  <data name="DataChangedTitle" xml:space="preserve">
+    <value>သတိေပးခ်က္</value>
+  </data>
+  <data name="DataSavedOK" xml:space="preserve">
+    <value>Data အား ေအာင္ျမင္စြာ Save လုပ္လိုက္ပါျပီ။</value>
+  </data>
+  <data name="DeleteQuestion" xml:space="preserve">
+    <value>လက္ရွိ Model အား Delete လုပ္ခ်င္သည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="DeleteModel" xml:space="preserve">
+    <value>လက္ရွိ Model အား Delete လုပ္ခ်င္သည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="DocumentAddedOk" xml:space="preserve">
+    <value>Document ထည့္သြင္းလုိက္ပါျပီ။</value>
+  </data>
+  <data name="DocumentSavedText" xml:space="preserve">
+    <value>Document အား ေအာင္ျမင္စြာ Save လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>မွားေနသည္။ (Error)</value>
+  </data>
+  <data name="ErrorDeletingUser" xml:space="preserve">
+    <value>User အား Delete လုပ္ရာတြင္ Error တက္ေနသည္။</value>
+  </data>
+  <data name="ErrorSavingData" xml:space="preserve">
+    <value>Data အား Save လုပ္ရာတြင္ Error တက္ေနသည္။</value>
+  </data>
+  <data name="ErrorSavingUser" xml:space="preserve">
+    <value>User အား Save လုပ္ရာတြင္ Error တက္ေနသည္။</value>
+  </data>
+  <data name="FactorSavedOk" xml:space="preserve">
+    <value>Factor အား Save လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="FactorSavedOkTitle" xml:space="preserve">
+    <value>အတည္ျပဳခ်က္</value>
+  </data>
+  <data name="FactorsChangedMessage" xml:space="preserve">
+    <value>အခ်ိဳ႕ Factor မ်ားအား ေျပာင္းလဲထားပါသည္။ Save လုပ္ခ်င္သည္မွာ ေသခ်ာပါသလား။ (ဖယ္ရွားလုိက္သည့္ Factor မ်ား၏ Data မ်ားအား ဆုံးရႈံးမည္ျဖစ္သည္။)</value>
+  </data>
+  <data name="FactorsChangedMessageTitle" xml:space="preserve">
+    <value>ေျပာင္းလဲထားသည့္ Factor မ်ား</value>
+  </data>
+  <data name="FindAndReplace" xml:space="preserve">
+    <value>ရွာေဖြျပီး အစားထုိးသည္။</value>
+  </data>
+  <data name="ModelImportError" xml:space="preserve">
+    <value>Model အား Import ျပဳလုပ္ရာတြင္ Error တက္ေနသည္။ မွန္ကန္ေသာ File အား ေရြးခ်ယ္ထားျခင္းရွိ/မရွိ ျပန္လည္စစ္ေဆးပါ။</value>
+  </data>
+  <data name="ModelImportErrorCaption" xml:space="preserve">
+    <value>မွားေနသည္။ (Error)</value>
+  </data>
+  <data name="ModelImportOk" xml:space="preserve">
+    <value>Model အား ေအာင္ျမင္စြာ Import ျပဳလုပ္လိုက္ပါျပီ။</value>
+  </data>
+  <data name="ModelSavedOk" xml:space="preserve">
+    <value>Model အား ေအာင္ျမင္စြာ Save ျပဳလုပ္လိုက္ပါျပီ။</value>
+  </data>
+  <data name="ModelSavingError" xml:space="preserve">
+    <value>Model အား Save လုပ္ရာတြင္ Error တက္ေနသည္။</value>
+  </data>
+  <data name="NoFactorsInModel" xml:space="preserve">
+    <value>Select လုပ္ထားသည့္ Model တြင္ Factor မရွိပါ။</value>
+  </data>
+  <data name="RegionDeleteConfirm" xml:space="preserve">
+    <value>{0} ေဒသအား Delete လုပ္ခ်င္သည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="RegionDeleteConfirmTitle" xml:space="preserve">
+    <value>Delete လုပ္သည္ကုိ အတည္ျပဳပါ။</value>
+  </data>
+  <data name="RegionDeleted" xml:space="preserve">
+    <value>ေဒသအား Delete လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="RegionNotDelete" xml:space="preserve">
+    <value>Model တစ္ခုတြင္ အသုံးျပဳ ထားသျဖင့္ ဤေဒသအား Delete လုပ္၍မရပါ။</value>
+  </data>
+  <data name="ReportDelete" xml:space="preserve">
+    <value>Save လုပ္ထားေသာ Setting မ်ားအား Delete လုပ္ခ်င္သည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="ReportWithTheSameName" xml:space="preserve">
+    <value>အမည္တူျဖင့္ Report တစ္ခု ရွိျပီးသားျဖစ္သည္။</value>
+  </data>
+  <data name="RequiredName" xml:space="preserve">
+    <value>အမည္တစ္ခုေပးရန္ လိုအပ္သည္။</value>
+  </data>
+  <data name="SaveReportCaption" xml:space="preserve">
+    <value>Setting မ်ားအား Save လုပ္ပါ။</value>
+  </data>
+  <data name="SaveReportError" xml:space="preserve">
+    <value>Setting မ်ားအား Save လုပ္ရာတြင္ Error တစ္ခု တက္ေနသည္။</value>
+  </data>
+  <data name="SaveReportOk" xml:space="preserve">
+    <value>Setting မ်ားအား ေအာင္ျမင္စြာ Save လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="ShapeFileMultiple" xml:space="preserve">
+    <value>ယခု File တြင္ Shape မ်ားပါ၀င္ေနေသာ္လည္း ၎တုိ႔ကုိ အမည္ေပးရန္အတြက္ DBF File အမ်ိဳးအစား ပါ၀င္ျခင္းမရွိပါ။ ယခု File အတြင္းရွိ Shape မ်ားအားလုံးကုိ ေဒသတစ္ခုအျဖစ္ အုပ္စုဖဲြ႕ေပးမည္ျဖစ္ပါသည္။ အဆုိပါအတုိင္း ဆက္လက္ေဆာင္ရြက္လုိပါက Yes ခလုပ္အား ႏႈိပ္ပါ။ ဆက္လက္မေဆာင္ရြက္လုိပါက No ခလုပ္အားႏွိပ္ပါ။</value>
+  </data>
+  <data name="ShapeFileMultipleNoDBF" xml:space="preserve">
+    <value>Shapefile တစ္ခုတည္းမွ ေဒသမ်ားအား Import ျပဳလုပ္ရန္အတြက္ ပူးတြဲထားေသာ DBF File တစ္ခု လုိအပ္ပါသည္။</value>
+  </data>
+  <data name="ShapeFilePaths" xml:space="preserve">
+    <value>Polygon အမ်ိဳးအစား Shapefile မ်ားကုိသာလွ်င္ ခြင့္ျပဳထားပါသည္။ ယခုသင္ေရြးခ်ယ္ထားေသာ File ထဲတြင္ လမ္းေၾကာင္းမ်ား ပါေနပုံရသည္။</value>
+  </data>
+  <data name="UserDeletedOk" xml:space="preserve">
+    <value>User အားေအာင္ျမင္စြာ Delete လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="UserSavedOk" xml:space="preserve">
+    <value>User အားေအာင္ျမင္စြာ Save လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="UserSavedOkCaption" xml:space="preserve">
+    <value>အတည္ျပဳခ်က္</value>
+  </data>
+  <data name="WorldContinentNotDelete" xml:space="preserve">
+    <value>ကမၻာႏွင့္ တုိက္ၾကီးမ်ားအား Delete လုပ္၍မရပါ။</value>
+  </data>
+  <data name="FactorsChangedMessage2" xml:space="preserve">
+    <value>Factor တစ္ခုအတြက္ Minimum၊ Maximum သုိ႔မဟုတ္ Interval တုိ႔ကုိေျပာင္းလဲလုိက္ပါက ၎ Factor ႏွင့္စပ္လ်ဥ္းျပီး Save လုပ္ထားသည့္ Data မ်ားအားလုံးကုိ ဆုံးရႈံးမည္ျဖစ္သည္။</value>
+  </data>
+  <data name="NoMarkerTypes" xml:space="preserve">
+    <value>Marker အမ်ိဳးအစားမ်ားအား Define ျပဳလုပ္ထားျခင္း မရွိပါ။</value>
+  </data>
+  <data name="MarkerValidation" xml:space="preserve">
+    <value>မွန္ကန္သည့္ Value မ်ားအား ျဖည့္စြက္ထားေၾကာင္း ေသခ်ာေအာင္လုပ္ပါ။ Name၊ Latitude ႏွင့္ Longitude တုိ႔ကို ျဖည့္သြင္းရန္လုိအပ္သည္။</value>
+  </data>
+  <data name="Allfieldsrequired" xml:space="preserve">
+    <value>ကြက္လပ္အားလုံးကုိ ျဖည့္သြင္းရန္လိုအပ္သည္။</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>အတည္ျပဳခ်က္</value>
+  </data>
+  <data name="ConfirmDeleteMarkerType" xml:space="preserve">
+    <value>ယခုအမ်ိဳးအစား Marker အားလုံးကုိ ဆုံးရႈံးမည္ျဖစ္သည္။ ယခု Marker အား Delete လုပ္ခ်င္သည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="MarkerTypeDeleted" xml:space="preserve">
+    <value>Marker အမ်ိဳးအစားအား ေအာင္ျမင္စြာ Delete လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="SelectMarkerType" xml:space="preserve">
+    <value>Marker အမ်ိဳးအစားတစ္ခုကုိ ေရြးခ်ယ္ပါ။</value>
+  </data>
+  <data name="MarkerTypeSaved" xml:space="preserve">
+    <value>Marker အမ်ိဳးအစားကုိ Save လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>ထည့္သြင္းထားေသာ ရက္စြဲသည္ မွန္ကန္မႈမရွိေသာ Format အမ်ိဳးအစားျဖစ္ေနသည္။</value>
+  </data>
+  <data name="AssociatedDataWillBeLost" xml:space="preserve">
+    <value>ပူးတြဲပါ Data မ်ားအားလုံးကုိ ဆုံးရႈံးမည္ျဖစ္သည္။ ယခုေရြးခ်ယ္ထားေသာ Factor အား Delete လုပ္ခ်င္သည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="FactorSavingError" xml:space="preserve">
+    <value>Factor အား Save လုပ္ရာတြင္ Error တက္ေနသည္။</value>
+  </data>
+  <data name="ReorderFactorsSavedOk" xml:space="preserve">
+    <value>မွတ္တမ္းတင္ထားေသာ Factor မ်ားအား မွန္ကန္စြာ Save လုပ္လိုက္ပါျပီ။</value>
+  </data>
+  <data name="EmptyField" xml:space="preserve">
+    <value>ကြက္လပ္တစ္ခု သုိ႔မဟုတ္ ကြက္လပ္မ်ားအား ျဖည့္စြက္ရန္ က်န္ရွိေသးသည္။</value>
+  </data>
+  <data name="NameHasBeenChanged" xml:space="preserve">
+    <value>အမည္တူ အျခား Report တစ္ခုရွိေနပါသျဖင့္္ ယခု Report ၏အမည္အား ေျပာင္းလဲထားပါသည္။</value>
+  </data>
+  <data name="LoadedCorrectlySettings" xml:space="preserve">
+    <value>Setting မ်ားအား မွန္ကန္စြာ Load လုပ္လိုက္ပါျပီ။</value>
+  </data>
+  <data name="NewRegionsHaveBeenImported" xml:space="preserve">
+    <value>ေဒသအသစ္မ်ားအား Import ျပဳလုပ္ထားပါသည္။</value>
+  </data>
+  <data name="NoMarkerTypesDefined" xml:space="preserve">
+    <value>Marker အမ်ိဳးအစားအား အဓိပၸါယ္ဖြင့္ဆုိထားျခင္း မရွိေသးပါ။ ေျမပုံေပၚ၌ Marker မတင္မီတြင္ Marker အမ်ိဳးအစားစီမံသည့္ ေနရာသုိ႔သြား၍ အနည္းဆုံး Marker တစ္ခုအား အဓိပၸါယ္ဖြင့္ဆုိပါ။</value>
+  </data>
+  <data name="InvalidDateChoise" xml:space="preserve">
+    <value>ထည့္သြင္းထားေသာ ရက္စြဲသည္ မွန္ကန္မႈမရွိေသာ Format အမ်ိဳးအစားျဖစ္ေနသည္။ ေနာက္တစ္ၾကိမ္ ျပန္လည္ထည့္သြင္းလုိပါသလား။</value>
+  </data>
+  <data name="TooManyColumns" xml:space="preserve">
+    <value>ထည့္သြင္းထားေသာ Data မ်ား၏ Column မ်ားသည္ ေမွ်ာ္မွန္းထားသည္ထက္ ပုိမုိၾကီးမားေနသည္။</value>
+  </data>
+  <data name="DateEnteredIsNotFormattedCorrectly" xml:space="preserve">
+    <value>ထည့္သြင္းထားေသာ ရက္စြဲသည္ မွန္ကန္မႈမရွိေသာ Format အမ်ိဳးအစားျဖစ္ေနသည္။</value>
+  </data>
+  <data name="ShapeFilePathsNotFound" xml:space="preserve">
+    <value>ေရြးခ်ယ္ထားေသာ File ထဲတြင္ Path တစ္ခုမွ မေတြ႕ပါ။</value>
+  </data>
+  <data name="ShapeFileSymbolsNotFound" xml:space="preserve">
+    <value>ေရြးခ်ယ္ထားေသာ File ထဲတြင္ Symbol တစ္ခုမွ မေတြ႕ပါ။</value>
+  </data>
+  <data name="DeleteTableRowConfirm" xml:space="preserve">
+    <value>ေရြးခ်ယ္ထားသည့္ Row မ်ားအား Delete လုပ္လုိသည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="ExportTables" xml:space="preserve">
+    <value>ဇယားမ်ားအား Excel ဖုိင္အျဖစ္ Export ျပဳလုပ္ပါ။</value>
+  </data>
+  <data name="ExportAllTables" xml:space="preserve">
+    <value>ဇယားမ်ားအားလုံး</value>
+  </data>
+  <data name="ExportCurrentTable" xml:space="preserve">
+    <value>လက္ရွိ ဇယား</value>
+  </data>
+  <data name="IPChanged" xml:space="preserve">
+    <value>Server address အသစ္ေျပာင္းလဲထားပါသည္။ Setting အသစ္မ်ား အသက္၀င္ေစရန္အတြက္ Application အား Restart ျပဳလုပ္ပါ။</value>
+  </data>
+  <data name="UnableToSave" xml:space="preserve">
+    <value>Save လုပ္၍မရပါ။ ယခု File အား အျခား Program တစ္ခုတြင္ အသုံးျပဳေနပါသည္။</value>
+  </data>
+  <data name="FactorNameIsRequired" xml:space="preserve">
+    <value>Save လုပ္ရန္အတြက္ Factor အမည္ေပးရန္လုိအပ္သည္။</value>
+  </data>
+  <data name="FactorNameAlreadyExists" xml:space="preserve">
+    <value>အမည္တူျဖင့္ Factor တစ္ခု ရွိျပီးသားျဖစ္သည္။ အျခားအမည္တစ္ခု ေျပာင္းလဲေရြးခ်ယ္ေပးပါ။</value>
+  </data>
+  <data name="UserNameAlreadyExists" xml:space="preserve">
+    <value>အမည္တူျဖင့္ User တစ္ဥိး ရွိျပီးသားျဖစ္သည္။ အျခား Username တစ္ခု ေျပာင္းလဲေရြးခ်ယ္ေပးပါ။</value>
+  </data>
+  <data name="ValueNotValid" xml:space="preserve">
+    <value>ထည့္သြင္းထားေသာ Value သည္ ခုိင္မာမႈမရွိပါ။</value>
+  </data>
+  <data name="ConfirmDeleteMarkers" xml:space="preserve">
+    <value>ေရြးခ်ယ္ထားသည့္ Marker မ်ားအား Delete လုပ္လုိသည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="ColumnCountNoMatch" xml:space="preserve">
+    <value>ထည့္သြင္းထားေသာ Column အေရအတြက္သည္ ဇယားႏွင့္ ကုိက္ညီမႈမရွိပါ။</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>သင္၏ Password အား Update ျပဳလုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="PasswordChangedCaption" xml:space="preserve">
+    <value>Password ေျပာင္းမည္။</value>
+  </data>
+  <data name="PasswordEmpty" xml:space="preserve">
+    <value>Password ေနရာတြင္ ေဟာင္းေလာင္းထားလုိ႔ မရပါ။</value>
+  </data>
+  <data name="PasswordNoMatch" xml:space="preserve">
+    <value>Password မ်ား ကုိက္ညီမႈ မရွိပါ။</value>
+  </data>
+  <data name="SelectARegionFirst" xml:space="preserve">
+    <value>ဇယားပင္ေပၚတြင္ ေဒသတစ္ခုအား အရင္ေရြးခ်ယ္ရပါမည္။</value>
+  </data>
+  <data name="PasteUpTo200Rows" xml:space="preserve">
+    <value>တစ္ခါ Paste လုပ္လွ်င္ Row ၂၀၀ အထိသာ လုပ္ႏုိင္ပါသည္။</value>
+  </data>
+  <data name="PhaseSavedOk" xml:space="preserve">
+    <value>Phase အား Save လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="RiskAlertSaved" xml:space="preserve">
+    <value>Risk Alert အား ေအာင္ျမင္စြာ Save လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="DateFromHigherDateTo" xml:space="preserve">
+    <value>Date from သည္ Date to ထက္ ၾကီးမားေန၍ မရပါ။</value>
+  </data>
+  <data name="PastePleaseInsertARowFirst" xml:space="preserve">
+    <value>Paste မလုပ္မီတြင္ Row တစ္ခုအား အရင္ Add လုပ္ပါ။</value>
+  </data>
+  <data name="DeleteDocumentDialogTitle" xml:space="preserve">
+    <value>Delete လုပ္မည့္အရာအား ေရြးခ်ယ္ပါ။</value>
+  </data>
+  <data name="DeleteDocumentUseDefaultDirectory" xml:space="preserve">
+    <value>Open File Dialog တြင္ ျပသထားသည့္ File မ်ားထဲမွ တစ္ခုအားေရြးခ်ယ္ပါ။</value>
+  </data>
+  <data name="DeleteDocumentWarning" xml:space="preserve">
+    <value>ယခုေရြးခ်ယ္ထားေသာ အရာအား အျပီးသတ္ Delete လုပ္ေတာ့မည္ျဖစ္သည္။ ၎အရာႏွင့္ ဆက္စပ္ေနသည့္ Link မ်ားအားလုံးကုိ Manual နည္းျဖင့္ Update ျပဳလုပ္ရမည္ျဖစ္သည္။ ဆက္လက္ေဆာင္ရြက္လုိပါသလား။</value>
+  </data>
+  <data name="DocumentExistsAlready" xml:space="preserve">
+    <value>သင္ယခုေရြးခ်ယ္ထားေသာ အမည္ႏွင့္ အမည္တူ File တစ္ခုရွိျပီးသားျဖစ္သည္။ အဆုိပါ File အား ယခု File ျဖင့္ အစားထုိးလုိပါသလား။</value>
+  </data>
+  <data name="DocumentSuccessfullyDeleted" xml:space="preserve">
+    <value>ယခုအေၾကာင္းအရာအား ေအာင္ျမင္စြာ Delete လုပ္ျပီးသြားပါျပီ။</value>
+  </data>
+  <data name="RestoreAsAdministratorWarning" xml:space="preserve">
+    <value>Database အား Restore ျပဳလုပ္ရန္အတြက္ Application အား Administrator Privileges ျဖင့္ ဖြင့္ရန္လုိအပ္သည္။ Application အား Restart ျပဳလုပ္ရန္လည္းလိုအပ္သည္။ ဆက္လက္ေဆာင္ရြက္ လုိပါသလား။</value>
+  </data>
+  <data name="RestoreTimeWarning" xml:space="preserve">
+    <value>Restore ျပဳလုပ္မႈသည္ မိနစ္အနည္းငယ္ခန္႔ ၾကာျမင့္မည္ျဖစ္သည္။ ဆက္လက္ေဆာင္ရြက္လုိပါက OK ခလုပ္ကုိႏႈိပ္ပါ။</value>
+  </data>
+  <data name="LatitudeLongitudeFormatError" xml:space="preserve">
+    <value>Latitude ႏွင့္ Longitude မ်ားသည္ Decimal Value မ်ား ျဖစ္ရပါမည္။</value>
+  </data>
+  <data name="ConfirmDeleteMarkerTypeImage" xml:space="preserve">
+    <value>Marker အမ်ိဳးအစားႏွင့္ ပူးတဲြေနသည့္ပုံအား Delete လုပ္လုိပါသလား။</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>သတင္းအခ်က္အလက္</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>သတိေပးခ်က္</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>မလုပ္လိုပါ။ (No)</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>ေက်ာ္လုိက္ပါ။ (Skip)</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>လုပ္လုိသည္။ (Yes)</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ActionsDialogCloseIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Actions-dialog-close-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\back-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ForwardIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\forward-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewDocIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\new-doc-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageWhiteLinkIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\page-white-link-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DatabaseEditIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\database-edit-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DatabaseKeyIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\database-key-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocumentDeleteIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Document-Delete-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocumentExportIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\document-export-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditDocumentIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Actions-document-edit-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MapIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewDocumentIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\new-doc-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PinIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pin-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserGroupIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\user-group-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_ContactIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_mail_small.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_ElectoralCycleIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_prevmit_small2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_KnowledgeResourcesIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_knowres_small2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_RiskAndActionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_riskreg_small.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_RiskMappingIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_analytinstr_small2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_StartIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_home_small.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Username ႏွင့္/ သုိ႔မဟုတ္ Password တုိ႔ မွန္ကန္မႈမရွိပါ။</value>
+  </data>
+  <data name="ERMTcontact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTcontact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTelectoralcycle_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTelectoralcycle_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTelectoralcycle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTelectoral_cycle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMThome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMThome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMThome_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMThome_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTknowledgeresources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTknowledgeresources.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTknowledgeresources_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTknowledgeresources_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTleft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTmaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTmaps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTmaps_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTmaps_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTprint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTprint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTriskandaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTriskandaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTriskandaction_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTriskandaction_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTleft40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTleft40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTprint40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTprint40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTright40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTright40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>ေနာက္ျပန္သြားမည္။ (Back)</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>ေရွ႕ဆက္သြားမည္။ (Forward)</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print ထုတ္မည္။</value>
+  </data>
+  <data name="ERMTClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTClose32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTClose32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTelectoral_cyclebig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTelectoral_cyclebig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTelectoral_cyclebig_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTelectoral_cyclebig_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTknowledgeresroucesbig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTknowledgeresroucesbig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTknowledgeresroucesbig_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTknowledgeresroucesbig_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTmapsbig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTmapsbig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTmapsbig_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTmapsbig_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapcontinent1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mapcontinent1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapcountry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mapcountry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maplayers_map_icon_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maplayers-map-icon-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maplayers_map_icon_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maplayers-map-icon-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maplayers_map_icon_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maplayers-map-icon-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maplayers_map_icon_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maplayers-map-icon-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mappin_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mappin-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapprovince" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mapprovince.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapworld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mapworld.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_down_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrow-down-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_up_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrow-up-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PhaseBulletDelete" xml:space="preserve">
+    <value>ယခု Select လုပ္ထားေသာ အခ်က္မ်ားအား Delete လုပ္လုိသည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="FactorNameRequired" xml:space="preserve">
+    <value>Factor Name ေနရာအား အလြတ္ထားထား၍ မရပါ။</value>
+  </data>
+  <data name="UserModifyTitle" xml:space="preserve">
+    <value>User မွ Modify ျပဳလုပ္မည္။</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>မူကြဲ (Version)</value>
+  </data>
+  <data name="FactorInterval" xml:space="preserve">
+    <value>Interval သည္ သုညထက္ ပုိရမည္။</value>
+  </data>
+  <data name="FactorScaleMax" xml:space="preserve">
+    <value>Scale Max သည္ Scale Min ထက္ပုိရမည္။</value>
+  </data>
+  <data name="FactorScaleMin" xml:space="preserve">
+    <value>Scale Min သည္ သုညထက္ပုိရမည္။</value>
+  </data>
+  <data name="NameEmptyUserManager" xml:space="preserve">
+    <value>Factor Name ေနရာအား အလြတ္ထားထား၍ မရပါ။</value>
+  </data>
+  <data name="AddNewFactor" xml:space="preserve">
+    <value>Factor အသစ္ထည့္မည္။</value>
+  </data>
+  <data name="AddNewUser" xml:space="preserve">
+    <value>User အသစ္ထည့္မည္။</value>
+  </data>
+  <data name="DocumentSelectAdd" xml:space="preserve">
+    <value>ထည့္သြင္းရန္ စာရြက္စာတမ္းတစ္ခု ေရြးခ်ယ္ပါ။</value>
+  </data>
+  <data name="ElectoralCycleBulletText" xml:space="preserve">
+    <value>ခုိင္မာေသာ အခ်က္အား ျဖည့္စြက္ပါ။</value>
+  </data>
+  <data name="EmailCannotEmpty" xml:space="preserve">
+    <value>အီးေမးလ္လိပ္စာေနရာအား အလြတ္ထားထား၍ မရပါ။</value>
+  </data>
+  <data name="MessageNotFound" xml:space="preserve">
+    <value>အခ်က္အလက္ မေတြ႕ရွိပါ။</value>
+  </data>
+  <data name="ModifyFactor" xml:space="preserve">
+    <value>Factor အား Modify ျပဳလုပ္မည္။</value>
+  </data>
+  <data name="ModifyPhase" xml:space="preserve">
+    <value>Phase အား Modify ျပဳလုပ္မည္။</value>
+  </data>
+  <data name="PasswordCannotEmpty" xml:space="preserve">
+    <value>Password ေနရာအား အလြတ္ထားထား၍ မရပါ။</value>
+  </data>
+  <data name="PhaseBullet" xml:space="preserve">
+    <value>Phase Bullet   </value>
+  </data>
+  <data name="ReorderFactors" xml:space="preserve">
+    <value>Factor မ်ားအား အစဥ္လုိက္ျပန္စီပါ။</value>
+  </data>
+  <data name="SelectRole" xml:space="preserve">
+    <value>Role တစ္ခုအား Select လုပ္ပါ။</value>
+  </data>
+  <data name="UserCannotEmpty" xml:space="preserve">
+    <value>Username ေနရာအား အလြတ္ထားထား၍ မရပါ။</value>
+  </data>
+  <data name="UserLastNameEmpty" xml:space="preserve">
+    <value>Last Name ေနရာအား အလြတ္ထားထား၍ မရပါ။</value>
+  </data>
+  <data name="UserNameEmpty" xml:space="preserve">
+    <value>အမည္ေနရာအား အလြတ္ထားထား၍ မရပါ။</value>
+  </data>
+  <data name="WarningAddDocument" xml:space="preserve">
+    <value>စာရြက္စာတမ္းအသစ္ ထည့္သြင္းေၾကာင္း သတိေပးသည္။</value>
+  </data>
+  <data name="CodeSixCaracters" xml:space="preserve">
+    <value>Code တြင္ စာလုံးေရ ၆ လုံးသာ ပါ၀င္ရမည္။</value>
+  </data>
+  <data name="PhaseCannotEmpty" xml:space="preserve">
+    <value>Phase Title ေနရာအား အလြတ္ထားထား၍ မရပါ။</value>
+  </data>
+  <data name="ServerTitle" xml:space="preserve">
+    <value>Server Hostname သုိ႔မဟုတ္ IP Address အား ျဖည့္သြင္းပါ။</value>
+  </data>
+  <data name="UserValidateEmail" xml:space="preserve">
+    <value>အီးေမးလ္လိပ္စာ လုိအပ္သည္။</value>
+  </data>
+  <data name="UserValidateFirstName" xml:space="preserve">
+    <value>First Name လုိအပ္သည္။</value>
+  </data>
+  <data name="UserValidateLastName" xml:space="preserve">
+    <value>Last Name လုိအပ္သည္။</value>
+  </data>
+  <data name="UserValidatePass" xml:space="preserve">
+    <value>Password လုိအပ္သည္။</value>
+  </data>
+  <data name="UserValidatePassMatch" xml:space="preserve">
+    <value>Password မ်ား ကုိက္ညီမႈ မရွိပါ။</value>
+  </data>
+  <data name="UserValidateRole" xml:space="preserve">
+    <value>Role လုိအပ္သည္။</value>
+  </data>
+  <data name="UserValidateUsername" xml:space="preserve">
+    <value>Username လုိအပ္သည္။</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>ေဆာင္ရြက္ပါ။ (Action)</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>ေဆာင္ရြက္ေနသည္။ (Active)</value>
+  </data>
+  <data name="Analysis" xml:space="preserve">
+    <value>သရုပ္ခြဲေလ့လာမႈ (Analysis)</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>လွ်ိဳ႕၀ွက္ဂဏန္း (Code)</value>
+  </data>
+  <data name="DateFrom" xml:space="preserve">
+    <value>ဤေန႔ရက္မွ (Date From)</value>
+  </data>
+  <data name="DateTo" xml:space="preserve">
+    <value>ဤေန႔ရက္သုိ႔ (Date To)</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>ေဆာင္ရြက္ျခင္းမရွိပါ။ (Inactive)</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>ပုံစံ (Model)</value>
+  </data>
+  <data name="Phases" xml:space="preserve">
+    <value>အဆင့္မ်ား (Phases)</value>
+  </data>
+  <data name="Regions" xml:space="preserve">
+    <value>ေဒသမ်ား (Regions)</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>ရလဒ္ (Result)</value>
+  </data>
+  <data name="RiskDescription" xml:space="preserve">
+    <value>Risk အေၾကာင္းေဖၚျပခ်က္ (Risk Description)</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>အေျခအေန</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>ေခါင္းစဥ္ (Title)</value>
+  </data>
+  <data name="Cumulative" xml:space="preserve">
+    <value>စုပုံေနေသာ (Cumulative)</value>
+  </data>
+  <data name="ModelAddTitle" xml:space="preserve">
+    <value>Model ထည့္သြင္းပါ။ (Add Model)</value>
+  </data>
+  <data name="World" xml:space="preserve">
+    <value>ကမၻာ</value>
+  </data>
+  <data name="PreviewTitle" xml:space="preserve">
+    <value>အစမ္းၾကည့္ရႈသည္။ (Preview)</value>
+  </data>
+  <data name="ElectoralCycle" xml:space="preserve">
+    <value>ေရြးေကာက္ပြဲစက္၀န္း (Electoral Cycle)</value>
+  </data>
+  <data name="KnowledgeResources" xml:space="preserve">
+    <value>အသိပညာေပးအရင္းအျမစ္မ်ား (Knowledge Resources)</value>
+  </data>
+  <data name="ModelEdit" xml:space="preserve">
+    <value>Model အား Edit ျပဳလုပ္ပါ။</value>
+  </data>
+  <data name="RiskAndActionTitle" xml:space="preserve">
+    <value>Risk ႏွင့္ အေရးယူေဆာင္ရြက္မႈ (Risk and Action)</value>
+  </data>
+  <data name="BackupText" xml:space="preserve">
+    <value>Backup အား ေအာင္ျမင္စြာ Save လုပ္ျပီးပါျပီ။</value>
+  </data>
+  <data name="BackupCancel" xml:space="preserve">
+    <value>Backup အား Cancel လုပ္ျပီးပါျပီ။</value>
+  </data>
+  <data name="BackupTitle" xml:space="preserve">
+    <value>Backup အျဖစ္ထားရွိသည့္ Database</value>
+  </data>
+  <data name="exporticon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\export.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PinIconNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-pin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\book_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electoralcycle_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\electoralcycle_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electoral_cycle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\electoral_cycle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\email_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fileicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\home_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\KML.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maps_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maps_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prevention_mitigation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\prevention_mitigation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_book_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_book_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_brush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-brush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_electoralcycle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_electoralcycle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_electoralcycle_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_electoralcycle_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_KML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_KML.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_continente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_mapping-continente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_continente1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping-continente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_country" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping-country.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_province" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping-province.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_map_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_map_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-pin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_risk_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-risk-action.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_brush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-brush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_KML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_KML.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_continente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-continente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_country" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-country.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_numerado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-numerado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_province" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-province.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_risk_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-risk-action.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditRegionShapeFileMissingFiles" xml:space="preserve">
+    <value>Shapefile ခုိင္လုံမႈမရွိပါ။ Shapefile မ်ားသည္ .shp file အမ်ိဳးအစား၊ .shx file အမ်ိဳးအစားႏွင့္ .dbf file အမ်ိဳးအစားတို႔ျဖစ္ရမည္။</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>သြင္းသည္။ (Import)</value>
+  </data>
+  <data name="RegionsMustBeLoadedBeforeImport" xml:space="preserve">
+    <value>Select ျပဳလုပ္ထားသည့္ Model အား ERMT ၏ Version အေဟာင္းျဖင့္ ဖန္တီးထားပုံရသည္။ ယခု Model အား Import မျပဳလုပ္မီတြင္ ပါ၀င္သည့္ေဒသမ်ားအား သင္၏ေျမပုံမ်ားအတြင္း ထည့္သြင္းရန္လိုအပ္သည္။ ဆက္လက္ေဆာင္ရြက္လုိပါသလား။</value>
+  </data>
+  <data name="ModelImportNotOk" xml:space="preserve">
+    <value>Model အား Import မျပဳလုပ္ထားပါ။</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>အသုံးျပဳသူ (User)</value>
+  </data>
+  <data name="MustSelectAtLeastOneOption" xml:space="preserve">
+    <value>အနည္းဆုံး တစ္ခုေတာ့ ေရြးရမည္။</value>
+  </data>
+  <data name="RestoreLoaded" xml:space="preserve">
+    <value>Restore အား Load ျပဳလုပ္ျပီးျပီ။</value>
+  </data>
+  <data name="DataRestored" xml:space="preserve">
+    <value>Data အား Restore ျပဳလုပ္ျပီးပါျပီ။ ေျပာင္းလဲမႈမ်ား အသက္၀င္ေစရန္အတြက္ Application အား ပိတ္လုိက္ပါမည္။</value>
+  </data>
+  <data name="SelectedRestoreOptionsWereNotBackupFile" xml:space="preserve">
+    <value>Restore ျပဳလုပ္ရန္ ေရြးခ်ယ္ထားေသာ အခ်ိဳ႕ဖုိင္မ်ားသည္ Backup file မ်ားထဲတြင္ မရွိပါ။</value>
+  </data>
+  <data name="ModelImportNoExistsParentRegionInLocalDB" xml:space="preserve">
+    <value>သင္ Import ျပဳလုပ္ရန္ ၾကိဳးပမ္းေနေသာ Model အတြက္ Parent Region အား ရွာေဖြ၍မရပါ။</value>
+  </data>
+  <data name="ModelImportNoExistsRegionsInLocalDB" xml:space="preserve">
+    <value>Import ျပဳလုပ္ထားေသာ Model အတြက္ ေဒသမရွိပါ။</value>
+  </data>
+  <data name="SomeRegionsWereNotImported" xml:space="preserve">
+    <value>အခ်ိဳ႕ေဒသမ်ားအား မွန္ကန္စြာ Import မျပဳလုပ္ထားပါ။ Local Region မ်ားႏွင့္ ကုိက္ညီမႈမရွိပါ။</value>
+  </data>
+  <data name="ViewText" xml:space="preserve">
+    <value>ၾကည့္ရႈသည္။ (View)</value>
+  </data>
+  <data name="TableMustHaveData" xml:space="preserve">
+    <value>ဇယားတြင္ Data ပါရွိရမည္။</value>
+  </data>
+  <data name="FileOverwriteConfirmation" xml:space="preserve">
+    <value>ေရြးခ်ယ္ထားသည့္ File သည္ နဂုိကတည္းက ရွိျပီးသားျဖစ္သည္။ ၎အား Overwrite ျပဳလုပ္လိုပါသလား။</value>
+  </data>
+  <data name="PathSuccessfullySaved" xml:space="preserve">
+    <value>လမ္းမ်ားအား ေအာင္ျမင္စြာ Save ျပဳလုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="POISuccessfullySaved" xml:space="preserve">
+    <value>POI အား ေအာင္ျမင္စြာ Save ျပဳလုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="RegionChildsDeleteConfirm" xml:space="preserve">
+    <value>{0} ၏ Child မ်ားကုိ Delete လုပ္လုိသည္မွာ ေသခ်ာပါသလား။</value>
+  </data>
+  <data name="RegionChildsDeleted" xml:space="preserve">
+    <value>Child မ်ားအားလုံးကုိ Delete လုပ္လုိက္ပါျပီ။</value>
+  </data>
+  <data name="RegionHasNoChilds" xml:space="preserve">
+    <value>ယခုေဒသတြင္ Child မရွိပါ။</value>
+  </data>
+  <data name="RegionWithModels" xml:space="preserve">
+    <value>ယခုေဒသ၊ ၎၏ Child Region သုိ႔မဟုတ္ Parent Region အား အသုံးျပဳထားသည့္ Model မ်ားရွိပါသည္။ ယခုေဒသအား Delete မလုပ္မီတြင္ ဆက္စပ္ေနသည့္ Model မ်ားအား ဦးစြာ Delete လုပ္ပါ။</value>
+  </data>
+  <data name="SaveAsKMLOK" xml:space="preserve">
+    <value>KML File အား ေအာင္ျမင္စြာ ဖန္တီးျပီးပါျပီ။</value>
+  </data>
+  <data name="CumulativeFactors" xml:space="preserve">
+    <value>စုပုံေနေသာ Factor မ်ား</value>
+  </data>
+  <data name="AddFactor" xml:space="preserve">
+    <value>Factor အား Add လုပ္မည္။</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>စီမံခန္႔ခဲြသူ (Admin)</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>အရံ (Backup)</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Password ေျပာင္းသည္။</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CreateNewModel" xml:space="preserve">
+    <value>Model အသစ္ဖန္တီးသည္။</value>
+  </data>
+  <data name="CurrentModel" xml:space="preserve">
+    <value>လက္ရွိ Model</value>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>အခ်က္အလက္ (Data)</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>ျပင္ဆင္သည္။ (Edit)</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>အဂၤလိပ္ဘာသာ</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>ထြက္သည္။ (Exit)</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export ထုတ္သည္။</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>မွတ္ခ်က္ (Feedback)</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>ကူညီသည္။ (Help)</value>
+  </data>
+  <data name="ImportModel" xml:space="preserve">
+    <value>Model အား Import ျပဳလုပ္သည္။</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>ညႊန္းကိန္း (Index)</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>ဘာသာစကား</value>
+  </data>
+  <data name="ManageRegions" xml:space="preserve">
+    <value>ေဒသမ်ားအား စီမံခန္႔ခဲြသည္။</value>
+  </data>
+  <data name="Mapping" xml:space="preserve">
+    <value>ေျမပုံေရးဆဲြျခင္း။</value>
+  </data>
+  <data name="MarkerTypes" xml:space="preserve">
+    <value>Marker အမ်ိဳးအစားမ်ား</value>
+  </data>
+  <data name="ModifyElectoralCyclePhase" xml:space="preserve">
+    <value>ေရြးေကာက္ပြဲစက္၀န္းရွိ အဆင့္မ်ားအား Modify ျပဳလုပ္သည္။</value>
+  </data>
+  <data name="ModifyExistingUser" xml:space="preserve">
+    <value>လက္ရွိ User အား Modify ျပဳလုပ္သည္။</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Responses" xml:space="preserve">
+    <value>တုံ႔ျပန္မႈမ်ား (Response)</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>ျပန္လည္ထိန္းသိမ္းသည္။ (Restore)</value>
+  </data>
+  <data name="ServerAddress" xml:space="preserve">
+    <value>ဆာဗာလိပ္စာ (Server Address)</value>
+  </data>
+  <data name="ShowTextControl" xml:space="preserve">
+    <value>စာသားမ်ားအား စီမံခန္႔ခဲြသည့္ေနရာ ျပသသည္။</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>စပိန္ဘာသာ</value>
+  </data>
+  <data name="UserAdmin" xml:space="preserve">
+    <value>အသုံးျပဳသူ၏ စီမံခန္႔ခဲြမႈ (User Admin)</value>
+  </data>
+  <data name="ViewFactors" xml:space="preserve">
+    <value>Factor မ်ားအား ၾကည့္ရႈသည္။</value>
+  </data>
+  <data name="ExitToChangeLanguage" xml:space="preserve">
+    <value>ဘာသာစကားအား ေျပာင္းလဲရန္အတြက္ Application ကုိ Restart လုပ္ရမည္။ လုပ္လုိပါသလား။</value>
+  </data>
+  <data name="EditRegionTitle" xml:space="preserve">
+    <value>ေဒသအားျပင္ဆင္သည္။</value>
+  </data>
+  <data name="ServerConnectionError" xml:space="preserve">
+    <value>Server အား ခ်ိတ္ဆက္ရာတြင္ Error တစ္ခုေပၚေပါက္လာပါသည္။ Server Hostname သုိ႔မဟုတ္ IP Address အား ျဖည့္သြင္းေပးပါ။</value>
+  </data>
+  <data name="ModelImportMainRegionDoesNotExits" xml:space="preserve">
+    <value>သင္ Import ျပဳလုပ္ရန္ ၾကိဳးပမ္းေနေသာ Model ၏ အဓိကေဒသသည္ သင္၏ Database ထဲတြင္ မရွိပါ။</value>
+  </data>
+  <data name="FactorCRUDDescriptionField1" xml:space="preserve">
+    <value>မိတ္ဆက္</value>
+  </data>
+  <data name="FactorCRUDDescriptionField2" xml:space="preserve">
+    <value>Empirical Cases</value>
+  </data>
+  <data name="FactorCRUDDescriptionField3" xml:space="preserve">
+    <value>ျမင္ေတြ႕ႏုိင္ေသာ Indicator မ်ား။</value>
+  </data>
+  <data name="FactorCRUDDescriptionField4" xml:space="preserve">
+    <value>Data ေကာက္ယူျခင္း။</value>
+  </data>
+  <data name="FactorCRUDDescriptionField5" xml:space="preserve">
+    <value>ေမးခြန္းမ်ား</value>
+  </data>
+  <data name="DataRestoreError" xml:space="preserve">
+    <value>Database အား Restore ျပဳလုပ္ရန္ၾကိဳးပမ္းရာတြင္ Error ေပၚေပါက္လာပါသည္။</value>
+  </data>
+  <data name="DataRestoreInvalidDBVersion" xml:space="preserve">
+    <value>Backup ထဲတြင္ ပါ၀င္ေသာ Database ၏ Version သည္ ခုိင္မာမႈမရွိပါ။</value>
+  </data>
+  <data name="ModelExportOk" xml:space="preserve">
+    <value>Model အား ေအာင္ျမင္စြာ Export ျပဳလုပ္ျပီးပါျပီ။ MODELSHAPEFILES ဟုအမည္ေပးထားေသာ Folder အားလည္း ဖန္တီးေပးထားပါသည္။ သင့္အေနျဖင့္ ကြန္ျပဴတာထဲတြင္ ေဒသမ်ား ဖန္တီးလုိလွ်င္ အသုံးျပဳႏုိင္ရန္အတြက္ ၎ Folder ထဲတြင္ Model ႏွင့္သက္ဆုိင္သည့္ Shapefile မ်ားအား ထည့္သြင္းထားေပးပါသည္။</value>
+  </data>
+  <data name="ModelImportErrorVersionUsesDundasAndWrongParent" xml:space="preserve">
+    <value>Export ျပဳလုပ္ထားေသာ Model ၏ Version မွာ အေဟာင္းျဖစ္ေနျပီး Model သည္လည္း ႏုိင္ငံအဆင့္ Model တစ္ခုမဟုတ္ပါ။ အဆုိပါ Model မ်ားအား Import ျပဳလုပ္၍မရပါ။</value>
+  </data>
+  <data name="PasteOnEmptyTable" xml:space="preserve">
+    <value>Paste မလုပ္မီတြင္ ဇယားအတြင္း၌ Row တစ္ခုအား အရင္ Add လုပ္ပါ။</value>
+  </data>
+  <data name="RegionChildsWithModelsDeleteConfirm" xml:space="preserve">
+    <value>သင္ Delete လုပ္ေတာ့မည့္ ေဒသမ်ားအား အသုံးျပဳေနေသာ အျခား Model မ်ားရွိပါသည္။ ၎ေဒသမ်ားကုိ Delete လုပ္လုိက္ပါက အဆုိပါ Model မ်ားလည္း ပ်က္စီသြားမည္ျဖစ္သည္။ ဆက္လက္ေဆာင္ရြက္လုိပါသလား။</value>
+  </data>
+  <data name="TableByRegionPasteOverwriteWarning" xml:space="preserve">
+    <value>သင္ Paste လုပ္ေတာ့မည့္ Data မ်ားထဲတြင္ မူလက တည္ရွိျပီးသား ရက္စြဲမ်ား ပါ၀င္ပါက သင္ Paste လုပ္လုိက္မည္ဆုိလွ်င္ နဂုိရွိျပီးသားရက္စြဲမ်ား ေပ်ာက္ပ်က္သြားမည္ျဖစ္သည္။ မပါ၀င္ပါက Row အသစ္မ်ား ေပၚေပါက္လာမည္ျဖစ္သည္။ ဆက္လက္ေဆာင္ရြက္လုိပါသလား။</value>
+  </data>
+  <data name="ContactBody" xml:space="preserve">
+    <value>သင္၏ အခ်က္အလက္မ်ား (အမည္ႏွင့္ အဆက္အသြယ္): %0D%0A%0D%0A မွတ္ခ်က္သည္ (tool ၏ ေဆာင္ရြက္ပုံ၊ လုပ္ေဆာင္ခ်က္၊ သင္၏ ေယဘုယ်အေတြ႕အၾကံဳ၊ အျခား) အေၾကာင္းျဖစ္သည္။: %0D%0A%0D%0A သင္၏မွတ္ခ်က္</value>
+  </data>
+  <data name="ContactSubject" xml:space="preserve">
+    <value>မွတ္ခ်က္မ်ား - Elecrtoral Risk Management Tool</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>ထည့္သြင္းသည္။ (Add)</value>
+  </data>
+  <data name="Alert" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>ဖန္တီးထားသည္။</value>
+  </data>
+  <data name="CurrentModelReorderFactors" xml:space="preserve">
+    <value>လက္ရွိ Model ၏ Factor မ်ားအား အစဥ္လုိက္ျပန္စီသည္။</value>
+  </data>
+  <data name="Modified" xml:space="preserve">
+    <value>ျပင္ဆင္ထားသည္။</value>
+  </data>
+  <data name="RiskAlertSearch" xml:space="preserve">
+    <value>Risk Alert အား ရွာေဖြသည္။</value>
+  </data>
+  <data name="RiskAndActionDateFrom" xml:space="preserve">
+    <value>Date from တစ္ခု ေရြးခ်ယ္ရမည္။</value>
+  </data>
+  <data name="RiskAndActionDateTo" xml:space="preserve">
+    <value>Date to တစ္ခု ေရြးခ်ယ္ရမည္။</value>
+  </data>
+  <data name="RiskAndActionPhase" xml:space="preserve">
+    <value>Phase တစ္ခုေတာ့ အနည္းဆုံး ေရြးခ်ယ္ရမည္။</value>
+  </data>
+  <data name="RiskAndActionRegion" xml:space="preserve">
+    <value>ေဒသတစ္ခုေတာ့ အနည္းဆုံး ေရြးခ်ယ္ရမည္။</value>
+  </data>
+  <data name="RiskAndActionSaveWarning" xml:space="preserve">
+    <value>Attachment မ်ားထည့္သြင္းႏုိင္ရန္အတြက္ Save လုပ္ပါ။</value>
+  </data>
+</root>

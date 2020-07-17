@@ -1,0 +1,1403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D08AF186-C90C-41A7-9C29-DA85ADA15D38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Idea.ERMT</RootNamespace>
+    <AssemblyName>Idea.ERMT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IconV7.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release - AR|AnyCPU'">
+    <OutputPath>bin\Release - AR\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release - AR|x86'">
+    <OutputPath>bin\x86\Release - AR\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release - AR|x64'">
+    <OutputPath>bin\x64\Release - AR\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxSHDocVw">
+      <HintPath>..\References\AxSHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="DesktopEdition">
+      <HintPath>..\References\ThinkGeo\DesktopEdition.dll</HintPath>
+    </Reference>
+    <Reference Include="MapSuiteCore">
+      <HintPath>..\References\ThinkGeo\MapSuiteCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.7.3.31740, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\ThinkGeo\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\EventManager.cs" />
+    <Compile Include="Classes\ExtentOverlayForContext.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Admin\DataRestoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\DataRestoreForm.Designer.cs">
+      <DependentUpon>DataRestoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Admin\DataBackupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\DataBackupForm.Designer.cs">
+      <DependentUpon>DataBackupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Admin\DataRestore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\DataRestore.Designer.cs">
+      <DependentUpon>DataRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Admin\DataBackup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\DataBackup.Designer.cs">
+      <DependentUpon>DataBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Admin\UserChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\UserChangePassword.Designer.cs">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Base\ScaleCustomColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\ScaleCustomColor.Designer.cs">
+      <DependentUpon>ScaleCustomColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Base\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\DeleteDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\DeleteDate.Designer.cs">
+      <DependentUpon>DeleteDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalForm.Designer.cs">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Admin\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Admin\ServerSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\ServerSettings.Designer.cs">
+      <DependentUpon>ServerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Admin\UserCRUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\UserCRUD.Designer.cs">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Admin\UserModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\UserModify.Designer.cs">
+      <DependentUpon>UserModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Admin\UserNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Admin\UserNew.Designer.cs">
+      <DependentUpon>UserNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Base\ColorDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\ColorPalette.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\ColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\CustomMessageBox.designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Base\DataGridViewExtended.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\ERMTUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Base\MessageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base\MessageControl.designer.cs">
+      <DependentUpon>MessageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.Designer.cs">
+      <DependentUpon>ElectoralCycleBulletList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.Designer.cs">
+      <DependentUpon>ElectoralCycleModifyPhase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.Designer.cs">
+      <DependentUpon>ElectoralCycleEditBullet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorItem.Designer.cs">
+      <DependentUpon>FactorItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorModify.Designer.cs">
+      <DependentUpon>FactorModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorsReorder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorsReorder.Designer.cs">
+      <DependentUpon>FactorsReorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HTML\IndexUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HTML\IndexUserControl.Designer.cs">
+      <DependentUpon>IndexUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorCRUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorCRUD.Designer.cs">
+      <DependentUpon>FactorCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorPreview.Designer.cs">
+      <DependentUpon>FactorPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Factor\FactorNew.Designer.cs">
+      <DependentUpon>FactorNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HTML\HtmlPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\HTML\HtmlPopup.Designer.cs">
+      <DependentUpon>HtmlPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Login\LoginUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Login\LoginUserControl.Designer.cs">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\EditRegion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\EditRegion.Designer.cs">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\EditRegionNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\EditRegionNameForm.Designer.cs">
+      <DependentUpon>EditRegionNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RiskAndAction\EditRiskAndAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\RiskAndAction\EditRiskAndAction.Designer.cs">
+      <DependentUpon>EditRiskAndAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\ChartLegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\ChartLegend.Designer.cs">
+      <DependentUpon>ChartLegend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\MapLegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\MapLegend.Designer.cs">
+      <DependentUpon>MapLegend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\MapLegendMarkerItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\MapLegendMarkerItem.Designer.cs">
+      <DependentUpon>MapLegendMarkerItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\MapLegendItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\MapLegendItem.Designer.cs">
+      <DependentUpon>MapLegendItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\MapZoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\MapZoom.Designer.cs">
+      <DependentUpon>MapZoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\PickColumnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\PickColumnForm.Designer.cs">
+      <DependentUpon>PickColumnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\RiskMappingFullScreenChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\RiskMappingFullScreenChart.Designer.cs">
+      <DependentUpon>RiskMappingFullScreenChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\RiskMappingFullScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\RiskMappingFullScreen.Designer.cs">
+      <DependentUpon>RiskMappingFullScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Marker\MarkerPickForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Marker\MarkerPickForm.Designer.cs">
+      <DependentUpon>MarkerPickForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RiskAndAction\RiskAndActionRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RiskAndAction\RiskAndActionRegister.Designer.cs">
+      <DependentUpon>RiskAndActionRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\RiskMapping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\RiskMapping.Designer.cs">
+      <DependentUpon>RiskMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map\TreeUtil.cs" />
+    <Compile Include="UserControls\Map\Updater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Map\Updater.Designer.cs">
+      <DependentUpon>Updater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Marker\MarkerPick.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Marker\MarkerPick.Designer.cs">
+      <DependentUpon>MarkerPick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Marker\MarkerTypeCRUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Marker\MarkerTypeCRUD.Designer.cs">
+      <DependentUpon>MarkerTypeCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Model\ModelCRUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Model\ModelCRUD.Designer.cs">
+      <DependentUpon>ModelCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Model\ModelEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Model\ModelEdit.Designer.cs">
+      <DependentUpon>ModelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Model\ModelNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Model\ModelNew.Designer.cs">
+      <DependentUpon>ModelNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Model\ModelReorderFactors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Model\ModelReorderFactors.Designer.cs">
+      <DependentUpon>ModelReorderFactors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Start\Start.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Start\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TestUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TestUserControl.Designer.cs">
+      <DependentUpon>TestUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ControlCache.cs" />
+    <Compile Include="Classes\ViewManager.cs" />
+    <EmbeddedResource Include="PrincipalForm.ar.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.bo.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.de.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.es-es.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.jv-Latn-ID.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.my.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.ne.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.ru.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.th.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataBackup.ar.resx">
+      <DependentUpon>DataBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataBackup.es-ES.resx">
+      <DependentUpon>DataBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataBackup.fr.resx">
+      <DependentUpon>DataBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataBackup.my.resx">
+      <DependentUpon>DataBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataBackup.ru.resx">
+      <DependentUpon>DataBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataBackup.th.resx">
+      <DependentUpon>DataBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataBackupForm.resx">
+      <DependentUpon>DataBackupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataRestore.ar.resx">
+      <DependentUpon>DataRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataRestore.es-ES.resx">
+      <DependentUpon>DataRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataRestore.fr.resx">
+      <DependentUpon>DataRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataRestore.my.resx">
+      <DependentUpon>DataRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataRestore.ru.resx">
+      <DependentUpon>DataRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataRestore.th.resx">
+      <DependentUpon>DataRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataRestoreForm.resx">
+      <DependentUpon>DataRestoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\ServerSettings.ar.resx">
+      <DependentUpon>ServerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\ServerSettings.es-es.resx">
+      <DependentUpon>ServerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\ServerSettings.fr.resx">
+      <DependentUpon>ServerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataRestore.resx">
+      <DependentUpon>DataRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\DataBackup.resx">
+      <DependentUpon>DataBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\ServerSettings.my.resx">
+      <DependentUpon>ServerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\ServerSettings.ne.resx">
+      <DependentUpon>ServerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\ServerSettings.ru.resx">
+      <DependentUpon>ServerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\ServerSettings.th.resx">
+      <DependentUpon>ServerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserChangePassword.ar.resx">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserChangePassword.es-es.resx">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserChangePassword.fr.resx">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserChangePassword.my.resx">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserChangePassword.ne.resx">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserChangePassword.resx">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserChangePassword.ru.resx">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserChangePassword.th.resx">
+      <DependentUpon>UserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserCRUD.ar.resx">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserCRUD.es-es.resx">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserCRUD.fr.resx">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserCRUD.my.resx">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserCRUD.ne.resx">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserCRUD.ru.resx">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserCRUD.th.resx">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserModify.ar.resx">
+      <DependentUpon>UserModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserModify.es-es.resx">
+      <DependentUpon>UserModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserModify.fr.resx">
+      <DependentUpon>UserModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserModify.my.resx">
+      <DependentUpon>UserModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserModify.ne.resx">
+      <DependentUpon>UserModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserModify.ru.resx">
+      <DependentUpon>UserModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserModify.th.resx">
+      <DependentUpon>UserModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserNew.ar.resx">
+      <DependentUpon>UserNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserNew.es-es.resx">
+      <DependentUpon>UserNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserNew.fr.resx">
+      <DependentUpon>UserNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserNew.my.resx">
+      <DependentUpon>UserNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserNew.ne.resx">
+      <DependentUpon>UserNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserNew.ru.resx">
+      <DependentUpon>UserNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserNew.th.resx">
+      <DependentUpon>UserNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Base\ScaleCustomColor.ar.resx">
+      <DependentUpon>ScaleCustomColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Base\ScaleCustomColor.fr.resx">
+      <DependentUpon>ScaleCustomColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Base\ScaleCustomColor.resx">
+      <DependentUpon>ScaleCustomColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Base\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.ar.resx">
+      <DependentUpon>ElectoralCycleBulletList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.es-es.resx">
+      <DependentUpon>ElectoralCycleBulletList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.fr.resx">
+      <DependentUpon>ElectoralCycleBulletList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.my.resx">
+      <DependentUpon>ElectoralCycleBulletList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.ne.resx">
+      <DependentUpon>ElectoralCycleBulletList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.ru.resx">
+      <DependentUpon>ElectoralCycleBulletList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.th.resx">
+      <DependentUpon>ElectoralCycleBulletList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.ar.resx">
+      <DependentUpon>ElectoralCycleEditBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.es-es.resx">
+      <DependentUpon>ElectoralCycleEditBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.fr.resx">
+      <DependentUpon>ElectoralCycleEditBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.my.resx">
+      <DependentUpon>ElectoralCycleEditBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.ne.resx">
+      <DependentUpon>ElectoralCycleEditBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.ru.resx">
+      <DependentUpon>ElectoralCycleEditBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.th.resx">
+      <DependentUpon>ElectoralCycleEditBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.ar.resx">
+      <DependentUpon>ElectoralCycleModifyPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.es-es.resx">
+      <DependentUpon>ElectoralCycleModifyPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.fr.resx">
+      <DependentUpon>ElectoralCycleModifyPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.my.resx">
+      <DependentUpon>ElectoralCycleModifyPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.ne.resx">
+      <DependentUpon>ElectoralCycleModifyPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.ru.resx">
+      <DependentUpon>ElectoralCycleModifyPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.th.resx">
+      <DependentUpon>ElectoralCycleModifyPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorCRUD.ar.resx">
+      <DependentUpon>FactorCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorCRUD.es-es.resx">
+      <DependentUpon>FactorCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorCRUD.my.resx">
+      <DependentUpon>FactorCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorCRUD.ne.resx">
+      <DependentUpon>FactorCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorCRUD.ru.resx">
+      <DependentUpon>FactorCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorCRUD.th.resx">
+      <DependentUpon>FactorCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorItem.ar.resx">
+      <DependentUpon>FactorItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorItem.fr.resx">
+      <DependentUpon>FactorItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorModify.ar.resx">
+      <DependentUpon>FactorModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorModify.es-es.resx">
+      <DependentUpon>FactorModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorModify.fr.resx">
+      <DependentUpon>FactorModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorModify.my.resx">
+      <DependentUpon>FactorModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorModify.ne.resx">
+      <DependentUpon>FactorModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorModify.ru.resx">
+      <DependentUpon>FactorModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorModify.th.resx">
+      <DependentUpon>FactorModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorNew.ar.resx">
+      <DependentUpon>FactorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorNew.es-es.resx">
+      <DependentUpon>FactorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorNew.fr.resx">
+      <DependentUpon>FactorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorNew.my.resx">
+      <DependentUpon>FactorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorNew.ne.resx">
+      <DependentUpon>FactorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorNew.ru.resx">
+      <DependentUpon>FactorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorNew.th.resx">
+      <DependentUpon>FactorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorsReorder.ar.resx">
+      <DependentUpon>FactorsReorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorsReorder.es-es.resx">
+      <DependentUpon>FactorsReorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorsReorder.fr.resx">
+      <DependentUpon>FactorsReorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorsReorder.my.resx">
+      <DependentUpon>FactorsReorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorsReorder.ne.resx">
+      <DependentUpon>FactorsReorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorsReorder.ru.resx">
+      <DependentUpon>FactorsReorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorsReorder.th.resx">
+      <DependentUpon>FactorsReorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\LoginUserControl.ar.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\LoginUserControl.es-es.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\LoginUserControl.fr.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\LoginUserControl.my.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\LoginUserControl.ne.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\LoginUserControl.ru.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\LoginUserControl.th.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\ChartLegend.ar.resx">
+      <DependentUpon>ChartLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\ChartLegend.es-es.resx">
+      <DependentUpon>ChartLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\ChartLegend.fr.resx">
+      <DependentUpon>ChartLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\ChartLegend.my.resx">
+      <DependentUpon>ChartLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\ChartLegend.ne.resx">
+      <DependentUpon>ChartLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\ChartLegend.ru.resx">
+      <DependentUpon>ChartLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\ChartLegend.th.resx">
+      <DependentUpon>ChartLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\DeleteDate.ar.resx">
+      <DependentUpon>DeleteDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\DeleteDate.fr.resx">
+      <DependentUpon>DeleteDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\DeleteDate.resx">
+      <DependentUpon>DeleteDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.fr.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\ServerSettings.resx">
+      <DependentUpon>ServerSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserCRUD.resx">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserModify.resx">
+      <DependentUpon>UserModify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Admin\UserNew.resx">
+      <DependentUpon>UserNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Base\CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Base\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Base\MessageControl.resx">
+      <DependentUpon>MessageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleBulletList.resx">
+      <DependentUpon>ElectoralCycleBulletList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleModifyPhase.resx">
+      <DependentUpon>ElectoralCycleModifyPhase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ElectoralCycle\ElectoralCycleEditBullet.resx">
+      <DependentUpon>ElectoralCycleEditBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorItem.resx">
+      <DependentUpon>FactorItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorModify.resx">
+      <DependentUpon>FactorModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorsReorder.resx">
+      <DependentUpon>FactorsReorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HTML\IndexUserControl.resx">
+      <DependentUpon>IndexUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorCRUD.fr.resx">
+      <DependentUpon>FactorCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorCRUD.resx">
+      <DependentUpon>FactorCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorPreview.resx">
+      <DependentUpon>FactorPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Factor\FactorNew.resx">
+      <DependentUpon>FactorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HTML\HtmlPopup.resx">
+      <DependentUpon>HtmlPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\LoginUserControl.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegion.ar.resx">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegion.es-ES.resx">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegion.fr.resx">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegion.my.resx">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegion.ne.resx">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegion.resx">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegion.ru.resx">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegion.th.resx">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegionNameForm.ar.resx">
+      <DependentUpon>EditRegionNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegionNameForm.es-ES.resx">
+      <DependentUpon>EditRegionNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegionNameForm.fr.resx">
+      <DependentUpon>EditRegionNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\EditRegionNameForm.resx">
+      <DependentUpon>EditRegionNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMapping.ar.resx">
+      <DependentUpon>RiskMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMapping.my.resx">
+      <DependentUpon>RiskMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMapping.ne.resx">
+      <DependentUpon>RiskMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMapping.ru.resx">
+      <DependentUpon>RiskMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMapping.th.resx">
+      <DependentUpon>RiskMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerPick.ar.resx">
+      <DependentUpon>MarkerPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerPick.my.resx">
+      <DependentUpon>MarkerPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerPick.ne.resx">
+      <DependentUpon>MarkerPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerPick.ru.resx">
+      <DependentUpon>MarkerPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerPick.th.resx">
+      <DependentUpon>MarkerPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerTypeCRUD.ar.resx">
+      <DependentUpon>MarkerTypeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerTypeCRUD.my.resx">
+      <DependentUpon>MarkerTypeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerTypeCRUD.ne.resx">
+      <DependentUpon>MarkerTypeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerTypeCRUD.ru.resx">
+      <DependentUpon>MarkerTypeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerTypeCRUD.th.resx">
+      <DependentUpon>MarkerTypeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelCRUD.ar.resx">
+      <DependentUpon>ModelCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelCRUD.my.resx">
+      <DependentUpon>ModelCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelCRUD.ne.resx">
+      <DependentUpon>ModelCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelCRUD.ru.resx">
+      <DependentUpon>ModelCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelCRUD.th.resx">
+      <DependentUpon>ModelCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelEdit.ar.resx">
+      <DependentUpon>ModelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelEdit.my.resx">
+      <DependentUpon>ModelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelEdit.ne.resx">
+      <DependentUpon>ModelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelEdit.ru.resx">
+      <DependentUpon>ModelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelEdit.th.resx">
+      <DependentUpon>ModelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelNew.ar.resx">
+      <DependentUpon>ModelNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelNew.my.resx">
+      <DependentUpon>ModelNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelNew.ne.resx">
+      <DependentUpon>ModelNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelNew.ru.resx">
+      <DependentUpon>ModelNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelNew.th.resx">
+      <DependentUpon>ModelNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelReorderFactors.ar.resx">
+      <DependentUpon>ModelReorderFactors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelReorderFactors.my.resx">
+      <DependentUpon>ModelReorderFactors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelReorderFactors.ne.resx">
+      <DependentUpon>ModelReorderFactors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelReorderFactors.ru.resx">
+      <DependentUpon>ModelReorderFactors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelReorderFactors.th.resx">
+      <DependentUpon>ModelReorderFactors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\EditRiskAndAction.ar.resx">
+      <DependentUpon>EditRiskAndAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\EditRiskAndAction.es-ES.resx">
+      <DependentUpon>EditRiskAndAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\EditRiskAndAction.fr.resx">
+      <DependentUpon>EditRiskAndAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\EditRiskAndAction.my.resx">
+      <DependentUpon>EditRiskAndAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\EditRiskAndAction.resx">
+      <DependentUpon>EditRiskAndAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\ChartLegend.resx">
+      <DependentUpon>ChartLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\MapLegend.resx">
+      <DependentUpon>MapLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\MapLegendMarkerItem.resx">
+      <DependentUpon>MapLegendMarkerItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\MapLegendItem.resx">
+      <DependentUpon>MapLegendItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\MapZoom.resx">
+      <DependentUpon>MapZoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\PickColumnForm.resx">
+      <DependentUpon>PickColumnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMapping.es-es.resx">
+      <DependentUpon>RiskMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMapping.fr.resx">
+      <DependentUpon>RiskMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMappingFullScreenChart.resx">
+      <DependentUpon>RiskMappingFullScreenChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMappingFullScreen.resx">
+      <DependentUpon>RiskMappingFullScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerPick.es-ES.resx">
+      <DependentUpon>MarkerPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerPick.fr.resx">
+      <DependentUpon>MarkerPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerTypeCRUD.es-es.resx">
+      <DependentUpon>MarkerTypeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerTypeCRUD.fr.resx">
+      <DependentUpon>MarkerTypeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelCRUD.es-es.resx">
+      <DependentUpon>ModelCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelCRUD.fr.resx">
+      <DependentUpon>ModelCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelEdit.es-es.resx">
+      <DependentUpon>ModelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelEdit.fr.resx">
+      <DependentUpon>ModelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelNew.es-es.resx">
+      <DependentUpon>ModelNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelNew.fr.resx">
+      <DependentUpon>ModelNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelReorderFactors.es-es.resx">
+      <DependentUpon>ModelReorderFactors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelReorderFactors.fr.resx">
+      <DependentUpon>ModelReorderFactors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\EditRiskAndAction.ru.resx">
+      <DependentUpon>EditRiskAndAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\EditRiskAndAction.th.resx">
+      <DependentUpon>EditRiskAndAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\RiskAndActionRegister.ar.resx">
+      <DependentUpon>RiskAndActionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\RiskAndActionRegister.es-ES.resx">
+      <DependentUpon>RiskAndActionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\RiskAndActionRegister.fr.resx">
+      <DependentUpon>RiskAndActionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\RiskAndActionRegister.my.resx">
+      <DependentUpon>RiskAndActionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\RiskAndActionRegister.ne.resx">
+      <DependentUpon>RiskAndActionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\RiskAndActionRegister.resx">
+      <DependentUpon>RiskAndActionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\RiskMapping.resx">
+      <DependentUpon>RiskMapping.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Map\Updater.resx">
+      <DependentUpon>Updater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerPick.resx">
+      <DependentUpon>MarkerPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Marker\MarkerTypeCRUD.resx">
+      <DependentUpon>MarkerTypeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelCRUD.resx">
+      <DependentUpon>ModelCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelEdit.resx">
+      <DependentUpon>ModelEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelNew.resx">
+      <DependentUpon>ModelNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Model\ModelReorderFactors.resx">
+      <DependentUpon>ModelReorderFactors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\RiskAndActionRegister.ru.resx">
+      <DependentUpon>RiskAndActionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RiskAndAction\RiskAndActionRegister.th.resx">
+      <DependentUpon>RiskAndActionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Start\Start.ar.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Start\Start.es-es.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Start\Start.fr.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Start\Start.my.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Start\Start.ne.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Start\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Start\Start.ru.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Start\Start.th.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TestUserControl.resx">
+      <DependentUpon>TestUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Config\App.Debug.config" />
+    <None Include="Config\App.Release.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Uninstall.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Idea.Entities\Idea.Entities.csproj">
+      <Project>{e53247a3-07de-47dc-8858-a59631b64296}</Project>
+      <Name>Idea.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idea.Facade\Idea.Facade.csproj">
+      <Project>{134d20b6-0a89-4a83-94fd-f27b85f6ef9b}</Project>
+      <Name>Idea.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idea.HtmlEditorControl\Idea.HTMLEditorControl.csproj">
+      <Project>{5873de0f-6853-4c8e-91a4-7a6861069a9a}</Project>
+      <Name>Idea.HTMLEditorControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idea.Utils\Idea.Utils.csproj">
+      <Project>{a1a394e7-726c-4f1d-9d76-73db5788a81c}</Project>
+      <Name>Idea.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\mapcontinent1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapcountry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maplayers-map-icon-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maplayers-map-icon-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maplayers-map-icon-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maplayers-map-icon-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mappin-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapprovince.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapworld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mappath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mappoi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30x30-mapping-data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30x30-mapping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30x30-mapping1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoomout.png" />
+    <None Include="Resources\zoomin.png" />
+    <None Include="Resources\loadingV7.gif" />
+    <None Include="Resources\loadinggif2.gif" />
+    <None Include="Resources\loadinggif.gif" />
+    <None Include="Resources\loading.png" />
+    <None Include="Resources\splash.png" />
+    <None Include="Resources\google-map-icon.png" />
+    <None Include="Resources\32x32-mapping-continente.png" />
+    <None Include="Resources\32x32-mapping.png" />
+    <None Include="Resources\32x32-mapping-country.png" />
+    <None Include="Resources\32x32-mapping-province.png" />
+    <None Include="Resources\32x32-pin.png" />
+    <None Include="Resources\32x32-refresh.png" />
+    <None Include="Resources\32x32-pin marker.png" />
+    <None Include="Resources\32x32-brush.png" />
+    <None Include="Resources\32x32_path.png" />
+    <None Include="Resources\32x32-mapping-numerado5.png" />
+    <None Include="Resources\32x32-mapping-numerado6.png" />
+    <None Include="Resources\32x32-mapping-numerado7.png" />
+    <None Include="Resources\32x32_POI.png" />
+    <None Include="Resources\32x32-mapping-numerado.png" />
+    <Content Include="AppIcon.ico" />
+    <Content Include="IconV7.ico" />
+    <Content Include="Resources\40x40-mapping-continente.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <Target Name="AfterBuild">
+    <Delete Files="$(TargetDir)$(TargetFileName).config" />
+    <Copy SourceFiles="$(ProjectDir)\Config\App.$(Configuration).config" DestinationFiles="$(TargetDir)$(TargetFileName).config" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

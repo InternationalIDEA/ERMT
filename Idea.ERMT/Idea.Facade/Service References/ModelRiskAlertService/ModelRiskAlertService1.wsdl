@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://schemas.microsoft.com/ws/2005/02/mex/bindings" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ModelRiskAlertService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IModelRiskAlertService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://schemas.microsoft.com/ws/2005/02/mex/bindings" location="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/mex?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/mex?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/mex?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/mex?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Idea.Entities" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/mex?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IModelRiskAlertService_GetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAll" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetWithFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWithFilter" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetWithFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWithFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_Save_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_Save_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetNewModelRiskAlertAttachment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewModelRiskAlertAttachment" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetNewModelRiskAlertAttachment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewModelRiskAlertAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetNewModelRiskAlertPhase_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewModelRiskAlertPhase" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetNewModelRiskAlertPhase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewModelRiskAlertPhaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_SavePhase_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePhase" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_SavePhase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavePhaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_SaveRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveRegion" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_SaveRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_SaveAttachment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAttachment" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_SaveAttachment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetNewModelRiskAlertRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewModelRiskAlertRegion" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetNewModelRiskAlertRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewModelRiskAlertRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetAllRegionsWithAlerts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRegionsWithAlerts" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetAllRegionsWithAlerts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRegionsWithAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_Get_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_Get_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetRegions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegions" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetRegions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetPhases_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhases" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetPhases_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetModelRiskAlertRegions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelRiskAlertRegions" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetModelRiskAlertRegions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelRiskAlertRegionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetModelRiskAlertAttachments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelRiskAlertAttachments" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_GetModelRiskAlertAttachments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelRiskAlertAttachmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_DeletePhase_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePhase" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_DeletePhase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePhaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_DeleteRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRegion" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_DeleteRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_DeleteAttachment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttachment" />
+  </wsdl:message>
+  <wsdl:message name="IModelRiskAlertService_DeleteAttachment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IModelRiskAlertService">
+    <wsdl:operation name="GetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetAll" message="tns:IModelRiskAlertService_GetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetAllResponse" message="tns:IModelRiskAlertService_GetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWithFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetWithFilter" message="tns:IModelRiskAlertService_GetWithFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetWithFilterResponse" message="tns:IModelRiskAlertService_GetWithFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/Save" message="tns:IModelRiskAlertService_Save_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/SaveResponse" message="tns:IModelRiskAlertService_Save_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/Delete" message="tns:IModelRiskAlertService_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/DeleteResponse" message="tns:IModelRiskAlertService_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewModelRiskAlertAttachment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertAttachment" message="tns:IModelRiskAlertService_GetNewModelRiskAlertAttachment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertAttachmentResponse" message="tns:IModelRiskAlertService_GetNewModelRiskAlertAttachment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewModelRiskAlertPhase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertPhase" message="tns:IModelRiskAlertService_GetNewModelRiskAlertPhase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertPhaseResponse" message="tns:IModelRiskAlertService_GetNewModelRiskAlertPhase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePhase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/SavePhase" message="tns:IModelRiskAlertService_SavePhase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/SavePhaseResponse" message="tns:IModelRiskAlertService_SavePhase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/SaveRegion" message="tns:IModelRiskAlertService_SaveRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/SaveRegionResponse" message="tns:IModelRiskAlertService_SaveRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAttachment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/SaveAttachment" message="tns:IModelRiskAlertService_SaveAttachment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/SaveAttachmentResponse" message="tns:IModelRiskAlertService_SaveAttachment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewModelRiskAlertRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertRegion" message="tns:IModelRiskAlertService_GetNewModelRiskAlertRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertRegionResponse" message="tns:IModelRiskAlertService_GetNewModelRiskAlertRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRegionsWithAlerts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetAllRegionsWithAlerts" message="tns:IModelRiskAlertService_GetAllRegionsWithAlerts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetAllRegionsWithAlertsResponse" message="tns:IModelRiskAlertService_GetAllRegionsWithAlerts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/Get" message="tns:IModelRiskAlertService_Get_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetResponse" message="tns:IModelRiskAlertService_Get_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetRegions" message="tns:IModelRiskAlertService_GetRegions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetRegionsResponse" message="tns:IModelRiskAlertService_GetRegions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhases">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetPhases" message="tns:IModelRiskAlertService_GetPhases_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetPhasesResponse" message="tns:IModelRiskAlertService_GetPhases_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelRiskAlertRegions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetModelRiskAlertRegions" message="tns:IModelRiskAlertService_GetModelRiskAlertRegions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetModelRiskAlertRegionsResponse" message="tns:IModelRiskAlertService_GetModelRiskAlertRegions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelRiskAlertAttachments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetModelRiskAlertAttachments" message="tns:IModelRiskAlertService_GetModelRiskAlertAttachments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/GetModelRiskAlertAttachmentsResponse" message="tns:IModelRiskAlertService_GetModelRiskAlertAttachments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/DeletePhase" message="tns:IModelRiskAlertService_DeletePhase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/DeletePhaseResponse" message="tns:IModelRiskAlertService_DeletePhase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/DeleteRegion" message="tns:IModelRiskAlertService_DeleteRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/DeleteRegionResponse" message="tns:IModelRiskAlertService_DeleteRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttachment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelRiskAlertService/DeleteAttachment" message="tns:IModelRiskAlertService_DeleteAttachment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelRiskAlertService/DeleteAttachmentResponse" message="tns:IModelRiskAlertService_DeleteAttachment_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IModelRiskAlertService" type="tns:IModelRiskAlertService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IModelRiskAlertService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetAll">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWithFilter">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetWithFilter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/Save" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewModelRiskAlertAttachment">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertAttachment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewModelRiskAlertPhase">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertPhase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePhase">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/SavePhase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRegion">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/SaveRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAttachment">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/SaveAttachment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewModelRiskAlertRegion">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRegionsWithAlerts">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetAllRegionsWithAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetRegions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhases">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetPhases" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelRiskAlertRegions">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetModelRiskAlertRegions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelRiskAlertAttachments">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetModelRiskAlertAttachments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhase">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/DeletePhase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegion">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/DeleteRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttachment">
+      <soap12:operation soapAction="http://tempuri.org/IModelRiskAlertService/DeleteAttachment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IModelRiskAlertService" type="tns:IModelRiskAlertService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAll">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWithFilter">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetWithFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/Save" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewModelRiskAlertAttachment">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertAttachment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewModelRiskAlertPhase">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertPhase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePhase">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/SavePhase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRegion">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/SaveRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAttachment">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/SaveAttachment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewModelRiskAlertRegion">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetNewModelRiskAlertRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRegionsWithAlerts">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetAllRegionsWithAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetRegions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhases">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetPhases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelRiskAlertRegions">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetModelRiskAlertRegions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelRiskAlertAttachments">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/GetModelRiskAlertAttachments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhase">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/DeletePhase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegion">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/DeleteRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttachment">
+      <soap:operation soapAction="http://tempuri.org/IModelRiskAlertService/DeleteAttachment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ModelRiskAlertService">
+    <wsdl:port name="NetTcpBinding_IModelRiskAlertService" binding="tns:NetTcpBinding_IModelRiskAlertService">
+      <soap12:address location="net.tcp://localhost:8733/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8733/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IModelRiskAlertService" binding="tns:BasicHttpBinding_IModelRiskAlertService">
+      <soap:address location="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/" />
+    </wsdl:port>
+    <wsdl:port name="MetadataExchangeHttpBinding_IModelRiskAlertService" binding="i0:MetadataExchangeHttpBinding_IModelRiskAlertService">
+      <soap12:address location="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/mex" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelRiskAlertService/mex</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

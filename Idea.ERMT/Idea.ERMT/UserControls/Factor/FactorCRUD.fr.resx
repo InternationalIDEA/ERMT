@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 3</value>
+  </data>
+  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 8</value>
+  </data>
+  <data name="radioButton1.Text" xml:space="preserve">
+    <value>Facteur interne</value>
+  </data>
+  <data name="radioButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 8</value>
+  </data>
+  <data name="radioButton2.Text" xml:space="preserve">
+    <value>Facteur externe</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Nom de facteur</value>
+  </data>
+  <data name="btnDeleteDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>693, 10</value>
+  </data>
+  <data name="btnDeleteDocument.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>224, 32</value>
+  </data>
+  <data name="btnDeleteDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 32</value>
+  </data>
+  <data name="btnDeleteDocument.Text" xml:space="preserve">
+    <value>Supprimer document (bibliothèque)</value>
+  </data>
+  <data name="btnDeleteDocument.ToolTip" xml:space="preserve">
+    <value>Supprimer document (bibliothèque) ici</value>
+  </data>
+  <data name="btnAddDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>463, 10</value>
+  </data>
+  <data name="btnAddDocument.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>224, 32</value>
+  </data>
+  <data name="btnAddDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 32</value>
+  </data>
+  <data name="btnAddDocument.Text" xml:space="preserve">
+    <value>Ajouter document</value>
+  </data>
+  <data name="btnAddDocument.ToolTip" xml:space="preserve">
+    <value>Ajouter documents qui peuvent être lié à travers les éditeurs HTML des facteurs ici</value>
+  </data>
+  <data name="btnLinkDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 10</value>
+  </data>
+  <data name="btnLinkDocument.Text" xml:space="preserve">
+    <value>Lien au document</value>
+  </data>
+  <data name="btnLinkDocument.ToolTip" xml:space="preserve">
+    <value>Appuyer ici pour ajouter un lien vers un document</value>
+  </data>
+  <data name="cbFactorDescriptionField.Items1" xml:space="preserve">
+    <value>Cas empiriques</value>
+  </data>
+  <data name="cbFactorDescriptionField.Items2" xml:space="preserve">
+    <value>Indicateurs observables</value>
+  </data>
+  <data name="cbFactorDescriptionField.Items3" xml:space="preserve">
+    <value>Collecte des données</value>
+  </data>
+  <data name="cbFactorDescriptionField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 3</value>
+  </data>
+  <data name="cbFactorDescriptionField.ToolTip" xml:space="preserve">
+    <value>Sélectionner le champs à modifier ci-dessous</value>
+  </data>
+  <data name="lblColor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 1</value>
+  </data>
+  <data name="lblColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 32</value>
+  </data>
+  <data name="lblColor.Text" xml:space="preserve">
+    <value>Couleur de fond</value>
+  </data>
+  <data name="lblColor.ToolTip" xml:space="preserve">
+    <value>Couleur d'affichage de la valeur d'un facteur cumulatif</value>
+  </data>
+  <data name="lblColor2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblColor2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 1</value>
+  </data>
+  <data name="lblColor2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 32</value>
+  </data>
+  <data name="lblColor2.Text" xml:space="preserve">
+    <value>Couleur de police</value>
+  </data>
+  <data name="lblColor2.ToolTip" xml:space="preserve">
+    <value>Couleur alternative d'affichage de la valeur de facteur cumulatif</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tlpMain.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tlpMain.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnPreview.Text" xml:space="preserve">
+    <value>Aperçu</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>922, 53</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 433</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 74</value>
+  </data>
+  <data name="txtQuestionnaire.Size" type="System.Drawing.Size, System.Drawing">
+    <value>956, 270</value>
+  </data>
+  <data name="grpQuestionnaire.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="grpQuestionnaire.Size" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="pnlQuestionnaire.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 187</value>
+  </data>
+  <data name="txtDataCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>956, 270</value>
+  </data>
+  <data name="grpDataCollection.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="grpDataCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="grpDataCollection.Text" xml:space="preserve">
+    <value>Collecte des données</value>
+  </data>
+  <data name="pnlDataCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 187</value>
+  </data>
+  <data name="txtObservableIndicators.Size" type="System.Drawing.Size, System.Drawing">
+    <value>956, 270</value>
+  </data>
+  <data name="grpObservableIndicators.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="grpObservableIndicators.Size" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="grpObservableIndicators.Text" xml:space="preserve">
+    <value>Indicateurs observables</value>
+  </data>
+  <data name="pnlObservableIndicators.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 187</value>
+  </data>
+  <data name="txtEmpiricalCases.Size" type="System.Drawing.Size, System.Drawing">
+    <value>956, 270</value>
+  </data>
+  <data name="grpEmpiricalCases.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="grpEmpiricalCases.Size" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="grpEmpiricalCases.Text" xml:space="preserve">
+    <value>Cas empiriques</value>
+  </data>
+  <data name="pnlEmpiricalCases.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 187</value>
+  </data>
+  <data name="txtIntroduction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>956, 270</value>
+  </data>
+  <data name="grpIntroduction.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="grpIntroduction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>962, 291</value>
+  </data>
+  <data name="pnlIntroduction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 187</value>
+  </data>
+  <data name="pnlFather.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 187</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 16</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Sélectionner le champs à modifier </value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 34</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>922, 233</value>
+  </data>
+  <data name="gbFactorTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 254</value>
+  </data>
+  <data name="gbFactorTexts.Text" xml:space="preserve">
+    <value>Textes des facteurs</value>
+  </data>
+  <data name="gbFactorName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 49</value>
+  </data>
+  <data name="gbFactorName.Text" xml:space="preserve">
+    <value>Nom de facteur</value>
+  </data>
+  <data name="lblMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 13</value>
+  </data>
+  <data name="lblMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="lblMin.Text" xml:space="preserve">
+    <value>Min.</value>
+  </data>
+  <data name="nudScaleMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 10</value>
+  </data>
+  <data name="lblMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 5</value>
+  </data>
+  <data name="lblMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 32</value>
+  </data>
+  <data name="lblMax.Text" xml:space="preserve">
+    <value>Max.</value>
+  </data>
+  <data name="nudScaleInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 10</value>
+  </data>
+  <data name="lblInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 5</value>
+  </data>
+  <data name="lblInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 32</value>
+  </data>
+  <data name="lblInterval.Text" xml:space="preserve">
+    <value>Intervalle</value>
+  </data>
+  <data name="tlpScale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 43</value>
+  </data>
+  <data name="gbScale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 54</value>
+  </data>
+  <data name="gbScale.Text" xml:space="preserve">
+    <value>Echelle</value>
+  </data>
+  <data name="colorPickerSecondary.Text" xml:space="preserve">
+    <value>Couleur secondaire</value>
+  </data>
+  <data name="lblPreview.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Aperçu:</value>
+  </data>
+  <data name="colorPickerPrimary.Text" xml:space="preserve">
+    <value>Couleur primaire</value>
+  </data>
+  <data name="gbCumulativeFactorColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 54</value>
+  </data>
+  <data name="gbCumulativeFactorColor.Text" xml:space="preserve">
+    <value>Couleurs du facteur cumul. </value>
+  </data>
+  <data name="pnlScaleAndCumulativeLabelSetup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 54</value>
+  </data>
+  <data name="cbScaleOrCumulative.Items" xml:space="preserve">
+    <value>Echelle</value>
+  </data>
+  <data name="cbScaleOrCumulative.Items1" xml:space="preserve">
+    <value>Cumulatif</value>
+  </data>
+  <data name="cbInternalExternal.Items" xml:space="preserve">
+    <value>Facteur interne</value>
+  </data>
+  <data name="cbInternalExternal.Items1" xml:space="preserve">
+    <value>Facteur externe</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 49</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Type de facteur</value>
+  </data>
+  <data name="tlpMain.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>954, 550</value>
+  </data>
+  <data name="tlpMain.RowCount" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tlpMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>954, 550</value>
+  </data>
+</root>

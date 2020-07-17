@@ -1,0 +1,1 @@
+osql -S .\IDEAGEO -U sa -P 1deageo! -Q "sp_detach_db 'idea'"

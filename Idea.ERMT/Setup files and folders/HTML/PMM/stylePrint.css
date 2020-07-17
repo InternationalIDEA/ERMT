@@ -1,0 +1,30 @@
+.noPrint
+{
+	display: none;
+}
+
+.landScape
+{ 
+	width: 100%; 
+	height: 100%; 
+	margin: 0% 0% 0% 0%; 
+	filter: progid:DXImageTransform.Microsoft.BasicImage(Rotation=3);
+} 
+
+.pageBreak 
+{ 
+	page-break-before: always;
+}
+
+@page 
+{
+	size: landscape;
+}
+
+#divLayout
+{
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;	
+	text-align:left;
+}

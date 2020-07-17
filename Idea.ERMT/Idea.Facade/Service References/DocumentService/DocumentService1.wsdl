@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://schemas.microsoft.com/ws/2005/02/mex/bindings" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DocumentService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IDocumentService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://schemas.microsoft.com/ws/2005/02/mex/bindings" location="http://localhost:8731/Design_Time_Addresses/Idea.Server/DocumentService/mex?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/DocumentService/mex?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/DocumentService/mex?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/DocumentService/mex?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Idea.Entities" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/DocumentService/mex?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDocumentService_GetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAll" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetCurrentModelFactors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentModelFactors" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetCurrentModelFactors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentModelFactorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetDocumentByFactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentByFactor" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetDocumentByFactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentByFactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_Save_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_Save_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_Export_InputMessage">
+    <wsdl:part name="parameters" element="tns:Export" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_Export_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_Import_InputMessage">
+    <wsdl:part name="parameters" element="tns:Import" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_Import_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_BackupApplicationData_InputMessage">
+    <wsdl:part name="parameters" element="tns:BackupApplicationData" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_BackupApplicationData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BackupApplicationDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_RestoreApplicationData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RestoreApplicationData" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_RestoreApplicationData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RestoreApplicationDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetDocumentTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetDocumentTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetPMM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPMM" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetPMM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPMMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_SaveShapeFileToServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveShapeFileToServer" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_SaveShapeFileToServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveShapeFileToServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetRegionShapefilesFromServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionShapefilesFromServer" />
+  </wsdl:message>
+  <wsdl:message name="IDocumentService_GetRegionShapefilesFromServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionShapefilesFromServerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDocumentService">
+    <wsdl:operation name="GetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/GetAll" message="tns:IDocumentService_GetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/GetAllResponse" message="tns:IDocumentService_GetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentModelFactors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/GetCurrentModelFactors" message="tns:IDocumentService_GetCurrentModelFactors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/GetCurrentModelFactorsResponse" message="tns:IDocumentService_GetCurrentModelFactors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentByFactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/GetDocumentByFactor" message="tns:IDocumentService_GetDocumentByFactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/GetDocumentByFactorResponse" message="tns:IDocumentService_GetDocumentByFactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/Save" message="tns:IDocumentService_Save_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/SaveResponse" message="tns:IDocumentService_Save_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/Delete" message="tns:IDocumentService_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/DeleteResponse" message="tns:IDocumentService_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Export">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/Export" message="tns:IDocumentService_Export_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/ExportResponse" message="tns:IDocumentService_Export_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Import">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/Import" message="tns:IDocumentService_Import_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/ImportResponse" message="tns:IDocumentService_Import_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BackupApplicationData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/BackupApplicationData" message="tns:IDocumentService_BackupApplicationData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/BackupApplicationDataResponse" message="tns:IDocumentService_BackupApplicationData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RestoreApplicationData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/RestoreApplicationData" message="tns:IDocumentService_RestoreApplicationData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/RestoreApplicationDataResponse" message="tns:IDocumentService_RestoreApplicationData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/GetDocumentTemplate" message="tns:IDocumentService_GetDocumentTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/GetDocumentTemplateResponse" message="tns:IDocumentService_GetDocumentTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPMM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/GetPMM" message="tns:IDocumentService_GetPMM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/GetPMMResponse" message="tns:IDocumentService_GetPMM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveShapeFileToServer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/SaveShapeFileToServer" message="tns:IDocumentService_SaveShapeFileToServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/SaveShapeFileToServerResponse" message="tns:IDocumentService_SaveShapeFileToServer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionShapefilesFromServer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDocumentService/GetRegionShapefilesFromServer" message="tns:IDocumentService_GetRegionShapefilesFromServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDocumentService/GetRegionShapefilesFromServerResponse" message="tns:IDocumentService_GetRegionShapefilesFromServer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IDocumentService" type="tns:IDocumentService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IDocumentService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetAll">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentModelFactors">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/GetCurrentModelFactors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentByFactor">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/GetDocumentByFactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/Save" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Export">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/Export" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Import">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/Import" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BackupApplicationData">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/BackupApplicationData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RestoreApplicationData">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/RestoreApplicationData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentTemplate">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/GetDocumentTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPMM">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/GetPMM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveShapeFileToServer">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/SaveShapeFileToServer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionShapefilesFromServer">
+      <soap12:operation soapAction="http://tempuri.org/IDocumentService/GetRegionShapefilesFromServer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IDocumentService" type="tns:IDocumentService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAll">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentModelFactors">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/GetCurrentModelFactors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentByFactor">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/GetDocumentByFactor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/Save" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Export">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/Export" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Import">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/Import" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BackupApplicationData">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/BackupApplicationData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RestoreApplicationData">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/RestoreApplicationData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentTemplate">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/GetDocumentTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPMM">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/GetPMM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveShapeFileToServer">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/SaveShapeFileToServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionShapefilesFromServer">
+      <soap:operation soapAction="http://tempuri.org/IDocumentService/GetRegionShapefilesFromServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DocumentService">
+    <wsdl:port name="NetTcpBinding_IDocumentService" binding="tns:NetTcpBinding_IDocumentService">
+      <soap12:address location="net.tcp://localhost:8733/Design_Time_Addresses/Idea.Server/DocumentService/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8733/Design_Time_Addresses/Idea.Server/DocumentService/</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IDocumentService" binding="tns:BasicHttpBinding_IDocumentService">
+      <soap:address location="http://localhost:8731/Design_Time_Addresses/Idea.Server/DocumentService/" />
+    </wsdl:port>
+    <wsdl:port name="MetadataExchangeHttpBinding_IDocumentService" binding="i0:MetadataExchangeHttpBinding_IDocumentService">
+      <soap12:address location="http://localhost:8731/Design_Time_Addresses/Idea.Server/DocumentService/mex" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:8731/Design_Time_Addresses/Idea.Server/DocumentService/mex</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

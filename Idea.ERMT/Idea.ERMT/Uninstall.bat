@@ -1,0 +1,1 @@
+msiexec /UNINSTALL %1

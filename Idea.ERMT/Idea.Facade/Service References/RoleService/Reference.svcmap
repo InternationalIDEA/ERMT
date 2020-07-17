@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d97267de-96d1-4452-9db1-03095b0a16e3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8731/Design_Time_Addresses/Idea.Server/RoleService/mex" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="mex.xsd" MetadataType="Schema" ID="59207aed-7374-444d-afaa-715d6f01bab1" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/RoleService/mex?xsd=xsd0" />
+    <MetadataFile FileName="RoleService.wsdl" MetadataType="Wsdl" ID="5768c42c-480a-46fb-b982-e2d4eba3f12f" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/RoleService/mex?wsdl" />
+    <MetadataFile FileName="RoleService1.wsdl" MetadataType="Wsdl" ID="7e66207d-5986-437b-926c-1574bddd8a4e" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/RoleService/mex" />
+    <MetadataFile FileName="mex1.xsd" MetadataType="Schema" ID="a8a8656f-e186-4405-b88c-8ee36c795966" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/RoleService/mex?xsd=xsd1" />
+    <MetadataFile FileName="mex.wsdl" MetadataType="Wsdl" ID="7cd93fb5-79bb-495e-b0d1-dc2e958aef6a" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/RoleService/mex?wsdl=wsdl0" />
+    <MetadataFile FileName="mex2.xsd" MetadataType="Schema" ID="abd89bef-94f0-4b84-a920-04d3a6582c1f" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/RoleService/mex?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

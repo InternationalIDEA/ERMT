@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="698821cc-f02b-4e76-9543-efec92a98179" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="mex.xsd" MetadataType="Schema" ID="b069adfd-7bbe-44ac-bdbb-7be127808281" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex?xsd=xsd2" />
+    <MetadataFile FileName="PhaseBulletService.wsdl" MetadataType="Wsdl" ID="1c6b652f-a42b-44e6-a827-44a3f382b9ca" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex?wsdl" />
+    <MetadataFile FileName="mex.wsdl" MetadataType="Wsdl" ID="2665d8bf-26dc-427d-b06d-21cb2b694a26" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex?wsdl=wsdl0" />
+    <MetadataFile FileName="mex1.xsd" MetadataType="Schema" ID="f1c5fccc-1db2-43bf-91e1-e7ebd03172e6" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex?xsd=xsd0" />
+    <MetadataFile FileName="PhaseBulletService1.wsdl" MetadataType="Wsdl" ID="282c6316-9735-4464-b3a3-820ed940ed05" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex" />
+    <MetadataFile FileName="mex2.xsd" MetadataType="Schema" ID="e7b4440c-12c3-4e91-abb6-b66a3b4c273f" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/PhaseBulletService/mex?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

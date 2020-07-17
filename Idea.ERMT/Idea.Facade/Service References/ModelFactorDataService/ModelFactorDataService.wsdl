@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://schemas.microsoft.com/ws/2005/02/mex/bindings" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ModelFactorDataService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IModelFactorDataService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://schemas.microsoft.com/ws/2005/02/mex/bindings" location="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelFactorDataService/mex?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelFactorDataService/mex?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelFactorDataService/mex?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelFactorDataService/mex?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Idea.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IModelFactorDataService_Save_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_Save_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetAvailableDateForPastedDataByModelFactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableDateForPastedDataByModelFactor" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetAvailableDateForPastedDataByModelFactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableDateForPastedDataByModelFactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetAvailableDateForPastedDataByRegionAndModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableDateForPastedDataByRegionAndModel" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetAvailableDateForPastedDataByRegionAndModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableDateForPastedDataByRegionAndModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAll" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_Get_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_Get_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByDateModelRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByDateModelRegion" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByDateModelRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByDateModelRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByDateModelFactorRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByDateModelFactorRegion" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByDateModelFactorRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByDateModelFactorRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByModelFactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByModelFactor" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByModelFactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByModelFactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetMapData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapData" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetMapData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetBetweenDatesModelFactorRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBetweenDatesModelFactorRegion" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetBetweenDatesModelFactorRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBetweenDatesModelFactorRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetMinorDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMinorDate" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetMinorDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMinorDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetMajorDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMajorDate" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetMajorDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMajorDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetMaxLevelWithData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxLevelWithData" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetMaxLevelWithData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxLevelWithDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetModelFactorLastDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelFactorLastDate" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetModelFactorLastDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelFactorLastDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetModelFactorWithDataAvailable_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelFactorWithDataAvailable" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetModelFactorWithDataAvailable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelFactorWithDataAvailableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByRegion" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByModelFactorIdAndDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByModelFactorIdAndDate" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetByModelFactorIdAndDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByModelFactorIdAndDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetRegionsWithData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsWithData" />
+  </wsdl:message>
+  <wsdl:message name="IModelFactorDataService_GetRegionsWithData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsWithDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IModelFactorDataService">
+    <wsdl:operation name="Save">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/Save" message="tns:IModelFactorDataService_Save_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/SaveResponse" message="tns:IModelFactorDataService_Save_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableDateForPastedDataByModelFactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetAvailableDateForPastedDataByModelFactor" message="tns:IModelFactorDataService_GetAvailableDateForPastedDataByModelFactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetAvailableDateForPastedDataByModelFactorResponse" message="tns:IModelFactorDataService_GetAvailableDateForPastedDataByModelFactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableDateForPastedDataByRegionAndModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetAvailableDateForPastedDataByRegionAndModel" message="tns:IModelFactorDataService_GetAvailableDateForPastedDataByRegionAndModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetAvailableDateForPastedDataByRegionAndModelResponse" message="tns:IModelFactorDataService_GetAvailableDateForPastedDataByRegionAndModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetAll" message="tns:IModelFactorDataService_GetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetAllResponse" message="tns:IModelFactorDataService_GetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/Get" message="tns:IModelFactorDataService_Get_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetResponse" message="tns:IModelFactorDataService_Get_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByDateModelRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByDateModelRegion" message="tns:IModelFactorDataService_GetByDateModelRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByDateModelRegionResponse" message="tns:IModelFactorDataService_GetByDateModelRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByDateModelFactorRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByDateModelFactorRegion" message="tns:IModelFactorDataService_GetByDateModelFactorRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByDateModelFactorRegionResponse" message="tns:IModelFactorDataService_GetByDateModelFactorRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByModelFactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByModelFactor" message="tns:IModelFactorDataService_GetByModelFactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByModelFactorResponse" message="tns:IModelFactorDataService_GetByModelFactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMapData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetMapData" message="tns:IModelFactorDataService_GetMapData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetMapDataResponse" message="tns:IModelFactorDataService_GetMapData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBetweenDatesModelFactorRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetBetweenDatesModelFactorRegion" message="tns:IModelFactorDataService_GetBetweenDatesModelFactorRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetBetweenDatesModelFactorRegionResponse" message="tns:IModelFactorDataService_GetBetweenDatesModelFactorRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMinorDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetMinorDate" message="tns:IModelFactorDataService_GetMinorDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetMinorDateResponse" message="tns:IModelFactorDataService_GetMinorDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMajorDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetMajorDate" message="tns:IModelFactorDataService_GetMajorDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetMajorDateResponse" message="tns:IModelFactorDataService_GetMajorDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxLevelWithData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetMaxLevelWithData" message="tns:IModelFactorDataService_GetMaxLevelWithData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetMaxLevelWithDataResponse" message="tns:IModelFactorDataService_GetMaxLevelWithData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelFactorLastDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetModelFactorLastDate" message="tns:IModelFactorDataService_GetModelFactorLastDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetModelFactorLastDateResponse" message="tns:IModelFactorDataService_GetModelFactorLastDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelFactorWithDataAvailable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetModelFactorWithDataAvailable" message="tns:IModelFactorDataService_GetModelFactorWithDataAvailable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetModelFactorWithDataAvailableResponse" message="tns:IModelFactorDataService_GetModelFactorWithDataAvailable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByRegion" message="tns:IModelFactorDataService_GetByRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByRegionResponse" message="tns:IModelFactorDataService_GetByRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByModelFactorIdAndDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByModelFactorIdAndDate" message="tns:IModelFactorDataService_GetByModelFactorIdAndDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetByModelFactorIdAndDateResponse" message="tns:IModelFactorDataService_GetByModelFactorIdAndDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/Delete" message="tns:IModelFactorDataService_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/DeleteResponse" message="tns:IModelFactorDataService_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionsWithData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IModelFactorDataService/GetRegionsWithData" message="tns:IModelFactorDataService_GetRegionsWithData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IModelFactorDataService/GetRegionsWithDataResponse" message="tns:IModelFactorDataService_GetRegionsWithData_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IModelFactorDataService" type="tns:IModelFactorDataService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IModelFactorDataService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="Save">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/Save" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableDateForPastedDataByModelFactor">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetAvailableDateForPastedDataByModelFactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableDateForPastedDataByRegionAndModel">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetAvailableDateForPastedDataByRegionAndModel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/Get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByDateModelRegion">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByDateModelRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByDateModelFactorRegion">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByDateModelFactorRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByModelFactor">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByModelFactor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMapData">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetMapData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBetweenDatesModelFactorRegion">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetBetweenDatesModelFactorRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMinorDate">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetMinorDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMajorDate">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetMajorDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxLevelWithData">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetMaxLevelWithData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelFactorLastDate">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetModelFactorLastDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelFactorWithDataAvailable">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetModelFactorWithDataAvailable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByRegion">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByModelFactorIdAndDate">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByModelFactorIdAndDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionsWithData">
+      <soap12:operation soapAction="http://tempuri.org/IModelFactorDataService/GetRegionsWithData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IModelFactorDataService" type="tns:IModelFactorDataService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Save">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/Save" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableDateForPastedDataByModelFactor">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetAvailableDateForPastedDataByModelFactor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableDateForPastedDataByRegionAndModel">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetAvailableDateForPastedDataByRegionAndModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByDateModelRegion">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByDateModelRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByDateModelFactorRegion">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByDateModelFactorRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByModelFactor">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByModelFactor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMapData">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetMapData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBetweenDatesModelFactorRegion">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetBetweenDatesModelFactorRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMinorDate">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetMinorDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMajorDate">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetMajorDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxLevelWithData">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetMaxLevelWithData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelFactorLastDate">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetModelFactorLastDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelFactorWithDataAvailable">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetModelFactorWithDataAvailable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByRegion">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByModelFactorIdAndDate">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetByModelFactorIdAndDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionsWithData">
+      <soap:operation soapAction="http://tempuri.org/IModelFactorDataService/GetRegionsWithData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ModelFactorDataService">
+    <wsdl:port name="NetTcpBinding_IModelFactorDataService" binding="tns:NetTcpBinding_IModelFactorDataService">
+      <soap12:address location="net.tcp://localhost:8733/Design_Time_Addresses/Idea.Server/ModelFactorDataService/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8733/Design_Time_Addresses/Idea.Server/ModelFactorDataService/</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="MetadataExchangeHttpBinding_IModelFactorDataService" binding="i0:MetadataExchangeHttpBinding_IModelFactorDataService">
+      <soap12:address location="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelFactorDataService/://localhost:8731/Design_Time_Addresses/Idea.Server/ModelFactorDataService/mex" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelFactorDataService/://localhost:8731/Design_Time_Addresses/Idea.Server/ModelFactorDataService/mex</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IModelFactorDataService" binding="tns:BasicHttpBinding_IModelFactorDataService">
+      <soap:address location="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelFactorDataService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

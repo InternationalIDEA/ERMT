@@ -1,0 +1,1350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="editorWebBrowser.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="editorWebBrowser.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="editorWebBrowser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="editorWebBrowser.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAsQAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAJwAAABMAAAAsCcAAGsfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMAAAA
+        AAAAAAAAAAABAAAA4NBXAHM1zxGuaQgAKy4SYggAAAAAAAAATAAAAAEUAgAAAAAAwAAAAAAAAEaAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="editorWebBrowser.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="editorWebBrowser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 272</value>
+  </data>
+  <data name="editorWebBrowser.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;editorWebBrowser.Name" xml:space="preserve">
+    <value>editorWebBrowser</value>
+  </data>
+  <data name="&gt;&gt;editorWebBrowser.Type" xml:space="preserve">
+    <value>AxSHDocVw.AxWebBrowser, AxSHDocVw, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;editorWebBrowser.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;editorWebBrowser.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="toolbarImageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="toolbarImageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACa
+        PAAAAk1TRnQBSQFMAgEBHwEAASIBAAEEAQABEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        AwABgAMAAQEBAAEgBgABgBoAATACKgHvATACKgHvATACKgHvATACKgHvATACKgHvATACKgHvATACKgHv
+        ATACKgHvATACKgHvATACKgHvATACKgHvATACKgHvATACKgHvBAABzgLWAf8BzgLWAf8BzgLWAf8BzgLW
+        Af8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLW
+        Af8BzgLWAf8BzgLWAf8EAAMLAQ0DGAEgAyMBMwMrAUYDMAFYAzQBaQM2AXgBAwFaAY8B/wM1AXkDNAFq
+        AzEBWQMrAUcBLAEqASYB/wEwAS4BKQH/Aw0BD0QAAUsCQgHfAQQCdAH/AQQCdAH/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AxkBIAMZASADBAH/AQQCdAH/AwQB/wQAAc4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/
+        Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/
+        Ac4C1gH/Ac4C1gH/IAABcwHJAdoB/wFuAccB2QH/AQMBWgGPAf8EAAHDAaQBjwH/AYoBUAEnAf8BiAFM
+        ASIB/wE3ATUBLwH/RAADBAH/AQQCgQH/AQQCgQH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/CAADBAH/
+        AQQCgQH/AwQB/wQAAc4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/
+        Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/IAABAwFaAY8B/wGf
+        AdkB4gH/AQEBoAHEAf8DAgEBAY8BVwEvAf8BjAFTASsB/wGKAVABJwH/AcMBpAGPAf9EAAMEAf8BBAKB
+        Af8BBAKBAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8IAAMEAf8BBAKBAf8DBAH/BAABzgLWAf8DAgH/
+        AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wHOAtYB/yAA
+        ATQBVAFnAZoBXgHDAdoB/wEBAaABxAH/AQEBZwF+Af8BwwGkAY8B/wGPAVcBLwH/AYwBUwErAf8BwwGk
+        AY8B/0QAAwQB/wEEAoEB/wEEAoEB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wFWAlMBrwFWAlMBrwME
+        Af8BBAKBAf8DBAH/BAABzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLW
+        Af8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8kAAEDAVoBjwH/
+        AV4BwwHaAf8BAQGgAcQB/wEDAVoBjwH/AZEBWgE0Af8BjgFWAS8B/wE3ATUBLwH/RAADBAH/AQQCgQH/
+        AQQCgQH/AQQCVAH/AQQCVAH/AQQCVAH/AQQCVAH/AQQCVAH/AQQCVAH/AQQCVAH/AQQCVAH/AQQCVAH/
+        AQQCgQH/AwQB/wQAAc4C1gH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMC
+        Af8DAgH/AwIB/wMCAf8BzgLWAf8oAAEdAasBywH/AV4BwwHaAf8BAQGgAcQB/wEDAVoBjwH/AcMBpAGP
+        Af9IAAMEAf8BBAKBAf8BBAKBAf8BBAI8Af8BBAI8Af8BBAI8Af8BBAI8Af8BBAI8Af8BBAI8Af8BBAI8
+        Af8BBAI8Af8BBAKBAf8BBAKBAf8DBAH/BAABzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLW
+        Af8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLW
+        Af8UAAE3ATUBLwH/ATcBNQEvAf8BNwE1AS8B/wwAAV4BwwHaAf8BAQGgAcQB/wEBAZ0BwAH/ATcBNQEv
+        Af9IAAMEAf8BBAKBAf8BBAJEAf8DSAGAA0gBgANIAYADSAGAA0gBgANIAYADSAGAA0gBgAEEAkQB/wEE
+        AoEB/wMEAf8EAAHOAtYB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/
+        AwIB/wMCAf8DAgH/Ac4C1gH/EAABNwE1AS8B/wGrAYEBZAH/AakBfgFfAf8BtgGRAXkB/wE3ATUBLwH/
+        ATcBNQEvAf8BNwE1AS8B/wEDAVoBjwH/AV4BwwHaAf8BAQGgAcQB/wOsAf9IAAMEAf8BBAKBAf8DBAH/
+        IAADBAH/AQQCgQH/AwQB/wQAAc4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/
+        Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/CAABNwE1
+        AS8B/wE3ATUBLwH/ATcBNQEvAf8BrQGEAWgB/wGrAYEBZAH/AakBfgFfAf8BpgF6AVsB/wGkAXYBVwH/
+        AaEBcwFSAf8BnwFvAU0B/wEDAVoBjwH/AV4BwwHaAf8DsQH/AQMBWgGPAf9EAAMEAf8BBAKBAf8DBAH/
+        IAADBAH/AQQCgQH/AwQB/wQAAc4C1gH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/
+        AwIB/wMCAf8DAgH/AwIB/wMCAf8BzgLWAf8EAAHDAaQBjwH/AbgBlAF8Af8BwwGkAY8B/wQAAcMBpAGP
+        Af8BrQGEAWgB/wGrAYEBZAH/AakBfgFfAf8BpgF6AVoB/wGkAXYBVgH/AaEBcwFSAf8BwwGkAY8B/wKs
+        Av8CQQL/AhIBxAH/RAADBAH/AQQCgQH/AwQB/yAAAwQB/wEEAoEB/wMEAf8EAAHOAtYB/wHOAtYB/wHO
+        AtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHO
+        AtYB/wHOAtYB/wHOAtYB/wHOAtYB/wQAAcMBpAGPAf8BrAGCAWYB/wE3ATUBLwH/BAABNwE1AS8B/wHD
+        AaQBjwH/Aa0BhAFoAf8BqwGBAWMB/wGoAX0BXwH/AaYBegFaAf8BwwGkAY8B/wE3ATUBLwH/ARYCFwEc
+        ApcC/wEDAVoBjwH/RAADBAH/AQQCgQH/AwQB/yAAAwQB/wEEAmQB/wMEAf8EAAHOAtYB/wMCAf8DAgH/
+        AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/Ac4C1gH/CAABNwE1
+        AS8B/wQAAcMBpAGPAf8IAAHDAaQBjwH/Aa0BgwFoAf8BqwGBAWMB/wGoAX0BXwH/ATcBNQEvAf9UAAME
+        Af8BBAKBAf8DBAH/IAADBAH/AVYCTwHPAwQB/wQAAc4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/
+        Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/Ac4C1gH/
+        Ac4C1gH/DAABNwE1AS8B/wE3ATUBLwH/ATcBNQEvAf8BNwE1AS8B/wQAATcBNQEvAf8BNwE1AS8B/wE3
+        ATUBLwH/WAADBAH/AQQCdAH/AwQB/wMZASADGQEgAxkBIAMZASADGQEgAxkBIAMZASADGQEgAwQB/wMZ
+        ASADBAH/BAABzgLWAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMC
+        Af8DAgH/AwIB/wHOAtYB/xQAAZkBegFjAf8DCwEMAcMBpAGPAf8EAAE3ATUBLwH/XAABMAIqAe8BMAIq
+        Ae8BMAIqAe8BMAIqAe8BMAIqAe8BMAIqAe8BMAIqAe8BMAIqAe8BMAIqAe8BMAIqAe8BMAIqAe8BMAIq
+        Ae8BMAIqAe8BMAIqAe8EAAHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHO
+        AtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/wHOAtYB/xwAATcBNQEv
+        Af8BNwE1AS8B/wE3ATUBLwH/mAABzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLW
+        Af8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf8BzgLWAf+8AAT/
+        yAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wwAAwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/FAADBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wQAAUsCQgHfAUsCQgHfAUsCQgHfAUsCQgHf
+        AUsCQgHfAUsCQgHfAUsCQgHfAUsCQgHfAUsCQgHfAUsCQgHfAUsCQgHfGAADBAH/JAADBAH/BAADBAH/
+        CAADBCn/AwQB/xQAAwQB/wwAAwQB/xAAAwQB/wwAAwQB/wQAAwQB/wMEAf8BBAJsAf8BBAJsAf8BBAJs
+        Af8BBAJsAf8BBAJsAf8BBAJsAf8BBAJsAf8BBAJsAf8BBAJsAf8BVgJPAc8QAAMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8EAAMEAf8EAAMEBf8DBAH/AwQF/wME
+        Af8DBAH/AwQB/wMEAf8DBAX/AwQB/xQAAwQB/wwAAwQB/xAAAwQB/wwAAwQB/wQAAwQB/wEEAr8B/wEE
+        AiQB/wEEAoEB/wEEAoEB/wEEAoEB/wEEAoEB/wEEAoEB/wEEAoEB/wEEAoEB/wEEAoEB/wEEAmQB/wFY
+        AlMBvwwAAwQB/xgAAQQD/wEEA/8BBAP/CAADBAH/AwQB/wMEAf8EAAMEKf8DBAH/FAADBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wQAAwQB/wGvA/8BBAKv
+        Af8BBAIsAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAJc
+        Af8BVgJTAa8IAAMEAf8YAAOBAf8DgQH/A4EB/wgAAwQB/wQAAwQB/wQAAwQF/wMEAf8DBAX/AwQB/wME
+        Af8DBAH/AwQB/wMEBf8DBAH/FAADBAH/DAADBAH/EAADBAH/DAADBAH/BAADBAH/AWQD/wGfA/8BBAKf
+        Af8BBAI0Af8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAKBAf8BBAJU
+        Af8BUgJPAZ8EAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8IAAMEAf8DBCn/AwQB/xQAAwQB/wwAAwQB/xAAAwQB/wwAAwQB/wQAAwQB/wGPA/8BdAP/AY8D/wEE
+        Ao8B/wEEAjwB/wEEAjwB/wEEAjwB/wEEAjwB/wEEAjwB/wEEAjwB/wEEAjwB/wEEAjwB/wEEAjwB/wME
+        Af8BTgJMAY8DBAH/KAADBAH/BAADBAH/BAADBAH/AwQd/wMECf8DBAH/FAADBAH/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wQAAwQB/wGBA/8BgQP/AYED/wGB
+        A/8BBAKBAf8DgQH/AQQCgQH/A4EB/wEEAoEB/wMEAf8DSAGAA0gBgANIAYADSAGAA0gBgAQAAwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wQAAwQB/wQAAwQB/wMEAf8DBAX/AwQB/wME
+        Df8DBAH/BAADBAX/AwQB/xQAAwQB/wwAAwQB/xAAAwQB/wwAAwQB/wQAAwQB/wF0A/8BjwP/AXQD/wGP
+        A/8BdAP/AY8D/wF0A/8BjwP/AXQD/wMEAf8cAAMEIf8DBAH/BAADBAH/BAADBAH/AwQF/wMEAf8EAAME
+        Bf8DBAH/BAADBAH/BAADBAH/AwQB/wMEAf8EAAGBAgQB/wGBAgQB/wQAAwQB/wwAAwQB/xAAAwQB/wwA
+        AwQB/wQAAwQB/wGfA/8BZAP/AZ8D/wEEAp8B/wOfAf8BBAKfAf8DnwH/AQQCnwH/A58B/wMEAf8gAAME
+        Bf8DBAH/AwQB/wMEAf8DBAH/AwQF/wMEAf8DBAH/AwQB/wMEAf8EAAMECf8DBAH/BAADBAH/BAADBAH/
+        BAADBAH/DAADBAH/AYECBAH/AYECBAH/BAADBAL/AgQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wQAAVYCUwGvAQQCrwH/A68B/wEEAq8B/wFWAlMBrwFWAlMBrwFW
+        AlMBrwFWAlMBrwFWAlMBrwFWAlMBrwFWAlMBrwQAAzMBUAMzAVADMwFQEAADBCH/AwQB/wwAAwQB/wME
+        Af8DBAH/AwQB/wMEAf8EAAMEAf8EAAMEAf8UAAGBAgQB/wGBAgQB/wQAAwQC/wIEAf8BgQIEAf8BgQIE
+        Af8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8DBAH/
+        CAABWAJTAb8BWAJTAb8BWAJTAb8gAAFYAlMBvwMEAf8DBAH/FAADBAX/AwQB/wMEAf8DBAH/AwQB/wME
+        Bf8DBAH/IAADBAH/BAADBAH/GAABgQIEAf8BgQIEAf8EAAMEAv8CBAH/AYECBAH/AYECBAH/AYECBAH/
+        AYECBAH/AYECBAH/AYECBAH/AYECBAH/AYECBAH/AYECBAH/AYECBAH/AYECBAH/AwQB/yQAAyIBMAwA
+        AyIBMAFWAk8BzwMEAf8UAAMEIf8DBAH/IAADBAH/GAADBAH/AYECBAH/AYECBAH/BAADBAL/AgQC/wIE
+        Av8CBAL/AgQC/wIEAv8CBAL/AgQC/wIEAv8CBAL/AgQC/wIEAf8DBAH/AwQB/yQAAUsCQgHfAxkBIAMZ
+        ASADGQEgAUsCQgHfBAABSwJCAd8YAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/yQA
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/BAABgQIEAf8BgQIEAf8EAAMEAf8DBAH/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/KAABMAIqAe8BMAIqAe8BMAIqAe//AKEA
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf9UAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/xQA
+        AYECBAH/WAABBAKBBf8BBAP/AQQCgQH/AQQCgQH/AQQCgQH/AQQCgQH/AQQCgQH/AQQCgQH/AwQB/1AA
+        AwQB/wMEAf8MAAMEAf8QAAOBAf8BgQIEAf8DgQH/KAADBAH/AwQB/wMEAf8DBAH/IAABBAKBAf8BBAKB
+        Af8BBAP/AQQD/wEEAoEB/wEEAoEB/wMEAf8DBAH/EAADBAH/AwQB/wMEAf8DBAH/AwQB/xQAAwQB/wME
+        Af8DBAH/AwQB/wMEAf8MAAMEAf8DBAH/HAABgQIEAf8BgQIEAf8BgQIEAf8kAAMEAf8CgQEEAf8CgQEE
+        Af8CgQEEAf8CgQEEAf8DBAH/JAABBAKBAf8BBAKBAf8BBAKBAf8DBAH/GAADBAX/AwQB/wMEAf8DBAH/
+        FAADBAX/AwQB/wMEAf8DBAH/EAADBAH/AwQB/xQAA4EB/wGBAgQB/wGBAgQB/wGBAgQB/wOBAf8cAAME
+        Af8CgQEEAf8CgQEEAf8CgQEEAf8CgQEEAf8CgQEEAf8CgQEEAf8DBAH/JAABBAKBAf8DBAH/HAADBAX/
+        AwQB/wMEAf8DBAH/FAADBAX/AwQB/wMEAf8DBAH/FAADBAH/AwQB/xAAAYECBAH/AYECBAH/AYECBAH/
+        AYECBAH/AYECBAH/BAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AoEBBAH/AoEBBAH/AoEBBAH/
+        AoEBBAH/AoEBBAH/AoEBBAH/AwQB/xwAAQQCgQH/AQQCgQH/AQQCgQH/AQQCgQH/AwQB/wMEAf8UAAME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8EAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8IAAME
+        Af8MAAMEAf8DBAH/FAABgQIEAf8QAAMEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8DBAH/AoEBBAH/
+        AoEBBAH/AoEBBAH/AoEBBAH/AoEBBAH/AoEBBAH/AwQB/xgAAQQCgQH/AQQD/wEEAoEB/wMEAf8DBAH/
+        AQQCgQH/AQQCgQH/AwQB/xAAAwQB/wMEBf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEBf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wgAAwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/FAABgQIEAf8UAAMEAf8BgQIEAf8BgQIE
+        Af8BgQIEAf8DBAH/AoEBBAH/AoEBBAH/AoEBBAH/AoEBBAH/AoEBBAH/AoEBBAH/AwQB/wMEAf8QAAEE
+        AoEB/wEEA/8DBAH/AoEBBAH/AoEBBAH/AoEBBAH/AwQB/wEEAoEB/wEEAoEB/wMEAf8MAAMEAf8DBAX/
+        AwQB/wMEAf8DBAH/BAADBAH/AwQF/wMEAf8DBAH/AwQB/wMEAf8DBAH/NAABgQIEAf8YAAMEAf8BgQIE
+        Af8BgQIEAf8BgQIEAf8DBAH/AoEBBAH/AoEBBAH/AoEBBAH/AoEBBAH/AwQB/wEEA/8DBAH/EAABBAKB
+        Af8DBAH/AQQBgQEEA/8BBAP/AQQB/wQAAf8BBAL/AwQB/wEEAoEB/wEEAoEB/wMEAf8IAAMEAf8DBAX/
+        AwQB/wMEAf8DBAH/BAADBAH/AwQF/wMEAf8DBAH/AwQB/wMEAf8DBAH/CAADBAH/AwQB/wMEAf8EAAME
+        Af8DBAH/AwQB/xAAAYECBAH/HAADBAH/AYECBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AQQH/wME
+        Af8QAAH/AQQE/wEEA/8BBAL/AQQE/wEEAv8BBAL/AQQBgQEEAf8DgQH/AwQB/wEEAoEB/wMEAf8MAAME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8MAAOBAf8DBAH/
+        DAADBAH/A4EB/xAAAYECBAH/IAADBAH/BAADBAX/AQQH/wEEB/8BBAP/AwQB/xAAAoEBBAH/A4ED/wEE
+        A/8BBAL/AQQE/wEEAf8BgQEEAYEB/wKBAQQB/wMEAf8BBAKBAf8DBAH/EAADBAX/AwQB/wMEAf8DBAH/
+        BAADBAX/AwQB/wMEAf8DBAH/FAADBAH/AwQB/wMEAf8DBAH/AwQB/xQAAYECBAH/KAADBAH/AQQH/wEE
+        B/8BBAf/AwQB/xAAAoEBBAL/AQQE/wEEAv8BBAf/AQQC/wKBAQQB/wOBAf8DBAH/BAABBAKBAf8QAAME
+        Af8DBAH/AwQB/wMEAf8DBAH/BAADBAH/AwQB/wMEAf8DBAH/AwQB/xQAA4EB/wMEAf8EAAMEAf8DgQH/
+        FAABgQIEAf8oAAMEBf8BBAf/AQQH/wEEA/8DBAH/EAACgQEEAf8BBAH/AQQC/wEEDP8BBAH/AYEBBAGB
+        Av8BBAL/AwQB/wEEA/8BBAKBAf8UAAMEAf8DBAH/AwQB/wwAAwQB/wMEAf8DBAH/HAADBAH/AwQB/wME
+        Af8YAAGBAgQB/ygAAwQB/wEEB/8BBAf/AQQH/wMEAf8UAAKBAQQD/wEEAv8BBAT/AQQD/wEEAv8BBAL/
+        AoEBBAH/AwQB/wEEA/8BBAKBAf8UAAMEBf8DBAH/DAADBAX/AwQB/xwAA4EB/wMEAf8DgQH/GAABgQIE
+        Af8oAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/GAACgQEEA/8BBAL/AQQD/wEEAv8CgQEE
+        Af8DBAH/AQQD/wEEAoEB/xgAAwQB/wMEAf8DBAH/DAADBAH/AwQB/wMEAf8gAAMEAf8cAAGBAgQB/2gA
+        AoEBBAH/AoEBBAH/BAABBAKBAf8BBAKBAf//AEEAAYECBAH/TAABgQIEAf8BgQIEAf8BgQIEAf8UAAGB
+        AgQB/wGBAgQB/wGBAgQB/yAAAYECBAH/AYECBAH/AYECBAH/LAADBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8UAAGBAgQB/0wAAYECBAX/AYECBAH/BAADBAH/AwQB/wMEAf8EAAGBAgQF/wGBAgQB/wQAAwQB/wME
+        Af8DBAH/EAABgQIEBf8BgQIEAf8EAAMEAf8DBAH/AwQB/xwAAwQB/wMEAf8MAAMEAf8UAAGBAgQB/0wA
+        AYECBAH/AYECBAH/GAABgQIEAf8BgQIEAf8kAAGBAgQB/wGBAgQB/zQAAwQB/wMEAf8gAAGBAgQB/9gA
+        AwQB/wMEAf8cAAGBAgQB/9wAAwQB/wMEAf8YAAGBAgQB/0wAAYECBAH/AYECBAH/AYECBAH/FAABgQIE
+        Af8BgQIEAf8BgQIEAf80AAGBAgQB/wGBAgQB/wGBAgQB/xgAAwQB/wwAAwQB/wMEAf8UAAGBAgQB/0wA
+        AYECBAX/AYECBAH/BAADBAH/AwQB/wMEAf8EAAGBAgQF/wGBAgQB/wQAAwQB/wMEAf8DBAH/JAABgQIE
+        Bf8BgQIEAf8EAAMEAf8DBAH/AwQB/wgAAwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/FAABgQIEAf8QAAOB
+        Af8DgQH/A4EB/wOBAf8DgQH/A4EB/wOBAf8DgQH/A4EB/wOBAf8DgQH/A4EB/wOBAf8DgQH/A4EB/wGB
+        AgQB/wGBAgQB/xgAAYECBAH/AYECBAH/OAABgQIEAf8BgQIEAf9IAAGBAgQB/wwAAwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/iAADBAH/AwQB/wME
+        Af8EAAMEAf8DBAH/AwQB/xAAAYECBAH/0AADgQH/AwQB/wwAAwQB/wOBAf8IAAGBAgQB/wGBAgQB/wGB
+        AgQB/wGBAgQB/wGBAgQB/0QAAYECBAH/AYECBAH/AYECBAH/FAABgQIEAf8BgQIEAf8BgQIEAf8YAAGB
+        AgQB/wGBAgQB/wGBAgQB/zgAAwQB/wMEAf8DBAH/AwQB/wMEAf8MAAOBAf8BgQIEAf8BgQIEAf8BgQIE
+        Af8DgQH/RAABgQIEBf8BgQIEAf8EAAMEAf8DBAH/AwQB/wQAAYECBAX/AYECBAH/BAADBAH/AwQB/wME
+        Af8IAAGBAgQF/wGBAgQB/wQAAwQB/wMEAf8DBAH/KAADgQH/AwQB/wQAAwQB/wOBAf8QAAGBAgQB/wGB
+        AgQB/wGBAgQB/0gAAYECBAH/AYECBAH/GAABgQIEAf8BgQIEAf8cAAGBAgQB/wGBAgQB/0AAAwQB/wME
+        Af8DBAH/FAADgQH/AYECBAH/A4EB/9QAA4EB/wMEAf8DgQH/GAABgQIEAf/cAAMEAf//ALEAAwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8IAAMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH//wANAAMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8gAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8MAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/CAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB//8ABQADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wgAAwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf8cAAMEAf8DgQH/NAADgQH/AwQB/7wAAwQB/wMEAf8DBAH/A4EB/yQAA4EB/wMEAf8DBAH/
+        AwQB/zAAAwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/yAAAwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wwAAwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/BAADBAH/AwQB/wMEAf8DBAH/CAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8EAAMEAf8DBAH/AwQB/wMEAf+YAAMEAf8DBAH/AwQB/wOBAf8kAAOBAf8DBAH/AwQB/wMEAf8oAAME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/CAADBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/xwAAwQB/wOB
+        Af80AAOBAf8DBAH//wAxAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8gAAME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8MAAMEAf8DBAH/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/CAADBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB//8ABQADBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wgAAwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8MAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/CAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB//8A/wD/AP8A/wDNAAMEAf8DBAH/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf//AAkAAgQC/wIEAv8CBAL/BAACBAL/AgQC/wIE
+        Av8BBAGBAQQB/wIEAv8CBAL/DAABgQIEAf8BgQIEAf8wAAOBAf8BgQIEAf8YAAGBAgQB/wOBAf8wAAME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/xgAA4EB/wIEAv8MAAIEAv8DgQH/AQQBgQEE
+        Af8IAAEEAYEBBAH/BAABgQIEAf8IAAGBAgQB/wgAAYECBAH/AYECBAH/AYECBAH/AYECBAH/AYECBAH/
+        FAABgQIEAf8DgQH/EAADgQH/AYECBAH/FAABgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf9MAAIE
+        Av8MAAIEAv8EAAEEAYEBBAH/CAABBAGBAQQB/wQAAYECBAH/FAABgQIEAf8BgQIEAf8BgQIEAf8BgQIE
+        Af8cAAGBAgQB/xAAAYECBAH/HAABgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8MAAMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8MAAIEAv8CBAL/AgQC/wIEAv8CBAL/
+        BAABBAGBAQQB/wEEAYEBBAH/AQQBgQEEAf8IAAGBAgQB/xQAAYECBAH/AYECBAH/AYECBAH/IAABgQIE
+        Af8QAAGBAgQB/yAAAYECBAH/AYECBAH/AYECBAH/UAACBAL/BAACBAL/CAABBAGBAQQB/wgAAQQBgQEE
+        Af8EAAGBAgQB/wgAAYECBAH/CAABgQIEAf8BgQIEAf8EAAGBAgQB/xwAAYECBAH/EAABgQIEAf8cAAGB
+        AgQB/wQAAYECBAH/AYECBAH/DAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8gAAIE
+        Av8EAAIEAv8EAAEEAYEBBAH/AQQBgQEEAf8BBAGBAQQB/wEEAYEBBAH/DAABgQIEAf8BgQIEAf8BgQIE
+        Af8IAAGBAgQB/wwAAYECBAH/AYECBAH/EAABgQIEAf8DgQH/EAADgQH/AYECBAH/EAABgQIEAf8BgQIE
+        Af8MAAGBAgQB/1AAA4EB/wIEAv8DgQH/TAABgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8DgQH/GAADgQH/
+        AYECBAH/AYECBAH/AYECBAH/AYECBAH/JAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8DBAH/AwQB/wMEAf8DBAH/FAACBAL//wC1AAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/
+        AwQB//8A/wD/AP8AKAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf//AOUAAwQB/wME
+        Af8DBAH/AwQB/wMEAf8kAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/6wAAwQB/wMEAf8DgQH/BAADgQH/
+        AwQB/wMEAf8oAAMEAf8DBAH/A4EB/yAAAwQB/wMEAf8DBAH/BAADBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8MAAMEAf8DBAH/BAADBAH/AwQB/wMEAf8EAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wwAAwQB/wME
+        Af8DBAH/EAADBAH/AwQB/wwAAwQB/wMEAf8oAAOBAf8DBAH/AwQB/yAAA4EB/wMEAf8MAAMEAf8DgQH/
+        AwQB/wgAAwQB/wQAAwQB/wgAAwQB/wQAAwQB/wwAAwQB/wQAAwQB/wgAAwQB/wQAAwQB/xwAAwQB/wME
+        Af8MAAMEAf8DBAH/LAADBAH/AwQB/wOBAf8gAAMEAf8MAAMEAf8EAAMEAf8IAAMEAf8EAAMEAf8MAAME
+        Af8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wME
+        Af8QAAMEAf8DBAH/DAADBAH/AwQB/ywAA4EB/wMEAf8DBAH/IAADBAH/AwQB/wMEAf8DBAH/AwQB/wQA
+        AwQB/wMEAf8DBAH/CAADBAH/FAADBAH/BAADBAH/CAADBAH/AwQB/wMEAf8IAAMEAf8cAAMEAf8DBAH/
+        DAADBAH/AwQB/zAAAwQB/wMEAf8DgQH/IAADBAH/BAADBAH/CAADBAH/CAADBAH/BAADBAH/CAADBAH/
+        CAADBAH/AwQB/wMEAf8IAAMEAf8IAAMEAf8EAAMEAf8cAAMEAf8DBAH/DAADBAH/AwQB/zAAA4EB/wME
+        Af8DBAH/IAADBAH/BAADBAH/BAADBAH/AwQB/wMEAf8DBAH/DAADBAH/AwQB/wMEAf8MAAMEAf8MAAME
+        Af8IAAMEAf8EAAMEAf8IAAMEAf8QAAMEAf8DBAH/DAADBAH/AwQB/zQAAwQB/wMEAf8DgQH/HAADgQH/
+        AwQB/wOBAf84AAMEAf8IAAMEAf8DBAH/AwQB/wMEAf8MAAMEAf8DBAH/AwQB/wwAAwQB/wMEAf8DBAH/
+        AwQB/wQAAwQB/wMEAf8DBAH/AwQB/ywAAwQB/wMEAf8DBAH/AwQB/wMEAf8cAAMEAf//AP8A/wD/AIQA
+        AYECBAH/AYECBAH/gAABgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIEAf8BgQIE
+        Af8BgQIEAf8BgQIEAf9MAAGBAgQB/wgAAYECBAH/CAABgQIEAf8BgQIEAf8sAAGBAgQB/wGBAgQB/wGB
+        AgQB/wGBAgQB/wGBAgQB/wGBAgQB/wGBAgQB/wGBAgQB/wGBAgQB/wgAAwQB/wMEAf8DBAH/AwQB/wME
+        Af8BgQIEIf8BgQIEAf9MAAGBAgQB/wgAAYECBAH/BAABgQIEAf8IAAGBAgQB/ygAAYECBB3/AYECBAH/
+        BAADBAH/A4EB/wEEAoEB/wOBAf8BBAKBAf8DgQH/AYECBAX/AYECBAH/AYECBAH/AYECBAH/AYECBAH/
+        AYECBAH/AYECBAX/AYECBAH/TAABgQIEAf8IAAGBAgQB/wQAAYECBAH/CAABgQIEAf8oAAGBAgQF/wME
+        Af8DBAH/AwQB/wMEAf8DBAX/AYECBAH/BAADBAH/AQQCgQH/A4EB/wEEAoEB/wOBAf8BBAKBAf8BgQIE
+        If8BgQIEAf8MAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/JAABgQIEAf8BgQIEAf8BgQIE
+        Af8EAAGBAgQB/wgAAYECBAH/EAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8BgQIEHf8BgQIEAf8EAAME
+        Af8DgQH/AQQCgQH/A4EB/wEEAoEB/wOBAf8BgQIEBf8BgQIEAf8BgQIEAf8BgQIEBf8BgQIEAf8BgQIE
+        Af8BgQIEAf8BgQIEAf8QAAMEAf8DBAH/AwQB/wgAAwQB/wMEAf8DBAH/KAABgQIEAf8EAAGBAgQB/wGB
+        AgQB/wGBAgQB/xQAAwQV/wGBAgQF/wMEAf8DBAH/AwQB/wMEAf8DBAX/AYECBAH/BAADBAH/AQQCgQH/
+        A4EB/wEEAoEB/wOBAf8BBAKBAf8BgQIEFf8BgQIEBf8BgQIEAf8UAAMEAf8DBAH/AwQB/wgAAwQB/wME
+        Af8DBAH/KAABgQIEAf8DBAH/AYECBAH/HAADBAX/AwQB/wMEAf8DBAH/AwQB/wGBAgQd/wGBAgQB/wQA
+        AwQB/wOBAf8BBAKBAf8DgQH/AQQCgQH/A4EB/wGBAgQV/wGBAgQB/wGBAgQB/xgAAwQB/wMEAf8DBAH/
+        CAADBAH/AwQB/wMEAf8sAAMEAf8gAAMEFf8BgQIEBf8DBAH/AwQF/wGBAgQB/wGBAgQB/wGBAgQB/wGB
+        AgQB/wQAAwQB/wEEAoEB/wOBAf8BBAKBAf8DgQH/AQQCgQH/AYECBAH/AYECBAH/AYECBAH/AYECBAH/
+        AYECBAH/AYECBAH/AYECBAH/AwQB/xgAAwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/ywAAwQB/wME
+        Af8DBAH/HAADBAX/AwQB/wMEAf8DBAH/AwQB/wGBAgQR/wGBAgQF/wGBAgQB/wgAAwQB/wOBAf8BBAKB
+        Af8DgQH/AQQCgQH/A4EB/wEEAoEB/wOBAf8BBAKBAf8DgQH/AQQCgQH/A4EB/wEEAoEB/wMEAf8YAAME
+        Af8DBAH/AwQB/wgAAwQB/wMEAf8DBAH/KAADBAH/BAADBAH/HAADBBX/AYECBBH/AYECBAH/AYECBAH/
+        DAADBAH/AQQCgQH/A4EB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/A4EB/wOBAf8DBAH/
+        GAADBAH/AwQB/wMEAf8IAAMEAf8DBAH/AwQB/yQAAwQB/wMEAf8EAAMEAf8DBAH/GAADBAX/AwQB/wME
+        Bf8DBAH/AYECBAH/AYECBAH/AYECBAH/AYECBAH/AYECBAH/AYECBAH/EAADBAH/A4EB/wOBAf8DBAH/
+        GAADBAH/A4EB/wEEAoEB/wMEAf8YAAMEAf8DBAH/AwQB/wgAAwQB/wMEAf8DBAH/JAADBAH/DAADBAH/
+        GAADBBH/AwQF/wMEAf8gAAMEAf8BBAKBAf8DgQH/AQQCgQH/AwQB/wEEA/8DBAH/AwQB/wEEA/8DBAH/
+        A4EB/wEEAoEB/wOBAf8DBAH/FAADBAH/AwQB/wMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/ygAAwQB/wwA
+        AwQB/xgAAwQR/wMEAf8DBAH/KAADBAH/AwQB/wMEAf8DBAH/AwQB/wEEA/8BBAP/AwQB/wMEAf8DBAH/
+        AwQB/wMEAf9gAAMEAf8MAAMEAf8YAAMEAf8DBAH/AwQB/wMEAf8DBAH/AwQB/zwAAwQB/wMEAf8DBAH/
+        AwQB//8AXQABQgFNAT4HAAE+AwABKAMAAUADAAGAAwABAQEAAQEGAAEEFgAD/wEAAcABAQIAAYADAAGA
+        AQECAAH/ARACAAGAATECAAH/AwABgAExAgAB/wMAAYABAQIAAf8BgAIAAYABAQIAAf8BwQIAAYABAQIA
+        AfgB4QIAAYABAQIAAfABAQIAAY8B8QIAAcADAAGPAfECAAGIAwABjwHxAgABiAMAAY8B8QIAAdYBDwIA
+        AY8B8QIAAeEBHwIAAYABAQIAAfgBvwIAAYABAQIAAf4BPwIAAv8CAAL/AgAB/wH+Bv8BwAEHAQABDwGA
+        AQEBAAEfAb8B6wEAAQ8BuwHdAQABDwEAAQUBAAEPAbsB3QEAAQcBfgExAQABDwGAAQEBAAEDAX4BNQEA
+        AQ8BuwHdAQABAQEAAQYBAAEPAbsB3QIAAX8B6gEAAQ8BgAEBAgABgAEUAQABjwG7Ad0BAAEfAcABCgER
+        AUQBuwHdAQABHwHgAQEBCgG4AYABAQEAAREB4AEHAQUBfAGAAQEBjwHxAfABBwH6AfwBgAEBAf8BcQHw
+        AQMB/QH4AYABAQH/AQUB+AEDAf4BBAGAAQEB/wGPDP8B8AEPAv8BgQH3Av8B4AEHAv8BnQHjAf8BDwHw
+        AQ8BBwHBAc8B4wH+AQcB/AE/AQcBwQHnAcEB/AEDAf4BfwEHAcEB8wHBAQABAwH4AR8CAQG5AfcBgAED
+        AfABDwEAAQEBgQH3AcABAQHgAQcBAgEBAf8B9wHgAQEB4AGDAQIBAQGIAfcB8AEBAeABAwGAAQMBnAH3
+        AfoBAQHgAQMBwQEHAcEB9wH+AQEB4AELAcEBBwHJAfcB/gEBAeABAwHjAY8B4wH3Af4BAQHwAQMB4wGP
+        AeMB9wH+AQEB+AEHAeMBjwL3Av8B/gFPCf8B9wL/Ah8B4wH/AYEB9wL/AhEB4gE/AZ0B9wL/Aj8B5wH/
+        Ac8B9wb/AecB9wb/AfMB9wL/Ah8B/wEfAbkB9wL/AhEB/wERAYEB9wGAAQACPwH/AT8B/wH3AQABAQT/
+        AYgB9wb/AZwBwQL/Ah8BjwH/AsEC/wIRAYgB/wHJAeMC/wI/AZ8B/wLjBv8B4wH3Bv8B9w3/AYABAQGA
+        AQEI/wHAAQ8B8AEDAYABAQGAAQEI/wEAAQMBAAEDAfkB/wHzBf8B+AF/AcMB/wHAAQ8B8AEDAYABIQGA
+        ASEE/wH4AX8BwwH/AQABAwEAAQMB+QH/AfMJ/wHAAQ8B8AEDAYABAQGAAQEI/wEAAQMBAAEDAYABAQGA
+        AQEu/wGAAQMI/wEQATkB/wLnAf8BgAE/ATgB1gHBAfMBzwGDAv8BugHXAcMB+wHfAcMBgAEDAYIBNwHH
+        AfsB3wHjAv8C1gHLAfsB3wHTAYABPwHUATgB3AHzAc8BOwL/AccC/wEHAeAB/wGAAQMB7w3/AYABPyD/
+        AeABDw7/AfgBPwHgAX8E/wHxAR8B+AH/ARABOQEQATgB8wGfAfgB/wE4AdYBugHXAfMBnwH8AX8BugHX
+        AgAB8wGfAfwBfwGCATcB1gE3AfMBnwH+AT8C1gHGAdcB8wGfAf4BPwHUATgB7gHWAfMBnwH/AR8BxwH/
+        AewBOAHhAQ8B/gEPAe8j/wHzA/8B/AEAAv8B7QGfAfwBAQGAAQAC/wHtAW8B/AEBAgAC/wHtAW8B/AEB
+        AgAB4AEfAfEBbwEAAQECAAHxAY8B/QEfAQABAQEAAQEB8QGPAfwBfwEAAQEBAAEDAfEBjwH+Af8BAAEB
+        AQABAwHwAR8B/AF/AQABAwEAAQMB8QGPAf0BfwEAAQcBAAEDAfEBjwH5AT8BAAIPAcMB8QGPAfsBvwEA
+        Af8BAAEDAeABHwH7Ab8BAQH/AYABBwL/AfsBvwEDAf8B+AF/Cv8L
+</value>
+  </data>
+  <metadata name="contextMenuMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>152, 17</value>
+  </metadata>
+  <data name="menuTableProperties.Text" xml:space="preserve">
+    <value>Propiedades</value>
+  </data>
+  <data name="menuTableInsertRow.Text" xml:space="preserve">
+    <value>Insertar fila</value>
+  </data>
+  <data name="menuTableDeleteRow.Text" xml:space="preserve">
+    <value>Eliminar fila</value>
+  </data>
+  <data name="menuTableModify.Text" xml:space="preserve">
+    <value>Tabla</value>
+  </data>
+  <data name="menuTextUndo.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlZ</value>
+  </data>
+  <data name="menuTextUndo.Text" xml:space="preserve">
+    <value>Deshacer escritura</value>
+  </data>
+  <data name="menuTextRedo.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlY</value>
+  </data>
+  <data name="menuTextRedo.Text" xml:space="preserve">
+    <value>Rehacer escritura</value>
+  </data>
+  <data name="menuTextSep1.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuTextCut.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlX</value>
+  </data>
+  <data name="menuTextCut.Text" xml:space="preserve">
+    <value>Cortar</value>
+  </data>
+  <data name="menuTextCopy.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlC</value>
+  </data>
+  <data name="menuTextCopy.Text" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="menuTextPaste.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlV</value>
+  </data>
+  <data name="menuTextPaste.Text" xml:space="preserve">
+    <value>Pegar</value>
+  </data>
+  <data name="menuTextSep2.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuTextFindReplace.Text" xml:space="preserve">
+    <value>Encontrar y reemplazar</value>
+  </data>
+  <data name="menuTextSep3.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuTextSelectNone.Text" xml:space="preserve">
+    <value>Deseleccionar</value>
+  </data>
+  <data name="menuTextSelectAll.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlA</value>
+  </data>
+  <data name="menuTextSelectAll.Text" xml:space="preserve">
+    <value>Seleccionar todo</value>
+  </data>
+  <data name="menuTextDelete.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>Del</value>
+  </data>
+  <data name="menuTextDelete.Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="menuText.Text" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="menuDocumentOpen.Text" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="menuDocumentSave.Text" xml:space="preserve">
+    <value>Guardar como</value>
+  </data>
+  <data name="menuDocumentSep1.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuDocumentPrint.Text" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="menuDocumentSep2.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuDocumentToolbar.Text" xml:space="preserve">
+    <value>Barra de Herramientas</value>
+  </data>
+  <data name="menuDocumentScrollbar.Text" xml:space="preserve">
+    <value>Barra de Scroll</value>
+  </data>
+  <data name="menuDocumentWordwrap.Text" xml:space="preserve">
+    <value>Envolver mundo</value>
+  </data>
+  <data name="menuDocumentOverwrite.Text" xml:space="preserve">
+    <value>Sobreescribir</value>
+  </data>
+  <data name="menuDocument.Text" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="menuMainSep1.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuTextFontDialog.Text" xml:space="preserve">
+    <value>Diálogo de fuente</value>
+  </data>
+  <data name="menuTextFontColor.Text" xml:space="preserve">
+    <value>Color de fuente</value>
+  </data>
+  <data name="menuTextFontSep1.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuTextFontNormal.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="menuTextFontBold.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlB</value>
+  </data>
+  <data name="menuTextFontBold.Text" xml:space="preserve">
+    <value>Grueso</value>
+  </data>
+  <data name="menuTextFontItalic.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlI</value>
+  </data>
+  <data name="menuTextFontItalic.Text" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="menuTextFontUnderline.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlU</value>
+  </data>
+  <data name="menuTextFontUnderline.Text" xml:space="preserve">
+    <value>Subrayado</value>
+  </data>
+  <data name="menuTextFontSuperscript.Text" xml:space="preserve">
+    <value>Superscript</value>
+  </data>
+  <data name="menuTextFontSubscript.Text" xml:space="preserve">
+    <value>Subscript</value>
+  </data>
+  <data name="menuTextFontStrikeout.Text" xml:space="preserve">
+    <value>Strikeout</value>
+  </data>
+  <data name="menuTextFontSep2.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuTextFontIncrease.Text" xml:space="preserve">
+    <value>Incrementa tamaño de fuente</value>
+  </data>
+  <data name="menuTextFontDecrease.Text" xml:space="preserve">
+    <value>Decrementar tamaño de fuente</value>
+  </data>
+  <data name="menuTextFontIndent.Text" xml:space="preserve">
+    <value>Insertar identidad</value>
+  </data>
+  <data name="menuTextFontOutdent.Text" xml:space="preserve">
+    <value>Eliminar identidad</value>
+  </data>
+  <data name="menuTextFontSep3.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuTextFontListOrdered.Text" xml:space="preserve">
+    <value>Lista ordenada</value>
+  </data>
+  <data name="menuTextFontListUnordered.Text" xml:space="preserve">
+    <value>Lista desordenada</value>
+  </data>
+  <data name="menuTextFont.Text" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="menuJustifyLeft.Text" xml:space="preserve">
+    <value>Izquierda</value>
+  </data>
+  <data name="menuJustifyCenter.Text" xml:space="preserve">
+    <value>Centro</value>
+  </data>
+  <data name="menuJustifyRight.Text" xml:space="preserve">
+    <value>Derecha</value>
+  </data>
+  <data name="menuJustify.Text" xml:space="preserve">
+    <value>Justificar</value>
+  </data>
+  <data name="menuFormatting.Text" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="menuMainSep2.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuInsertLine.Text" xml:space="preserve">
+    <value>Línea</value>
+  </data>
+  <data name="menuInsertLink.Text" xml:space="preserve">
+    <value>Link web</value>
+  </data>
+  <data name="menuInsertImage.Text" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="menuInsertText.Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="menuInsertHtml.Text" xml:space="preserve">
+    <value>Html</value>
+  </data>
+  <data name="menuInsertTable.Text" xml:space="preserve">
+    <value>Tabla</value>
+  </data>
+  <data name="menuInsert.Text" xml:space="preserve">
+    <value>Insertar</value>
+  </data>
+  <data name="toolBarFindReplace.ImageIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="toolBarFindReplace.ToolTipText" xml:space="preserve">
+    <value>Encontrar y reemplazar texto</value>
+  </data>
+  <data name="toolBarInsertLink.ImageIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="toolBarInsertLink.ToolTipText" xml:space="preserve">
+    <value>Insertar link web</value>
+  </data>
+  <data name="toolBarInsertImage.ImageIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="toolBarInsertImage.ToolTipText" xml:space="preserve">
+    <value>Insertar imagen</value>
+  </data>
+  <data name="toolBarInsertTable.ImageIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="toolBarInsertTable.ToolTipText" xml:space="preserve">
+    <value>Insertar tabla</value>
+  </data>
+  <data name="toolBarInsertLine.ImageIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="toolBarInsertLine.ToolTipText" xml:space="preserve">
+    <value>Insertar línea horizontal</value>
+  </data>
+  <data name="toolBarListUnordered.ImageIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="toolBarListUnordered.ToolTipText" xml:space="preserve">
+    <value>Nivel Línea desordenada</value>
+  </data>
+  <data name="toolBarListOrdered.ImageIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="toolBarListOrdered.ToolTipText" xml:space="preserve">
+    <value>Nivel Línea ordenada</value>
+  </data>
+  <data name="toolBarSuperscript.ImageIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="toolBarFootnote.ImageIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="toolBarFootnote.ToolTipText" xml:space="preserve">
+    <value>Modificar estilo de la nota al pie</value>
+  </data>
+  <data name="toolBarButton1.ImageIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="toolBarJustRight.ImageIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="toolBarJustRight.ToolTipText" xml:space="preserve">
+    <value>Justificar a la derecha</value>
+  </data>
+  <data name="toolBarJustCenter.ImageIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="toolBarJustCenter.ToolTipText" xml:space="preserve">
+    <value>Justificar al centro</value>
+  </data>
+  <data name="toolBarJustLeft.ImageIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="toolBarJustLeft.ToolTipText" xml:space="preserve">
+    <value>Justificar a la izquierda</value>
+  </data>
+  <data name="toolBarItalic.ImageIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="toolBarItalic.ToolTipText" xml:space="preserve">
+    <value>Texto Italic</value>
+  </data>
+  <data name="toolBarUnderline.ImageIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="toolBarUnderline.ToolTipText" xml:space="preserve">
+    <value>Subrayado de texto</value>
+  </data>
+  <data name="toolBarBold.ImageIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="toolBarBold.ToolTipText" xml:space="preserve">
+    <value>Texto grueso</value>
+  </data>
+  <data name="toolBarRedo.ImageIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="toolBarRedo.ToolTipText" xml:space="preserve">
+    <value>Rehacer escritura</value>
+  </data>
+  <data name="toolBarUndo.ImageIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="toolBarUndo.ToolTipText" xml:space="preserve">
+    <value>Deshacer escritura</value>
+  </data>
+  <data name="toolBarPaste.ImageIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="toolBarPaste.ToolTipText" xml:space="preserve">
+    <value>Pegar texto</value>
+  </data>
+  <data name="toolBarCopy.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="toolBarCopy.ToolTipText" xml:space="preserve">
+    <value>Copiar texto</value>
+  </data>
+  <data name="toolBarCut.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="toolBarCut.ToolTipText" xml:space="preserve">
+    <value>Cortar texto</value>
+  </data>
+  <data name="editorToolbar.Appearance" type="System.Windows.Forms.ToolBarAppearance, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="editorToolbar.ButtonSize" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="editorToolbar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="editorToolbar.DropDownArrows" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="editorToolbar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="editorToolbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 272</value>
+  </data>
+  <data name="editorToolbar.ShowToolTips" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="editorToolbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 28</value>
+  </data>
+  <data name="editorToolbar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;editorToolbar.Name" xml:space="preserve">
+    <value>editorToolbar</value>
+  </data>
+  <data name="&gt;&gt;editorToolbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editorToolbar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;editorToolbar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 300</value>
+  </data>
+  <data name="&gt;&gt;toolbarImageList.Name" xml:space="preserve">
+    <value>toolbarImageList</value>
+  </data>
+  <data name="&gt;&gt;toolbarImageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenuMain.Name" xml:space="preserve">
+    <value>contextMenuMain</value>
+  </data>
+  <data name="&gt;&gt;contextMenuMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTableModify.Name" xml:space="preserve">
+    <value>menuTableModify</value>
+  </data>
+  <data name="&gt;&gt;menuTableModify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTableProperties.Name" xml:space="preserve">
+    <value>menuTableProperties</value>
+  </data>
+  <data name="&gt;&gt;menuTableProperties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTableInsertRow.Name" xml:space="preserve">
+    <value>menuTableInsertRow</value>
+  </data>
+  <data name="&gt;&gt;menuTableInsertRow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTableDeleteRow.Name" xml:space="preserve">
+    <value>menuTableDeleteRow</value>
+  </data>
+  <data name="&gt;&gt;menuTableDeleteRow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuText.Name" xml:space="preserve">
+    <value>menuText</value>
+  </data>
+  <data name="&gt;&gt;menuText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextUndo.Name" xml:space="preserve">
+    <value>menuTextUndo</value>
+  </data>
+  <data name="&gt;&gt;menuTextUndo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextRedo.Name" xml:space="preserve">
+    <value>menuTextRedo</value>
+  </data>
+  <data name="&gt;&gt;menuTextRedo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextSep1.Name" xml:space="preserve">
+    <value>menuTextSep1</value>
+  </data>
+  <data name="&gt;&gt;menuTextSep1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextCut.Name" xml:space="preserve">
+    <value>menuTextCut</value>
+  </data>
+  <data name="&gt;&gt;menuTextCut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextCopy.Name" xml:space="preserve">
+    <value>menuTextCopy</value>
+  </data>
+  <data name="&gt;&gt;menuTextCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextPaste.Name" xml:space="preserve">
+    <value>menuTextPaste</value>
+  </data>
+  <data name="&gt;&gt;menuTextPaste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextSep2.Name" xml:space="preserve">
+    <value>menuTextSep2</value>
+  </data>
+  <data name="&gt;&gt;menuTextSep2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFindReplace.Name" xml:space="preserve">
+    <value>menuTextFindReplace</value>
+  </data>
+  <data name="&gt;&gt;menuTextFindReplace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextSep3.Name" xml:space="preserve">
+    <value>menuTextSep3</value>
+  </data>
+  <data name="&gt;&gt;menuTextSep3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextSelectNone.Name" xml:space="preserve">
+    <value>menuTextSelectNone</value>
+  </data>
+  <data name="&gt;&gt;menuTextSelectNone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextSelectAll.Name" xml:space="preserve">
+    <value>menuTextSelectAll</value>
+  </data>
+  <data name="&gt;&gt;menuTextSelectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextDelete.Name" xml:space="preserve">
+    <value>menuTextDelete</value>
+  </data>
+  <data name="&gt;&gt;menuTextDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocument.Name" xml:space="preserve">
+    <value>menuDocument</value>
+  </data>
+  <data name="&gt;&gt;menuDocument.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentOpen.Name" xml:space="preserve">
+    <value>menuDocumentOpen</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentSave.Name" xml:space="preserve">
+    <value>menuDocumentSave</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentSep1.Name" xml:space="preserve">
+    <value>menuDocumentSep1</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentSep1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentPrint.Name" xml:space="preserve">
+    <value>menuDocumentPrint</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentPrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentSep2.Name" xml:space="preserve">
+    <value>menuDocumentSep2</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentSep2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentToolbar.Name" xml:space="preserve">
+    <value>menuDocumentToolbar</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentToolbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentScrollbar.Name" xml:space="preserve">
+    <value>menuDocumentScrollbar</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentScrollbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentWordwrap.Name" xml:space="preserve">
+    <value>menuDocumentWordwrap</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentWordwrap.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentOverwrite.Name" xml:space="preserve">
+    <value>menuDocumentOverwrite</value>
+  </data>
+  <data name="&gt;&gt;menuDocumentOverwrite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuMainSep1.Name" xml:space="preserve">
+    <value>menuMainSep1</value>
+  </data>
+  <data name="&gt;&gt;menuMainSep1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFont.Name" xml:space="preserve">
+    <value>menuTextFont</value>
+  </data>
+  <data name="&gt;&gt;menuTextFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontDialog.Name" xml:space="preserve">
+    <value>menuTextFontDialog</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontColor.Name" xml:space="preserve">
+    <value>menuTextFontColor</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSep1.Name" xml:space="preserve">
+    <value>menuTextFontSep1</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSep1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontNormal.Name" xml:space="preserve">
+    <value>menuTextFontNormal</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontNormal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontBold.Name" xml:space="preserve">
+    <value>menuTextFontBold</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontBold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontItalic.Name" xml:space="preserve">
+    <value>menuTextFontItalic</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontItalic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontUnderline.Name" xml:space="preserve">
+    <value>menuTextFontUnderline</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontUnderline.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSuperscript.Name" xml:space="preserve">
+    <value>menuTextFontSuperscript</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSuperscript.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSubscript.Name" xml:space="preserve">
+    <value>menuTextFontSubscript</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSubscript.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontStrikeout.Name" xml:space="preserve">
+    <value>menuTextFontStrikeout</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontStrikeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSep2.Name" xml:space="preserve">
+    <value>menuTextFontSep2</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSep2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontIncrease.Name" xml:space="preserve">
+    <value>menuTextFontIncrease</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontIncrease.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontDecrease.Name" xml:space="preserve">
+    <value>menuTextFontDecrease</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontDecrease.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontIndent.Name" xml:space="preserve">
+    <value>menuTextFontIndent</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontIndent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontOutdent.Name" xml:space="preserve">
+    <value>menuTextFontOutdent</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontOutdent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSep3.Name" xml:space="preserve">
+    <value>menuTextFontSep3</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontSep3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontListOrdered.Name" xml:space="preserve">
+    <value>menuTextFontListOrdered</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontListOrdered.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontListUnordered.Name" xml:space="preserve">
+    <value>menuTextFontListUnordered</value>
+  </data>
+  <data name="&gt;&gt;menuTextFontListUnordered.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuJustify.Name" xml:space="preserve">
+    <value>menuJustify</value>
+  </data>
+  <data name="&gt;&gt;menuJustify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuJustifyLeft.Name" xml:space="preserve">
+    <value>menuJustifyLeft</value>
+  </data>
+  <data name="&gt;&gt;menuJustifyLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuJustifyCenter.Name" xml:space="preserve">
+    <value>menuJustifyCenter</value>
+  </data>
+  <data name="&gt;&gt;menuJustifyCenter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuJustifyRight.Name" xml:space="preserve">
+    <value>menuJustifyRight</value>
+  </data>
+  <data name="&gt;&gt;menuJustifyRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuFormatting.Name" xml:space="preserve">
+    <value>menuFormatting</value>
+  </data>
+  <data name="&gt;&gt;menuFormatting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuMainSep2.Name" xml:space="preserve">
+    <value>menuMainSep2</value>
+  </data>
+  <data name="&gt;&gt;menuMainSep2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuInsert.Name" xml:space="preserve">
+    <value>menuInsert</value>
+  </data>
+  <data name="&gt;&gt;menuInsert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuInsertLine.Name" xml:space="preserve">
+    <value>menuInsertLine</value>
+  </data>
+  <data name="&gt;&gt;menuInsertLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuInsertLink.Name" xml:space="preserve">
+    <value>menuInsertLink</value>
+  </data>
+  <data name="&gt;&gt;menuInsertLink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuInsertImage.Name" xml:space="preserve">
+    <value>menuInsertImage</value>
+  </data>
+  <data name="&gt;&gt;menuInsertImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuInsertText.Name" xml:space="preserve">
+    <value>menuInsertText</value>
+  </data>
+  <data name="&gt;&gt;menuInsertText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuInsertHtml.Name" xml:space="preserve">
+    <value>menuInsertHtml</value>
+  </data>
+  <data name="&gt;&gt;menuInsertHtml.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuInsertTable.Name" xml:space="preserve">
+    <value>menuInsertTable</value>
+  </data>
+  <data name="&gt;&gt;menuInsertTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarFindReplace.Name" xml:space="preserve">
+    <value>toolBarFindReplace</value>
+  </data>
+  <data name="&gt;&gt;toolBarFindReplace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep6.Name" xml:space="preserve">
+    <value>toolBarEditSep6</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarInsertLink.Name" xml:space="preserve">
+    <value>toolBarInsertLink</value>
+  </data>
+  <data name="&gt;&gt;toolBarInsertLink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarInsertImage.Name" xml:space="preserve">
+    <value>toolBarInsertImage</value>
+  </data>
+  <data name="&gt;&gt;toolBarInsertImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarInsertTable.Name" xml:space="preserve">
+    <value>toolBarInsertTable</value>
+  </data>
+  <data name="&gt;&gt;toolBarInsertTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarInsertLine.Name" xml:space="preserve">
+    <value>toolBarInsertLine</value>
+  </data>
+  <data name="&gt;&gt;toolBarInsertLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep5.Name" xml:space="preserve">
+    <value>toolBarEditSep5</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarListUnordered.Name" xml:space="preserve">
+    <value>toolBarListUnordered</value>
+  </data>
+  <data name="&gt;&gt;toolBarListUnordered.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarListOrdered.Name" xml:space="preserve">
+    <value>toolBarListOrdered</value>
+  </data>
+  <data name="&gt;&gt;toolBarListOrdered.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarSuperscript.Name" xml:space="preserve">
+    <value>toolBarSuperscript</value>
+  </data>
+  <data name="&gt;&gt;toolBarSuperscript.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarFootnote.Name" xml:space="preserve">
+    <value>toolBarFootnote</value>
+  </data>
+  <data name="&gt;&gt;toolBarFootnote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep4.Name" xml:space="preserve">
+    <value>toolBarEditSep4</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarButton1.Name" xml:space="preserve">
+    <value>toolBarButton1</value>
+  </data>
+  <data name="&gt;&gt;toolBarButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarJustRight.Name" xml:space="preserve">
+    <value>toolBarJustRight</value>
+  </data>
+  <data name="&gt;&gt;toolBarJustRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarJustCenter.Name" xml:space="preserve">
+    <value>toolBarJustCenter</value>
+  </data>
+  <data name="&gt;&gt;toolBarJustCenter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarJustLeft.Name" xml:space="preserve">
+    <value>toolBarJustLeft</value>
+  </data>
+  <data name="&gt;&gt;toolBarJustLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep3.Name" xml:space="preserve">
+    <value>toolBarEditSep3</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarItalic.Name" xml:space="preserve">
+    <value>toolBarItalic</value>
+  </data>
+  <data name="&gt;&gt;toolBarItalic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarUnderline.Name" xml:space="preserve">
+    <value>toolBarUnderline</value>
+  </data>
+  <data name="&gt;&gt;toolBarUnderline.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarBold.Name" xml:space="preserve">
+    <value>toolBarBold</value>
+  </data>
+  <data name="&gt;&gt;toolBarBold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep2.Name" xml:space="preserve">
+    <value>toolBarEditSep2</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarRedo.Name" xml:space="preserve">
+    <value>toolBarRedo</value>
+  </data>
+  <data name="&gt;&gt;toolBarRedo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarUndo.Name" xml:space="preserve">
+    <value>toolBarUndo</value>
+  </data>
+  <data name="&gt;&gt;toolBarUndo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep1.Name" xml:space="preserve">
+    <value>toolBarEditSep1</value>
+  </data>
+  <data name="&gt;&gt;toolBarEditSep1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarPaste.Name" xml:space="preserve">
+    <value>toolBarPaste</value>
+  </data>
+  <data name="&gt;&gt;toolBarPaste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarCopy.Name" xml:space="preserve">
+    <value>toolBarCopy</value>
+  </data>
+  <data name="&gt;&gt;toolBarCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarCut.Name" xml:space="preserve">
+    <value>toolBarCut</value>
+  </data>
+  <data name="&gt;&gt;toolBarCut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>HtmlEditorControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

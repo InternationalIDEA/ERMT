@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c1fdc552-25bd-4f39-a98e-450fe30a3269" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelService/mex" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="mex.wsdl" MetadataType="Wsdl" ID="8538c466-7dff-4c04-8953-bd414bf08298" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelService/mex?wsdl=wsdl0" />
+    <MetadataFile FileName="ModelService.wsdl" MetadataType="Wsdl" ID="b988d9d0-9d73-4d78-9201-480d018f220d" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelService/mex?wsdl" />
+    <MetadataFile FileName="mex.xsd" MetadataType="Schema" ID="9e09bd6a-82da-4ad3-bc89-88eeaf55c194" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelService/mex?xsd=xsd2" />
+    <MetadataFile FileName="ModelService1.wsdl" MetadataType="Wsdl" ID="964c28ed-df3e-4e6f-9599-5b5332e7005d" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelService/mex" />
+    <MetadataFile FileName="mex1.xsd" MetadataType="Schema" ID="e1033844-bbab-40ed-96e9-330e707577c8" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelService/mex?xsd=xsd0" />
+    <MetadataFile FileName="mex2.xsd" MetadataType="Schema" ID="00ba812b-225a-4b8a-ba84-2c9bd9ee573c" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/ModelService/mex?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

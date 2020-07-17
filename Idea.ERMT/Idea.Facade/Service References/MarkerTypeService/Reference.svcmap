@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b65ea5b9-bdca-44f0-8432-87faccf6c4c6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8731/Design_Time_Addresses/Idea.Server/MarkerTypeService/mex" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MarkerTypeService.wsdl" MetadataType="Wsdl" ID="6d61f732-061e-4302-9cc9-d63649f8fa99" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/MarkerTypeService/mex?wsdl" />
+    <MetadataFile FileName="MarkerTypeService1.wsdl" MetadataType="Wsdl" ID="f3af1601-b7c6-46f2-869e-6e5fba204f64" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/MarkerTypeService/mex" />
+    <MetadataFile FileName="mex.xsd" MetadataType="Schema" ID="e0df79fc-a0a7-4f52-a837-e011196a13e9" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/MarkerTypeService/mex?xsd=xsd2" />
+    <MetadataFile FileName="mex.wsdl" MetadataType="Wsdl" ID="ac40042c-2cda-4ca0-90ff-737101fc24f7" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/MarkerTypeService/mex?wsdl=wsdl0" />
+    <MetadataFile FileName="mex1.xsd" MetadataType="Schema" ID="3358febe-567e-47de-a9f8-95497267294e" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/MarkerTypeService/mex?xsd=xsd0" />
+    <MetadataFile FileName="mex2.xsd" MetadataType="Schema" ID="d1ebc3b5-8e8c-4ba6-b07d-26c26b9c0833" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Idea.Server/MarkerTypeService/mex?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,251 @@
+﻿
+body
+{
+	font-family: Arial, Verdana, Trebuchet MS;
+	font-size: 12px;
+	text-align:center;
+	margin:5% 10% 5% 10%;
+}
+#divLayout
+{
+	width:90%;
+	margin:0 auto;
+	overflow:hidden;	
+	text-align:left;
+}
+
+#divContent
+{	
+	margin: 0 0 0 -2.33%;
+	width: 102.33%;
+/* clear the internal floats in standards browsers  
+	  (IE is already clearing internal floats because the width gives this div layout) */
+		overflow: hidden;
+}
+
+.firstColumn
+{
+	width: 31%;	
+	/* background-color: #eaefff; */
+	border-color:#eaefff;
+	border-width:5;
+	border-style:solid;
+	margin:2px;
+	float: left;
+	padding-bottom: 90em;
+	margin-bottom: -90em;
+	display: inline;
+	margin-left: 2.33%;
+}
+.secondColumn
+{
+	width: 31%;
+	margin:2px;
+	/* background-color: #ffe5e5; */
+	border-color:#ffe5e5;
+	border-width:5;
+	border-style:solid;
+	float: left;
+	padding-bottom: 90em;
+	margin-bottom: -90em;
+	display: inline;
+
+}
+.thirdColumn
+{
+	width: 31%;
+	margin:2px;
+	/* background-color: #e5f2e5; */
+	border-color:#e5f2e5;
+	border-width:5;
+	border-style:solid;
+	float: left;
+	padding-bottom: 90em;
+	margin-bottom: -90em;
+	display: inline;
+
+}
+
+.tableBullets
+{
+	width:98%;
+	font-family: Arial, Verdana, Trebuchet MS;
+	font-size: 12px;
+	text-align: center;
+}
+
+.tdFirstColumn
+{
+	margin:2px;
+	border-width:5;
+	border-style:solid;
+	border-color:#eaefff;
+	width: 33%;
+	vertical-align:top;
+	text-align: justify;
+	padding-right: 10px;
+}
+
+.tdSecondColumn
+{
+	margin:2px;
+	border-width:5;
+	border-style:solid;
+	border-color:#ffe5e5;
+	width: 33%;
+	vertical-align:top;
+	text-align: justify;
+	padding-right: 10px;
+}
+
+.tdThirdColumn
+{
+	margin:2px;
+	border-width:5;
+	border-style:solid;
+	border-color:#e5f2e5;
+	width: 33%;
+	vertical-align:top;
+	text-align: justify;
+	padding-right: 10px;
+}
+
+.rightColumn
+{
+
+	margin:2px;
+	padding-bottom: 90em;
+	margin-bottom: -90em;
+	display: inline;
+	float: right;
+	text-align:center;
+}
+
+.buttomRow
+{
+	text-align:right; 
+	margin-right:50px; 
+	margin-top:30px;
+}
+
+.ActionHeader
+{
+	height: 45px;
+	vertical-align:middle;
+	padding-top:20px;
+}
+p
+{
+	text-align: center;
+	height: 60px;
+
+}
+hr
+{
+	background-color: White;
+	border-color: White;
+	border-width: 0px;
+	color: White;
+	height: 2px;
+}
+.divSeparator
+{
+	width: 200px;
+	height: 5px;
+	float: left;
+}
+.divSection
+{
+	height: 45px;
+}
+ul
+{
+text-indent: 0px;
+list-style-position: outside;
+list-style-image: url(plus_arrow.gif);
+}
+li
+{
+	padding: 5px;
+	list-style-type:none;
+}
+.bottomButton
+{
+	width: 100%;
+        text-align: center;
+	height: 60px;
+	float: left;
+}
+
+.bottomButton a
+{
+	font-weight: bold;
+}
+
+
+.title
+{
+	font-weight: bold;
+	font-size: 20px;
+}
+.ActionTitle
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+a image
+{
+	border:0px;
+}
+
+h3
+{
+	margin-top:8px;
+	text-align:left;
+}
+
+
+.myButton {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #69a8bf), color-stop(1, #007dc5));
+	background:-moz-linear-gradient(top, #69a8bf 5%, #007dc5 100%);
+	background:-webkit-linear-gradient(top, #69a8bf 5%, #007dc5 100%);
+	background:-o-linear-gradient(top, #69a8bf 5%, #007dc5 100%);
+	background:-ms-linear-gradient(top, #69a8bf 5%, #007dc5 100%);
+	background:linear-gradient(to bottom, #69a8bf 5%, #007dc5 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#69a8bf', endColorstr='#007dc5',GradientType=0);
+	background-color:#69a8bf;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc5), color-stop(1, #69a8bf));
+	background:-moz-linear-gradient(top, #007dc5 5%, #69a8bf 100%);
+	background:-webkit-linear-gradient(top, #007dc5 5%, #69a8bf 100%);
+	background:-o-linear-gradient(top, #007dc5 5%, #69a8bf 100%);
+	background:-ms-linear-gradient(top, #007dc5 5%, #69a8bf 100%);
+	background:linear-gradient(to bottom, #007dc5 5%, #69a8bf 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc5', endColorstr='#69a8bf',GradientType=0);
+	background-color:#007dc5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+

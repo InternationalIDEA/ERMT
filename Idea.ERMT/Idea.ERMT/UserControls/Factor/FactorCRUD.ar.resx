@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 17</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>مقدمة</value>
+  </data>
+  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 3</value>
+  </data>
+  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 8</value>
+  </data>
+  <data name="radioButton1.Text" xml:space="preserve">
+    <value>عامل داخلي</value>
+  </data>
+  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 8</value>
+  </data>
+  <data name="radioButton2.Text" xml:space="preserve">
+    <value>عامل خارجي</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>اسم العامل</value>
+  </data>
+  <data name="btnDeleteDocument.Text" xml:space="preserve">
+    <value>حذف مستند من المكتبة</value>
+  </data>
+  <data name="btnDeleteDocument.ToolTip" xml:space="preserve">
+    <value>هنا يمكنك حذف مستندات من مكتبة المستندات</value>
+  </data>
+  <data name="btnAddDocument.Text" xml:space="preserve">
+    <value>إضافة مستند إلى المكتبة</value>
+  </data>
+  <data name="btnAddDocument.ToolTip" xml:space="preserve">
+    <value>هنا يمكنك إضافة مستندات إلى مكتبة المستندات و يمكن ربطها بمحرر HTML التابع للعامل</value>
+  </data>
+  <data name="btnLinkDocument.Text" xml:space="preserve">
+    <value>ربط مستند </value>
+  </data>
+  <data name="btnLinkDocument.ToolTip" xml:space="preserve">
+    <value>إضغط هنا لإضافة رابط إلى مستند من مكتبة المستندات</value>
+  </data>
+  <data name="cbFactorDescriptionField.Items" xml:space="preserve">
+    <value>مقدمة</value>
+  </data>
+  <data name="cbFactorDescriptionField.Items1" xml:space="preserve">
+    <value>التجارب</value>
+  </data>
+  <data name="cbFactorDescriptionField.Items2" xml:space="preserve">
+    <value>المؤشرات الملحوظة</value>
+  </data>
+  <data name="cbFactorDescriptionField.Items3" xml:space="preserve">
+    <value>جمع البيانات</value>
+  </data>
+  <data name="cbFactorDescriptionField.Items4" xml:space="preserve">
+    <value>استبيان</value>
+  </data>
+  <data name="cbFactorDescriptionField.ToolTip" xml:space="preserve">
+    <value>حدد في الأسفل حقل العامل المراد تحريره </value>
+  </data>
+  <data name="lblColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 9</value>
+  </data>
+  <data name="lblColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 16</value>
+  </data>
+  <data name="lblColor.Text" xml:space="preserve">
+    <value>لون الخلفية</value>
+  </data>
+  <data name="lblColor.ToolTip" xml:space="preserve">
+    <value>اللون المستخدم عند إظهار القيمة التراكمية للعامل على الخريطة</value>
+  </data>
+  <data name="lblColor2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 9</value>
+  </data>
+  <data name="lblColor2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 16</value>
+  </data>
+  <data name="lblColor2.Text" xml:space="preserve">
+    <value>لون الخط</value>
+  </data>
+  <data name="lblColor2.ToolTip" xml:space="preserve">
+    <value>اللون البديل المستخدم عند إظهار قيمة تراكمية للعامل على الخريطة</value>
+  </data>
+  <data name="btnPreview.Text" xml:space="preserve">
+    <value>استعراض</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>المستندات</value>
+  </data>
+  <data name="grpQuestionnaire.Text" xml:space="preserve">
+    <value>استبيان</value>
+  </data>
+  <data name="grpDataCollection.Text" xml:space="preserve">
+    <value>جمع البيانات</value>
+  </data>
+  <data name="grpObservableIndicators.Text" xml:space="preserve">
+    <value>المؤشرات الملحوظة</value>
+  </data>
+  <data name="grpEmpiricalCases.Text" xml:space="preserve">
+    <value>التجارب</value>
+  </data>
+  <data name="grpIntroduction.Text" xml:space="preserve">
+    <value>مقدمة</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 16</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>حدد حقل العامل المراد تحريره</value>
+  </data>
+  <data name="gbFactorTexts.Text" xml:space="preserve">
+    <value>نص العامل</value>
+  </data>
+  <data name="gbFactorName.Text" xml:space="preserve">
+    <value>اسم العامل</value>
+  </data>
+  <data name="lblMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 0</value>
+  </data>
+  <data name="lblMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 43</value>
+  </data>
+  <data name="lblMin.Text" xml:space="preserve">
+    <value>الحد الأدنى</value>
+  </data>
+  <data name="lblMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 0</value>
+  </data>
+  <data name="lblMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 43</value>
+  </data>
+  <data name="lblMax.Text" xml:space="preserve">
+    <value>الحد الأقصى</value>
+  </data>
+  <data name="lblInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 13</value>
+  </data>
+  <data name="lblInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 16</value>
+  </data>
+  <data name="lblInterval.Text" xml:space="preserve">
+    <value>فاصل</value>
+  </data>
+  <data name="gbScale.Text" xml:space="preserve">
+    <value>المقياس</value>
+  </data>
+  <data name="colorPickerSecondary.Text" xml:space="preserve">
+    <value>اللون الثانوي</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 16</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>استعراض:</value>
+  </data>
+  <data name="colorPickerPrimary.Text" xml:space="preserve">
+    <value>اللون الرئيسي</value>
+  </data>
+  <data name="gbCumulativeFactorColor.Text" xml:space="preserve">
+    <value>ألوان العامل التراكمية</value>
+  </data>
+  <data name="cbScaleOrCumulative.Items" xml:space="preserve">
+    <value>المقياس</value>
+  </data>
+  <data name="cbScaleOrCumulative.Items1" xml:space="preserve">
+    <value>تراكمي</value>
+  </data>
+  <data name="cbInternalExternal.Items" xml:space="preserve">
+    <value>عامل داخلي</value>
+  </data>
+  <data name="cbInternalExternal.Items1" xml:space="preserve">
+    <value>عامل خارجي</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>نوع العامل</value>
+  </data>
+</root>

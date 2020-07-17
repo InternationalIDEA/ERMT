@@ -1,0 +1,1285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>A propos de</value>
+  </data>
+  <data name="AddShapeBeforeSave" xml:space="preserve">
+    <value>Ajouter un fichier .shp ou dessiner une région</value>
+  </data>
+  <data name="AllOcurrencesReplaced" xml:space="preserve">
+    <value>Toutes les occurrences ont été remplacées!</value>
+  </data>
+  <data name="AtLeastOneFactor" xml:space="preserve">
+    <value>Au moins un facteur doit être sélectionné</value>
+  </data>
+  <data name="BackupSaved" xml:space="preserve">
+    <value>Sauvegardé</value>
+  </data>
+  <data name="ConfirmDeleteUser" xml:space="preserve">
+    <value>Supprimer utilisateur ?</value>
+  </data>
+  <data name="ConfirmDeleteUserTitle" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="DatabaseRestored" xml:space="preserve">
+    <value>Base de données restauré. L'application va fermer pour effectuer les changements</value>
+  </data>
+  <data name="DataChangedSaveMessage" xml:space="preserve">
+    <value>Données modifiées. Enregistrer ?</value>
+  </data>
+  <data name="DataChangedTitle" xml:space="preserve">
+    <value>Alerte</value>
+  </data>
+  <data name="DataSavedOK" xml:space="preserve">
+    <value>Données enregistrées</value>
+  </data>
+  <data name="DeleteQuestion" xml:space="preserve">
+    <value>Voulez-vous supprimer ce modèle ?</value>
+  </data>
+  <data name="DeleteModel" xml:space="preserve">
+    <value>Voulez-vous supprimer ce modèle ?</value>
+  </data>
+  <data name="DocumentAddedOk" xml:space="preserve">
+    <value>Document ajouté</value>
+  </data>
+  <data name="DocumentSavedText" xml:space="preserve">
+    <value>Document enregistré</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
+  <data name="ErrorDeletingUser" xml:space="preserve">
+    <value>Erreur : utilisateur pas supprimé</value>
+  </data>
+  <data name="ErrorSavingData" xml:space="preserve">
+    <value>Erreur : données pas enregistré</value>
+  </data>
+  <data name="ErrorSavingUser" xml:space="preserve">
+    <value>Erreur : utilisateur pas enregistré</value>
+  </data>
+  <data name="FactorSavedOk" xml:space="preserve">
+    <value>Facteur enregistré</value>
+  </data>
+  <data name="FactorSavedOkTitle" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="FactorsChangedMessage" xml:space="preserve">
+    <value>Certains facteurs ont été modifiés, voulez-vous enregistrer? (Les données pour les facteurs supprimés seront perdues)</value>
+  </data>
+  <data name="FactorsChangedMessageTitle" xml:space="preserve">
+    <value>Facteurs modifiés</value>
+  </data>
+  <data name="FindAndReplace" xml:space="preserve">
+    <value>Rechercher et remplacer</value>
+  </data>
+  <data name="ModelImportError" xml:space="preserve">
+    <value>Erreur : le modèle n'a pas été importé. Veuillez vérifier le fichier</value>
+  </data>
+  <data name="ModelImportErrorCaption" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
+  <data name="ModelImportOk" xml:space="preserve">
+    <value>Modèle importé</value>
+  </data>
+  <data name="ModelSavedOk" xml:space="preserve">
+    <value>Modèle enregistré</value>
+  </data>
+  <data name="ModelSavingError" xml:space="preserve">
+    <value>Erreur : modèle pas enregistré</value>
+  </data>
+  <data name="NoFactorsInModel" xml:space="preserve">
+    <value>Pas de facteurs dans le modèle sélectionné</value>
+  </data>
+  <data name="RegionDeleteConfirm" xml:space="preserve">
+    <value>Supprimer région {0} ?</value>
+  </data>
+  <data name="RegionDeleteConfirmTitle" xml:space="preserve">
+    <value>Confirmer</value>
+  </data>
+  <data name="RegionDeleted" xml:space="preserve">
+    <value>Région supprimé</value>
+  </data>
+  <data name="RegionNotDelete" xml:space="preserve">
+    <value>Cette région ne peut pas être supprimée - utilisée pas un modèle</value>
+  </data>
+  <data name="ReportDelete" xml:space="preserve">
+    <value>Supprimer les paramètres enregistrés ?</value>
+  </data>
+  <data name="ReportWithTheSameName" xml:space="preserve">
+    <value>Rapport avec le même nom existe déjà</value>
+  </data>
+  <data name="RequiredName" xml:space="preserve">
+    <value>Un nom est obligatoire</value>
+  </data>
+  <data name="SaveReportCaption" xml:space="preserve">
+    <value>Enregistrer les paramètres</value>
+  </data>
+  <data name="SaveReportError" xml:space="preserve">
+    <value>Erreur : paramètres pas enregistrés</value>
+  </data>
+  <data name="SaveReportOk" xml:space="preserve">
+    <value>Paramètres enregistrés</value>
+  </data>
+  <data name="ShapeFileMultiple" xml:space="preserve">
+    <value>Le fichier a de multiples formes, mais il n'y a pas de fichier DBF pour les nommer. Le logiciel regroupera toutes les formes dans le fichier dans une région unique. Cliquez sur Oui si vous voulez continuer ou cliquez sur Non pour annuler.</value>
+  </data>
+  <data name="ShapeFileMultipleNoDBF" xml:space="preserve">
+    <value>Un fichier DBF lié est nécessaire pour l'importer plusieurs régions du même shapefile.</value>
+  </data>
+  <data name="ShapeFilePaths" xml:space="preserve">
+    <value>Seuls les shapefiles de type polygone sont autorisés. Le fichier que vous avez sélectionné semble avoir des chemins à l'intérieur.</value>
+  </data>
+  <data name="UserDeletedOk" xml:space="preserve">
+    <value>Utilisateur supprimé</value>
+  </data>
+  <data name="UserSavedOk" xml:space="preserve">
+    <value>Utilisateur enregistré</value>
+  </data>
+  <data name="UserSavedOkCaption" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="WorldContinentNotDelete" xml:space="preserve">
+    <value>Monde et continents ne peuvent pas être supprimés</value>
+  </data>
+  <data name="FactorsChangedMessage2" xml:space="preserve">
+    <value>Si vous changez le minimum, le maximum ou l'intervalle pour un facteur, toutes les données pour ce facteur seront perdus lorsque vous enregistrez les modifications.</value>
+  </data>
+  <data name="NoMarkerTypes" xml:space="preserve">
+    <value>Types de marqueurs ne sont pas définis</value>
+  </data>
+  <data name="MarkerValidation" xml:space="preserve">
+    <value>Assurez-vous que les valeurs correctes ont été saisies. Le nom, la latitude et la longitude sont des champs obligatoires.</value>
+  </data>
+  <data name="Allfieldsrequired" xml:space="preserve">
+    <value>Tous les champs sont obligatoires</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="ConfirmDeleteMarkerType" xml:space="preserve">
+    <value>Tous les marqueurs de ce type seront perdus. Êtes-vous sûr de vouloir supprimer ce type de marqueur?</value>
+  </data>
+  <data name="MarkerTypeDeleted" xml:space="preserve">
+    <value>Type de marqueur supprimé</value>
+  </data>
+  <data name="SelectMarkerType" xml:space="preserve">
+    <value>Sélectionner le type de marqueur</value>
+  </data>
+  <data name="MarkerTypeSaved" xml:space="preserve">
+    <value>Type de marqueur enregistré</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>La date a été saisie dans le mauvais format</value>
+  </data>
+  <data name="AssociatedDataWillBeLost" xml:space="preserve">
+    <value>Données associées seront perdues. Etes-vous sûr de supprimer le facteur sélectionné?</value>
+  </data>
+  <data name="FactorSavingError" xml:space="preserve">
+    <value>Erreur : facteur pas enregistré</value>
+  </data>
+  <data name="ReorderFactorsSavedOk" xml:space="preserve">
+    <value>Facteurs réorganisés enregistrés</value>
+  </data>
+  <data name="EmptyField" xml:space="preserve">
+    <value>Un ou plusieurs champs ne sont pas complets</value>
+  </data>
+  <data name="NameHasBeenChanged" xml:space="preserve">
+    <value>Le nom a été changé parce qu'il ya un autre rapport avec le même nom</value>
+  </data>
+  <data name="LoadedCorrectlySettings" xml:space="preserve">
+    <value>Paramètres chargés</value>
+  </data>
+  <data name="NewRegionsHaveBeenImported" xml:space="preserve">
+    <value>Nouvelles régions importées</value>
+  </data>
+  <data name="NoMarkerTypesDefined" xml:space="preserve">
+    <value>Les types de marqueurs ne sont définis. Aller vers administrateur et ensuite type de marqueur pour définir au moins un type avant de le mettre sur la carte.</value>
+  </data>
+  <data name="InvalidDateChoise" xml:space="preserve">
+    <value>La date a été saisie dans le mauvais format. Veuillez essayer à nouveau</value>
+  </data>
+  <data name="TooManyColumns" xml:space="preserve">
+    <value>Les colonnes sur les données collées sont plus nombreuses que prévu.</value>
+  </data>
+  <data name="DateEnteredIsNotFormattedCorrectly" xml:space="preserve">
+    <value>La date indiquée n'est pas formatée correctement.</value>
+  </data>
+  <data name="ShapeFilePathsNotFound" xml:space="preserve">
+    <value>Aucun chemin n'a été trouvé dans le fichier sélectionné.</value>
+  </data>
+  <data name="ShapeFileSymbolsNotFound" xml:space="preserve">
+    <value>Aucun symbole n'a été trouvé dans le fichier sélectionné.</value>
+  </data>
+  <data name="DeleteTableRowConfirm" xml:space="preserve">
+    <value>Supprimer la ligne / s sélectionné?</value>
+  </data>
+  <data name="ExportTables" xml:space="preserve">
+    <value>Exporter tableau vers Excel</value>
+  </data>
+  <data name="ExportAllTables" xml:space="preserve">
+    <value>Tous les tableaux</value>
+  </data>
+  <data name="ExportCurrentTable" xml:space="preserve">
+    <value>Tableau actuel</value>
+  </data>
+  <data name="IPChanged" xml:space="preserve">
+    <value>L'adresse du serveur a été modifiée. Redémarrer le logiciel pour que les nouveaux paramètres puissent entrer en vigueur.</value>
+  </data>
+  <data name="UnableToSave" xml:space="preserve">
+    <value>Impossible d'enregistrer. Le fichier est en utilisation par une autre application.</value>
+  </data>
+  <data name="FactorNameIsRequired" xml:space="preserve">
+    <value>Saisir le nom du facteur pour enregistrer.</value>
+  </data>
+  <data name="FactorNameAlreadyExists" xml:space="preserve">
+    <value>Un facteur avec le même nom existe déjà. Sélectionner un autre nom</value>
+  </data>
+  <data name="UserNameAlreadyExists" xml:space="preserve">
+    <value>Un utilisateur avec le même nom existe déjà. Sélectionner un autre nom d'utilisateur</value>
+  </data>
+  <data name="ValueNotValid" xml:space="preserve">
+    <value>La valeur saisie n'est pas valide</value>
+  </data>
+  <data name="ConfirmDeleteMarkers" xml:space="preserve">
+    <value>Supprimer les marqueurs sélectionnés ?</value>
+  </data>
+  <data name="ColumnCountNoMatch" xml:space="preserve">
+    <value>La quantité de colonnes collées ne correspond pas à la table.</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Votre MdP a été mis à jour.</value>
+  </data>
+  <data name="PasswordChangedCaption" xml:space="preserve">
+    <value>Changer MdP</value>
+  </data>
+  <data name="PasswordEmpty" xml:space="preserve">
+    <value>MdP ne peut pas être vide</value>
+  </data>
+  <data name="PasswordNoMatch" xml:space="preserve">
+    <value>Les MdP ne correspondent pas</value>
+  </data>
+  <data name="SelectARegionFirst" xml:space="preserve">
+    <value>Sélectionner une région pour continuer</value>
+  </data>
+  <data name="PasteUpTo200Rows" xml:space="preserve">
+    <value>Vous ne pouvez coller jusqu'à 200 lignes à la fois.</value>
+  </data>
+  <data name="PhaseSavedOk" xml:space="preserve">
+    <value>Phase enregistré</value>
+  </data>
+  <data name="RiskAlertSaved" xml:space="preserve">
+    <value>Alerte de risque enregistrée</value>
+  </data>
+  <data name="DateFromHigherDateTo" xml:space="preserve">
+    <value>Date à partir de doit être avant date jusqu'à</value>
+  </data>
+  <data name="PastePleaseInsertARowFirst" xml:space="preserve">
+    <value>Ajouter une ligne avant de coller</value>
+  </data>
+  <data name="DeleteDocumentDialogTitle" xml:space="preserve">
+    <value>Sélectionner le document à supprimer</value>
+  </data>
+  <data name="DeleteDocumentUseDefaultDirectory" xml:space="preserve">
+    <value>Sélectionner un fichier à ouvrir dans le répertoire affiché.</value>
+  </data>
+  <data name="DeleteDocumentWarning" xml:space="preserve">
+    <value>Le document sélectionné sera supprimé. Tous les liens qui l'utilisent doivent être mis à jour manuellement. Continuer ?</value>
+  </data>
+  <data name="DocumentExistsAlready" xml:space="preserve">
+    <value>Un fichier avec le nom sélectionné existe déjà. \n Voulez-vous le remplacer?</value>
+  </data>
+  <data name="DocumentSuccessfullyDeleted" xml:space="preserve">
+    <value>Document supprimé</value>
+  </data>
+  <data name="RestoreAsAdministratorWarning" xml:space="preserve">
+    <value>Pour restaurer la base de données, le logiciel doit exécuter avec des privilèges d'administrateur. Un redémarrage est nécessaire. Continuer?</value>
+  </data>
+  <data name="RestoreTimeWarning" xml:space="preserve">
+    <value>Cette opération peut prendre quelques minutes. Cliquez OK pour continuer.</value>
+  </data>
+  <data name="LatitudeLongitudeFormatError" xml:space="preserve">
+    <value>La latitude et la longitude doivent être des valeurs décimales.</value>
+  </data>
+  <data name="ConfirmDeleteMarkerTypeImage" xml:space="preserve">
+    <value>Supprimer l'image associée à ce type de marqueur ?</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Sauter</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ActionsDialogCloseIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Actions-dialog-close-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\back-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ForwardIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\forward-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewDocIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\new-doc-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageWhiteLinkIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\page-white-link-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DatabaseEditIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\database-edit-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DatabaseKeyIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\database-key-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocumentDeleteIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Document-Delete-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocumentExportIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\document-export-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditDocumentIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Actions-document-edit-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MapIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\map-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewDocumentIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\new-doc-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PinIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pin-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserGroupIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\user-group-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_ContactIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_mail_small.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_ElectoralCycleIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_prevmit_small2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_KnowledgeResourcesIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_knowres_small2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_RiskAndActionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_riskreg_small.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_RiskMappingIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_analytinstr_small2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTool_StartIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTool_icon_home_small.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Nom d'utilisateur et/ou MdP sont incorrects.</value>
+  </data>
+  <data name="ERMTcontact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTcontact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTelectoralcycle_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTelectoralcycle_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTelectoralcycle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTelectoral_cycle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMThome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMThome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMThome_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMThome_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTknowledgeresources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTknowledgeresources.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTknowledgeresources_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTknowledgeresources_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTleft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTmaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTmaps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTmaps_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTmaps_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTprint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTprint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTriskandaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTriskandaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTriskandaction_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTriskandaction_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTleft40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTleft40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTprint40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTprint40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTright40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTright40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Arrière</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>Avant</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="ERMTClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTClose32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTClose32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTelectoral_cyclebig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTelectoral_cyclebig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTelectoral_cyclebig_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTelectoral_cyclebig_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTknowledgeresroucesbig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTknowledgeresroucesbig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTknowledgeresroucesbig_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTknowledgeresroucesbig_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTmapsbig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTmapsbig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERMTmapsbig_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ERMTmapsbig_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapcontinent1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mapcontinent1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapcountry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mapcountry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maplayers_map_icon_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maplayers-map-icon-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maplayers_map_icon_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maplayers-map-icon-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maplayers_map_icon_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maplayers-map-icon-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maplayers_map_icon_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maplayers-map-icon-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mappin_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mappin-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapprovince" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mapprovince.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapworld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mapworld.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_down_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrow-down-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_up_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrow-up-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PhaseBulletDelete" xml:space="preserve">
+    <value>Supprimer les bullets points sélectionnés ?</value>
+  </data>
+  <data name="FactorNameRequired" xml:space="preserve">
+    <value>Nom de facteur ne peut pas être vide</value>
+  </data>
+  <data name="UserModifyTitle" xml:space="preserve">
+    <value>Utilisateur modifier</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version </value>
+  </data>
+  <data name="FactorInterval" xml:space="preserve">
+    <value>Intervalle doit être supérieur à zéro.</value>
+  </data>
+  <data name="FactorScaleMax" xml:space="preserve">
+    <value>Echelle max doit être supérieure à l'échelle min.</value>
+  </data>
+  <data name="FactorScaleMin" xml:space="preserve">
+    <value>Echelle min doit être supérieure à zéro.</value>
+  </data>
+  <data name="NameEmptyUserManager" xml:space="preserve">
+    <value>Nom de facteur ne peut pas être vide</value>
+  </data>
+  <data name="AddNewFactor" xml:space="preserve">
+    <value>Ajouter nouveau facteur</value>
+  </data>
+  <data name="AddNewUser" xml:space="preserve">
+    <value>Ajouter nouvel utilisateur</value>
+  </data>
+  <data name="DocumentSelectAdd" xml:space="preserve">
+    <value>Sélectionner le document à ajouter</value>
+  </data>
+  <data name="ElectoralCycleBulletText" xml:space="preserve">
+    <value>Insérer du texte valide</value>
+  </data>
+  <data name="EmailCannotEmpty" xml:space="preserve">
+    <value>Email ne peut pas être vide</value>
+  </data>
+  <data name="MessageNotFound" xml:space="preserve">
+    <value>Message pas trouvé</value>
+  </data>
+  <data name="ModifyFactor" xml:space="preserve">
+    <value>Modifier facteur</value>
+  </data>
+  <data name="ModifyPhase" xml:space="preserve">
+    <value>Modifier phase</value>
+  </data>
+  <data name="PasswordCannotEmpty" xml:space="preserve">
+    <value>MdP ne peut pas être vide</value>
+  </data>
+  <data name="PhaseBullet" xml:space="preserve">
+    <value>Bullet points de la phase</value>
+  </data>
+  <data name="ReorderFactors" xml:space="preserve">
+    <value>Réorganiser les facteurs</value>
+  </data>
+  <data name="SelectRole" xml:space="preserve">
+    <value>Sélectionner un rôle</value>
+  </data>
+  <data name="UserCannotEmpty" xml:space="preserve">
+    <value>Nom d'utilisateur ne peut pas être vide</value>
+  </data>
+  <data name="UserLastNameEmpty" xml:space="preserve">
+    <value>Nom ne peut pas être vide</value>
+  </data>
+  <data name="UserNameEmpty" xml:space="preserve">
+    <value>Prénom ne peut pas être vide</value>
+  </data>
+  <data name="WarningAddDocument" xml:space="preserve">
+    <value>Attention ajoutant document</value>
+  </data>
+  <data name="CodeSixCaracters" xml:space="preserve">
+    <value>Code ne peut contenir que 6 caractères</value>
+  </data>
+  <data name="PhaseCannotEmpty" xml:space="preserve">
+    <value>Nom de phase ne peut pas être vide</value>
+  </data>
+  <data name="ServerTitle" xml:space="preserve">
+    <value>Saisir le nom d'hôte du serveur ou l'adresse IP</value>
+  </data>
+  <data name="UserValidateEmail" xml:space="preserve">
+    <value>Adresse email nécessaire</value>
+  </data>
+  <data name="UserValidateFirstName" xml:space="preserve">
+    <value>Prénom nécessaire</value>
+  </data>
+  <data name="UserValidateLastName" xml:space="preserve">
+    <value>Nom nécessaire</value>
+  </data>
+  <data name="UserValidatePass" xml:space="preserve">
+    <value>MdP nécessaire</value>
+  </data>
+  <data name="UserValidatePassMatch" xml:space="preserve">
+    <value>Les MdP ne correspondent pas</value>
+  </data>
+  <data name="UserValidateRole" xml:space="preserve">
+    <value>Rôle est nécessaire.</value>
+  </data>
+  <data name="UserValidateUsername" xml:space="preserve">
+    <value>Le nom d'utilisateur est requis,</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Mesures</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Actif</value>
+  </data>
+  <data name="Analysis" xml:space="preserve">
+    <value>Analyse</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="DateFrom" xml:space="preserve">
+    <value>Date à partir de</value>
+  </data>
+  <data name="DateTo" xml:space="preserve">
+    <value>Date jusqu'à</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inactif</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Modèle</value>
+  </data>
+  <data name="Phases" xml:space="preserve">
+    <value>Phases</value>
+  </data>
+  <data name="Regions" xml:space="preserve">
+    <value>Régions</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Résultats</value>
+  </data>
+  <data name="RiskDescription" xml:space="preserve">
+    <value>Description de risque</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Etat</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="Cumulative" xml:space="preserve">
+    <value>Cumulatif</value>
+  </data>
+  <data name="ModelAddTitle" xml:space="preserve">
+    <value>Ajouter modèle</value>
+  </data>
+  <data name="World" xml:space="preserve">
+    <value>Monde</value>
+  </data>
+  <data name="PreviewTitle" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="ElectoralCycle" xml:space="preserve">
+    <value>Cycle électoral</value>
+  </data>
+  <data name="KnowledgeResources" xml:space="preserve">
+    <value>Base de connaissances</value>
+  </data>
+  <data name="ModelEdit" xml:space="preserve">
+    <value>Modifier modèle</value>
+  </data>
+  <data name="RiskAndActionTitle" xml:space="preserve">
+    <value>Risques et actions</value>
+  </data>
+  <data name="BackupText" xml:space="preserve">
+    <value>Sauvegarde enregistré</value>
+  </data>
+  <data name="BackupCancel" xml:space="preserve">
+    <value>Sauvegarde annulé</value>
+  </data>
+  <data name="BackupTitle" xml:space="preserve">
+    <value>Sauvegarder la base de données</value>
+  </data>
+  <data name="exporticon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\export.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PinIconNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-pin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\book_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electoralcycle_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\electoralcycle_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electoral_cycle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\electoral_cycle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\email_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fileicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\home_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\KML.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maps_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\maps_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prevention_mitigation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\prevention_mitigation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_book_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_book_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_brush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-brush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_electoralcycle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_electoralcycle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_electoralcycle_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_electoralcycle_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_KML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_KML.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_continente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_mapping-continente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_continente1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping-continente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_country" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping-country.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_mapping_province" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-mapping-province.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_map_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174_map_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-pin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_risk_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-risk-action.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_174x174_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\174x174-table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_brush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-brush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_KML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_KML.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80_link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_continente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-continente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_country" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-country.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_numerado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-numerado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_mapping_province" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-mapping-province.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_risk_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-risk-action.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_80x80_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\80x80-table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditRegionShapeFileMissingFiles" xml:space="preserve">
+    <value>Shapefile non valide. Les Shapefiles doivent contenir: un fichier .shp, un fichier .shx et un fichier .dbf.</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Importater</value>
+  </data>
+  <data name="RegionsMustBeLoadedBeforeImport" xml:space="preserve">
+    <value>Le modèle choisi a été créé en utilisant une version antérieure de l'outil GRE. Avant d'importer le modèle, vous devez ajouter les régions comprises à vos cartes. Voulez-vous continuer?</value>
+  </data>
+  <data name="ModelImportNotOk" xml:space="preserve">
+    <value>Le modèle n'a pas été importé</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Utilisateur</value>
+  </data>
+  <data name="MustSelectAtLeastOneOption" xml:space="preserve">
+    <value>Sélectionner au moins une option</value>
+  </data>
+  <data name="RestoreLoaded" xml:space="preserve">
+    <value>Restauré</value>
+  </data>
+  <data name="DataRestored" xml:space="preserve">
+    <value>Données restaurées. Le logiciel sera fermé pour permettre aux modifications de prendre effet</value>
+  </data>
+  <data name="SelectedRestoreOptionsWereNotBackupFile" xml:space="preserve">
+    <value>Certaines options sélectionnées pour être restaurer n'étaient pas compris dans la sauvegarde</value>
+  </data>
+  <data name="ModelImportNoExistsParentRegionInLocalDB" xml:space="preserve">
+    <value>La région parente pour le modèle que vous importez ne peut être trouvée.</value>
+  </data>
+  <data name="ModelImportNoExistsRegionsInLocalDB" xml:space="preserve">
+    <value>Pas de régions pour le modèle importé sur l'ordinateur.</value>
+  </data>
+  <data name="SomeRegionsWereNotImported" xml:space="preserve">
+    <value>Certaines régions n'ont pas été importées. Ne correspondent pas aux régions sur l'ordinateur</value>
+  </data>
+  <data name="ViewText" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="TableMustHaveData" xml:space="preserve">
+    <value>Tableau doit contenir des données</value>
+  </data>
+  <data name="FileOverwriteConfirmation" xml:space="preserve">
+    <value>Le fichier sélectionné existe déjà. Voulez-vous le remplacer?</value>
+  </data>
+  <data name="PathSuccessfullySaved" xml:space="preserve">
+    <value>Chemin enregistré</value>
+  </data>
+  <data name="POISuccessfullySaved" xml:space="preserve">
+    <value>POI enregistré</value>
+  </data>
+  <data name="RegionChildsDeleteConfirm" xml:space="preserve">
+    <value>Supprimer les régions dépendantes de {0} ?</value>
+  </data>
+  <data name="RegionChildsDeleted" xml:space="preserve">
+    <value>Toutes régions dépendantes supprimées.</value>
+  </data>
+  <data name="RegionHasNoChilds" xml:space="preserve">
+    <value>Cette région n'a pas de région dépendante.</value>
+  </data>
+  <data name="RegionWithModels" xml:space="preserve">
+    <value>Des modèles utilisent cette région ou une de ses régions parentes/dépendantes. Supprimer les modèles liés pour continuer.</value>
+  </data>
+  <data name="SaveAsKMLOK" xml:space="preserve">
+    <value>Fichier KML crée</value>
+  </data>
+  <data name="CumulativeFactors" xml:space="preserve">
+    <value>Facteurs cumulatifs</value>
+  </data>
+  <data name="AddFactor" xml:space="preserve">
+    <value>Ajouter un facteur</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Sauvegarde</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Changer MdP</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copier</value>
+  </data>
+  <data name="CreateNewModel" xml:space="preserve">
+    <value>Créer un nouveau modèle</value>
+  </data>
+  <data name="CurrentModel" xml:space="preserve">
+    <value>Modèle actuel</value>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>Couper</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Données</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Anglais</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Sortie</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Exporter</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Fichier</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Aide</value>
+  </data>
+  <data name="ImportModel" xml:space="preserve">
+    <value>Importer un modèle</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="ManageRegions" xml:space="preserve">
+    <value>Gérer les régions</value>
+  </data>
+  <data name="Mapping" xml:space="preserve">
+    <value>Cartographie</value>
+  </data>
+  <data name="MarkerTypes" xml:space="preserve">
+    <value>Types de marqueur</value>
+  </data>
+  <data name="ModifyElectoralCyclePhase" xml:space="preserve">
+    <value>Modifier une phase du cycle électoral</value>
+  </data>
+  <data name="ModifyExistingUser" xml:space="preserve">
+    <value>Modifier utilisateur</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Coller</value>
+  </data>
+  <data name="Responses" xml:space="preserve">
+    <value>Mesures</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Restaurer</value>
+  </data>
+  <data name="ServerAddress" xml:space="preserve">
+    <value>Adresse du serveur</value>
+  </data>
+  <data name="ShowTextControl" xml:space="preserve">
+    <value>Afficher control test</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>Espagnol</value>
+  </data>
+  <data name="UserAdmin" xml:space="preserve">
+    <value>Administration des utilisateurs</value>
+  </data>
+  <data name="ViewFactors" xml:space="preserve">
+    <value>Afficher les facteurs</value>
+  </data>
+  <data name="ExitToChangeLanguage" xml:space="preserve">
+    <value>Pour changer de langue, redémarrer le logiciel. Etes-vous sûr ?</value>
+  </data>
+  <data name="EditRegionTitle" xml:space="preserve">
+    <value>Modifier région</value>
+  </data>
+  <data name="ServerConnectionError" xml:space="preserve">
+    <value>Erreur en essayant de se connecter au serveur. Saisir le nom de l'hôte du serveur ou l'adresse IP.</value>
+  </data>
+  <data name="ModelImportMainRegionDoesNotExits" xml:space="preserve">
+    <value>La région principale du modèle que vous essayez d'importer n'existe pas dans votre base de données locale.</value>
+  </data>
+  <data name="FactorCRUDDescriptionField1" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="FactorCRUDDescriptionField2" xml:space="preserve">
+    <value>Cas empiriques</value>
+  </data>
+  <data name="FactorCRUDDescriptionField3" xml:space="preserve">
+    <value>Indicateurs observables</value>
+  </data>
+  <data name="FactorCRUDDescriptionField4" xml:space="preserve">
+    <value>Collecte de données</value>
+  </data>
+  <data name="FactorCRUDDescriptionField5" xml:space="preserve">
+    <value>Questionnaire</value>
+  </data>
+  <data name="DataRestoreError" xml:space="preserve">
+    <value>Erreur en essayant de restaurer la base de données</value>
+  </data>
+  <data name="DataRestoreInvalidDBVersion" xml:space="preserve">
+    <value>La version de la base de données comprise dans la sauvegarde est invalide.</value>
+  </data>
+  <data name="ModelExportOk" xml:space="preserve">
+    <value>Modèle exporté. Un dossier MODELSHAPEFILES a été créé contenant les Shapefiles du modèle au cas où vous avez besoin de créer des régions dans l'ordinateur de destination.</value>
+  </data>
+  <data name="ModelImportErrorVersionUsesDundasAndWrongParent" xml:space="preserve">
+    <value>La version du modèle importée est dépassée et le modèle n'est pas un modèle pays. Ces modèles ne peuvent pas être importés.</value>
+  </data>
+  <data name="PasteOnEmptyTable" xml:space="preserve">
+    <value>Ajouter des lignes au tableau avant de coller</value>
+  </data>
+  <data name="RegionChildsWithModelsDeleteConfirm" xml:space="preserve">
+    <value>Des modèles en vigueur utilisent  les régions que vous voulez supprimer. Si vous continuez, ces modèles seront également supprimées. Continuer ?</value>
+  </data>
+  <data name="TableByRegionPasteOverwriteWarning" xml:space="preserve">
+    <value>Si les données que vous collez contiennent des données qui existent déjà, les informations existantes seront perdues. Si non, des nouvelles lignes seront ajoutées. Continuer ?</value>
+  </data>
+  <data name="ContactBody" xml:space="preserve">
+    <value>Vos coordonnées (nom et contact):% 0D% 0A% 0D% 0A Commentaire est à propos de (matériel de référence de l'outil, fonctionnalité, performance de l'outil, vos expériences, etc.):% 0D% 0A% 0D% 0A Votre commentaire:</value>
+  </data>
+  <data name="ContactSubject" xml:space="preserve">
+    <value>Commentaires - Outil de gestion des risques électoraux</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="Alert" xml:space="preserve">
+    <value>Alerte</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Créé</value>
+  </data>
+  <data name="CurrentModelReorderFactors" xml:space="preserve">
+    <value>Réorganiser les facteurs du modèle actuel</value>
+  </data>
+  <data name="Modified" xml:space="preserve">
+    <value>Modifié</value>
+  </data>
+  <data name="RiskAlertSearch" xml:space="preserve">
+    <value>Rechercher les alertes de risque</value>
+  </data>
+  <data name="RiskAndActionDateFrom" xml:space="preserve">
+    <value>Sélectionner une date à partir de</value>
+  </data>
+  <data name="RiskAndActionDateTo" xml:space="preserve">
+    <value>Sélectionner une date jusqu'à</value>
+  </data>
+  <data name="RiskAndActionPhase" xml:space="preserve">
+    <value>Sélectionner au moins une phase</value>
+  </data>
+  <data name="RiskAndActionRegion" xml:space="preserve">
+    <value>Sélectionner au moins une région</value>
+  </data>
+  <data name="RiskAndActionSaveWarning" xml:space="preserve">
+    <value>Enregistrer pour pouvoir ajouter des pièces jointes</value>
+  </data>
+  <data name="HTMLWarningText" xml:space="preserve">
+    <value>Doit Sélectionnez Texte à partir duquel créer un lien vers un document.</value>
+  </data>
+  <data name="HTMLWarningTitle" xml:space="preserve">
+    <value>Insérer le lien</value>
+  </data>
+  <data name="Large" xml:space="preserve">
+    <value>Grand</value>
+  </data>
+  <data name="MarkerTypeSelectImage" xml:space="preserve">
+    <value>Charger un fichier image</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Moyen</value>
+  </data>
+  <data name="Small" xml:space="preserve">
+    <value>Petit</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="OKText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ResultantValueOf" xml:space="preserve">
+    <value>Valeur résultante des régions: </value>
+  </data>
+</root>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="397194e5415f4b0c9ee65df570f7a606" Name="Diagram1" ZoomLevel="95">
+        <EntityTypeShape EntityType="Idea.ERMT.Model.Factor" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.Marker" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.MarkerType" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.Model" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.ModelFactor" Width="1.5" PointX="8.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.ModelFactorData" Width="2.125" PointX="10.5" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.ModelRiskAlert" Width="1.5" PointX="5.25" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.ModelRiskAlertAttachment" Width="2" PointX="7.5" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.ModelRiskAlertPhase" Width="2" PointX="10.5" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.ModelRiskAlertRegion" Width="2.25" PointX="7.5" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.Phase" Width="1.5" PointX="8.25" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.PhaseBullet" Width="1.5" PointX="10.5" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.Region" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.Report" Width="1.5" PointX="5.25" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.Role" Width="1.5" PointX="8.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.SystemParameter" Width="1.5" PointX="3.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Idea.ERMT.Model.User" Width="1.5" PointX="11" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelFactor_Factor" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_Marker_MarkerType" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_Marker_Model" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_Model_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelFactor_Model" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelRiskAlert_Model" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_Report_Model" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelFactorData_ModelFactor" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelFactorData_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelRiskAlertAttachment_ModelRiskAlert" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelRiskAlertPhase_ModelRiskAlert" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelRiskAlertRegion_ModelRiskAlert" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelRiskAlertPhase_Phase" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_ModelRiskAlertRegion_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_Bullet_Phase" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="Idea.ERMT.Model.FK_Region_Region" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

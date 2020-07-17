@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{134D20B6-0A89-4A83-94FD-F27B85F6EF9B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Idea.Facade</RootNamespace>
+    <AssemblyName>Idea.Facade</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Modules\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release - AR|AnyCPU'">
+    <OutputPath>bin\Release - AR\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release - AR|x86'">
+    <OutputPath>bin\x86\Release - AR\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release - AR|x64'">
+    <OutputPath>bin\x64\Release - AR\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DesktopEdition">
+      <HintPath>..\References\ThinkGeo\DesktopEdition.dll</HintPath>
+    </Reference>
+    <Reference Include="MapSuiteCore">
+      <HintPath>..\References\ThinkGeo\MapSuiteCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorHelper.cs" />
+    <Compile Include="ConfigurationSettingsHelper.cs" />
+    <Compile Include="CustomFactorColor.cs" />
+    <Compile Include="CustomFactorColorHelper.cs" />
+    <Compile Include="DocumentHelper.cs" />
+    <Compile Include="ExportCSVButton.cs" />
+    <Compile Include="FactorHelper.cs" />
+    <Compile Include="General.Designer.cs">
+      <DependentUpon>General.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ERMTSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General.es-es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>General.es-es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageHelper.cs" />
+    <Compile Include="KmlGeoCanvas.cs" />
+    <Compile Include="KmlMapEngine.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="MapHelper.cs" />
+    <Compile Include="MarkerHelper.cs" />
+    <Compile Include="MarkerTypeHelper.cs" />
+    <Compile Include="ModelFactorDataHelper.cs" />
+    <Compile Include="ModelFactorHelper.cs" />
+    <Compile Include="ModelHelper.cs" />
+    <Compile Include="ModelRiskAlertHelper.cs" />
+    <Compile Include="PhaseBulletHelper.cs" />
+    <Compile Include="PhaseHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionHelper.cs" />
+    <Compile Include="ReportHelper.cs" />
+    <Compile Include="ResourceHelper.cs" />
+    <Compile Include="RoleHelper.cs" />
+    <Compile Include="Service References\DocumentService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\FactorService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MarkerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MarkerTypeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ModelFactorDataService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ModelFactorService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ModelRiskAlertService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ModelService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PhaseBulletService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PhaseService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RegionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ReportService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RoleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UserService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SymbolStruct.cs" />
+    <Compile Include="UserHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Idea.Entities\Idea.Entities.csproj">
+      <Project>{e53247a3-07de-47dc-8858-a59631b64296}</Project>
+      <Name>Idea.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idea.Server\Idea.Server.csproj">
+      <Project>{f9f1bbaf-192a-448d-bf89-c0c0c2d42103}</Project>
+      <Name>Idea.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idea.Utils\Idea.Utils.csproj">
+      <Project>{a1a394e7-726c-4f1d-9d76-73db5788a81c}</Project>
+      <Name>Idea.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Idea.Entities.Document.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.Factor.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.Marker.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.MarkerType.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.Model.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.ModelFactor.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.ModelFactorData.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.ModelRiskAlert.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.ModelRiskAlertAttachment.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.ModelRiskAlertPhase.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.ModelRiskAlertRegion.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.Phase.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.PhaseBullet.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.Region.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.Report.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.Role.datasource" />
+    <None Include="Properties\DataSources\Idea.Entities.User.datasource" />
+    <None Include="Service References\DocumentService\DocumentService.wsdl">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocumentService\DocumentService1.wsdl" />
+    <None Include="Service References\DocumentService\mex.wsdl" />
+    <None Include="Service References\DocumentService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocumentService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocumentService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocumentService\mex3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FactorService\FactorService.wsdl" />
+    <None Include="Service References\FactorService\FactorService1.wsdl" />
+    <None Include="Service References\FactorService\mex.wsdl" />
+    <None Include="Service References\FactorService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FactorService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FactorService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MarkerService\MarkerService.wsdl" />
+    <None Include="Service References\MarkerService\MarkerService1.wsdl" />
+    <None Include="Service References\MarkerService\mex.wsdl" />
+    <None Include="Service References\MarkerService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MarkerService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MarkerService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MarkerTypeService\MarkerTypeService.wsdl" />
+    <None Include="Service References\MarkerTypeService\MarkerTypeService1.wsdl" />
+    <None Include="Service References\MarkerTypeService\mex.wsdl" />
+    <None Include="Service References\MarkerTypeService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MarkerTypeService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MarkerTypeService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelFactorDataService\mex.wsdl" />
+    <None Include="Service References\ModelFactorDataService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelFactorDataService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelFactorDataService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelFactorDataService\ModelFactorDataService.wsdl" />
+    <None Include="Service References\ModelFactorDataService\ModelFactorDataService1.wsdl" />
+    <None Include="Service References\ModelFactorService\mex.wsdl" />
+    <None Include="Service References\ModelFactorService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelFactorService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelFactorService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelFactorService\ModelFactorService.wsdl" />
+    <None Include="Service References\ModelFactorService\ModelFactorService1.wsdl" />
+    <None Include="Service References\ModelRiskAlertService\mex.wsdl" />
+    <None Include="Service References\ModelRiskAlertService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelRiskAlertService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelRiskAlertService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelRiskAlertService\mex3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelRiskAlertService\ModelRiskAlertService.wsdl" />
+    <None Include="Service References\ModelRiskAlertService\ModelRiskAlertService1.wsdl" />
+    <None Include="Service References\ModelService\mex.wsdl" />
+    <None Include="Service References\ModelService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelService\ModelService.wsdl" />
+    <None Include="Service References\ModelService\ModelService1.wsdl" />
+    <None Include="Service References\PhaseBulletService\mex.wsdl" />
+    <None Include="Service References\PhaseBulletService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhaseBulletService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhaseBulletService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhaseBulletService\PhaseBulletService.wsdl" />
+    <None Include="Service References\PhaseBulletService\PhaseBulletService1.wsdl" />
+    <None Include="Service References\PhaseService\mex.wsdl" />
+    <None Include="Service References\PhaseService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhaseService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhaseService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhaseService\PhaseService.wsdl" />
+    <None Include="Service References\PhaseService\PhaseService1.wsdl" />
+    <None Include="Service References\RegionService\mex.wsdl" />
+    <None Include="Service References\RegionService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RegionService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RegionService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RegionService\mex3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RegionService\RegionService.wsdl" />
+    <None Include="Service References\RegionService\RegionService1.wsdl" />
+    <None Include="Service References\ReportService\mex.wsdl" />
+    <None Include="Service References\ReportService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ReportService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ReportService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ReportService\ReportService.wsdl" />
+    <None Include="Service References\ReportService\ReportService1.wsdl" />
+    <None Include="Service References\RoleService\mex.wsdl" />
+    <None Include="Service References\RoleService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RoleService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RoleService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RoleService\RoleService.wsdl" />
+    <None Include="Service References\RoleService\RoleService1.wsdl" />
+    <None Include="Service References\UserService\mex.wsdl" />
+    <None Include="Service References\UserService\mex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserService\mex1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserService\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserService\UserService.wsdl" />
+    <None Include="Service References\UserService\UserService1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DocumentService\" />
+    <WCFMetadataStorage Include="Service References\FactorService\" />
+    <WCFMetadataStorage Include="Service References\MarkerService\" />
+    <WCFMetadataStorage Include="Service References\MarkerTypeService\" />
+    <WCFMetadataStorage Include="Service References\ModelFactorDataService\" />
+    <WCFMetadataStorage Include="Service References\ModelFactorService\" />
+    <WCFMetadataStorage Include="Service References\ModelRiskAlertService\" />
+    <WCFMetadataStorage Include="Service References\ModelService\" />
+    <WCFMetadataStorage Include="Service References\PhaseBulletService\" />
+    <WCFMetadataStorage Include="Service References\PhaseService\" />
+    <WCFMetadataStorage Include="Service References\RegionService\" />
+    <WCFMetadataStorage Include="Service References\ReportService\" />
+    <WCFMetadataStorage Include="Service References\RoleService\" />
+    <WCFMetadataStorage Include="Service References\UserService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.User.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.Factor.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.Document.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.Role.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.Region.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.ModelFactor.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.Model.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.ModelFactorData.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="General.ar.resx" />
+    <EmbeddedResource Include="General.es-es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>General.es-es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General.fr.resx" />
+    <EmbeddedResource Include="General.my.resx" />
+    <EmbeddedResource Include="General.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>General.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General.ru.resx" />
+    <EmbeddedResource Include="General.th.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.Report.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.MarkerType.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.Marker.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.Fase.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.FaseBullet.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.ModelRiskAlert.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.ModelRiskAlertAttachment.datasource" />
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.ModelRiskAlertFase.datasource" />
+    <None Include="Properties\DataSources\Idea.Server.SerializedObject.ModelRiskAlertRegion.datasource" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Service References\FactorService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FactorService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FactorService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MarkerService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MarkerService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MarkerService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DocumentService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DocumentService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DocumentService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelFactorService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelFactorService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelFactorService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhaseBulletService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhaseBulletService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhaseBulletService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhaseService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhaseService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhaseService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RoleService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RoleService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RoleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReportService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReportService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReportService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UserService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UserService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UserService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelFactorDataService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelFactorDataService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelFactorDataService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelRiskAlertService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelRiskAlertService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ModelRiskAlertService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MarkerTypeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MarkerTypeService\configuration.svcinfo" />
+    <None Include="Service References\MarkerTypeService\configuration91.svcinfo" />
+    <None Include="Resources\view.png" />
+    <None Include="Resources\80x80_add.png" />
+    <None Include="Resources\80x80_calendar.png" />
+    <None Include="Resources\80x80_delete.png" />
+    <None Include="Resources\80x80_KML.png" />
+    <None Include="Resources\80x80_link.png" />
+    <None Include="Resources\80x80-brush.png" />
+    <None Include="Resources\80x80-chart.png" />
+    <None Include="Resources\80x80-data.png" />
+    <None Include="Resources\80x80-mapping.png" />
+    <None Include="Resources\80x80-mapping-continente.png" />
+    <None Include="Resources\80x80-mapping-country.png" />
+    <None Include="Resources\80x80-mapping-data.png" />
+    <None Include="Resources\80x80-mapping-numerado.png" />
+    <None Include="Resources\80x80-mapping-province.png" />
+    <None Include="Resources\80x80-pin.png" />
+    <None Include="Resources\80x80-refresh.png" />
+    <None Include="Resources\80x80-risk-action.png" />
+    <None Include="Resources\80x80-table.png" />
+    <None Include="Resources\174x174_add.png" />
+    <None Include="Resources\174x174_book.png" />
+    <None Include="Resources\174x174_book_active.png" />
+    <None Include="Resources\174x174_calendar.png" />
+    <None Include="Resources\174x174_delete.png" />
+    <None Include="Resources\174x174_electoralcycle.png" />
+    <None Include="Resources\174x174_electoralcycle_active.png" />
+    <None Include="Resources\174x174_KML.png" />
+    <None Include="Resources\174x174_link.png" />
+    <None Include="Resources\174x174_map.png" />
+    <None Include="Resources\174x174_map_active.png" />
+    <None Include="Resources\174x174_mapping-continente.png" />
+    <None Include="Resources\174x174-brush.png" />
+    <None Include="Resources\174x174-chart.png" />
+    <None Include="Resources\174x174-data.png" />
+    <None Include="Resources\174x174-mapping.png" />
+    <None Include="Resources\174x174-mapping-continente.png" />
+    <None Include="Resources\174x174-mapping-country.png" />
+    <None Include="Resources\174x174-mapping-data.png" />
+    <None Include="Resources\174x174-mapping-province.png" />
+    <None Include="Resources\174x174-pin.png" />
+    <None Include="Resources\174x174-refresh.png" />
+    <None Include="Resources\174x174-risk-action.png" />
+    <None Include="Resources\174x174-table.png" />
+    <Content Include="Resources\Actions-dialog-close-icon.png" />
+    <Content Include="Resources\Actions-document-edit-icon.png" />
+    <None Include="Service References\RegionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RegionService\configuration.svcinfo" />
+    <None Include="Service References\RegionService\configuration91.svcinfo" />
+    <None Include="Resources\arrow-down-icon.png" />
+    <None Include="Resources\arrow-up-icon.png" />
+    <Content Include="Resources\back-icon.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\book_active.png" />
+    <None Include="Resources\close.png" />
+    <Content Include="Resources\database-edit-icon.png" />
+    <Content Include="Resources\database-key-icon.png" />
+    <None Include="Resources\DatabaseEditIconN.bmp" />
+    <Content Include="Resources\Document-Delete-icon.png" />
+    <Content Include="Resources\document-export-icon.png" />
+    <None Include="Resources\ERMThome.png" />
+    <None Include="Resources\ERMThome_active.png" />
+    <None Include="Resources\ERMTcontact.png" />
+    <None Include="Resources\ERMTknowledgeresources.png" />
+    <None Include="Resources\ERMTknowledgeresources_active.png" />
+    <None Include="Resources\ERMTmaps.png" />
+    <None Include="Resources\ERMTmaps_active.png" />
+    <None Include="Resources\ERMTelectoral_cycle.png" />
+    <None Include="Resources\ERMTelectoralcycle_active.png" />
+    <None Include="Resources\ERMTleft.png" />
+    <None Include="Resources\ERMTleft40x40.png" />
+    <None Include="Resources\ERMTelectoral_cyclebig.png" />
+    <None Include="Resources\ERMTelectoral_cyclebig_active.png" />
+    <None Include="Resources\ERMTknowledgeresroucesbig.png" />
+    <None Include="Resources\ERMTknowledgeresroucesbig_active.png" />
+    <None Include="Resources\ERMTmapsbig.png" />
+    <None Include="Resources\ERMTmapsbig_active.png" />
+    <None Include="Resources\ERMTClose.png" />
+    <None Include="Resources\ERMTClose32x32.png" />
+    <None Include="Resources\electoral_cycle.png" />
+    <None Include="Resources\electoralcycle_active.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\email_active.png" />
+    <Content Include="Resources\ERMTool_icon_analytinstr_small2.jpg" />
+    <Content Include="Resources\ERMTool_icon_home_small.jpg" />
+    <Content Include="Resources\ERMTool_icon_knowres_small2.jpg" />
+    <Content Include="Resources\ERMTool_icon_mail_small.jpg" />
+    <Content Include="Resources\ERMTool_icon_prevmit_small2.jpg" />
+    <Content Include="Resources\ERMTool_icon_riskreg_small.jpg" />
+    <None Include="Resources\ERMTriskandaction.png" />
+    <None Include="Resources\ERMTriskandaction_active.png" />
+    <None Include="Resources\ERMTprint.png" />
+    <None Include="Resources\ERMTright.png" />
+    <None Include="Resources\ERMTprint40x40.png" />
+    <None Include="Resources\ERMTright40x40.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\export.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\file_active.png" />
+    <Content Include="Resources\forward-icon.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\home_active.png" />
+    <None Include="Resources\KML.png" />
+    <None Include="Resources\left.png" />
+    <Content Include="Resources\main button 1.jpg" />
+    <Content Include="Resources\main button 11.jpg" />
+    <Content Include="Resources\main button 2.jpg" />
+    <Content Include="Resources\main button 3.jpg" />
+    <Content Include="Resources\map-icon.png" />
+    <Content Include="Resources\map-icon1.png" />
+    <None Include="Resources\mapcontinent1.png" />
+    <None Include="Resources\mapcountry.png" />
+    <None Include="Resources\maplayers-map-icon-5.png" />
+    <None Include="Resources\maplayers-map-icon-6.png" />
+    <None Include="Resources\maplayers-map-icon-7.png" />
+    <None Include="Resources\maplayers-map-icon-8.png" />
+    <None Include="Resources\mapprovince.png" />
+    <None Include="Resources\mapworld.png" />
+    <None Include="Resources\mappin-icon.png" />
+    <None Include="Resources\maps.png" />
+    <None Include="Resources\maps_active.png" />
+    <Content Include="Resources\new-doc-icon.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\ok.png" />
+    <Content Include="Resources\page-white-link-icon.png" />
+    <Content Include="Resources\pin-icon.png" />
+    <None Include="Resources\prevention_mitigation.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\save32x32.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\save_image.png" />
+    <Content Include="Resources\user-group-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
